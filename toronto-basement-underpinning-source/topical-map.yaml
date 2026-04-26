@@ -1,0 +1,130 @@
+meta:
+  homepage_role: a
+  homepage_role_legacy: primary_service_location
+  target_city: Toronto, Ontario
+  locale: en-CA
+  generated_at: "2026-04-25"
+  generator_version: lp-kb-v1
+homepage:
+  target_keyword: basement underpinning toronto
+  attaches_general_support_pages: true
+families: []
+hubs:
+  - slug: interior-waterproofing
+    title: Interior Waterproofing
+    priority: priority
+    family: null
+    target_keyword: interior basement waterproofing toronto
+    support_page_slugs: []
+    local_context_slugs: []
+  - slug: basement-finishing
+    title: Basement Finishing
+    priority: priority
+    family: null
+    target_keyword: basement finishing toronto
+    support_page_slugs: []
+    local_context_slugs: []
+  - slug: sump-pumps
+    title: Sump Pumps & Battery Backups
+    priority: standard
+    family: null
+    target_keyword: sump pump installation toronto
+    support_page_slugs: []
+    local_context_slugs: []
+  - slug: concrete-foundation-repair
+    title: Concrete & Foundation Repair
+    priority: standard
+    family: null
+    target_keyword: foundation repair toronto
+    support_page_slugs: []
+    local_context_slugs: []
+  - slug: drawings-permits
+    title: Drawings & Permits
+    priority: standard
+    family: null
+    target_keyword: basement underpinning permits toronto
+    support_page_slugs: []
+    local_context_slugs: []
+  - slug: plumbing-drain-services
+    title: Plumbing & Drain Services
+    priority: lean
+    family: null
+    target_keyword: basement plumbing drain services toronto
+    support_page_slugs: []
+    local_context_slugs: []
+support_pages_index:
+  - slug: what-is-basement-underpinning
+    parent_type: homepage
+    parent_slug: null
+  - slug: signs-you-need-basement-underpinning
+    parent_type: homepage
+    parent_slug: null
+  - slug: basement-underpinning-process
+    parent_type: homepage
+    parent_slug: null
+  - slug: basement-underpinning-cost-ontario
+    parent_type: homepage
+    parent_slug: null
+  - slug: how-to-choose-basement-underpinning-contractor-toronto
+    parent_type: homepage
+    parent_slug: null
+local_context:
+  - slug: basement-underpinning-the-annex
+    neighborhood: The Annex
+    parent_type: homepage
+    parent_slug: null
+    earned_relevance: High concentration of pre-1920 Victorian and Edwardian homes with shallow rubble or fieldstone foundations make underpinning especially common. Narrow lot widths force specialized excavation access strategies, and the neighborhood's renovation culture produces tight neighbour-coordination expectations.
+  - slug: basement-underpinning-leslieville
+    neighborhood: Leslieville
+    parent_type: homepage
+    parent_slug: null
+    earned_relevance: Renovation-heavy semi-detached and row-house stock with narrow lot constraints. Underpinning is typically paired with full home renovation and rental-suite conversion — the demographic skews toward owner-occupiers building secondary suites for rental income.
+  - slug: basement-underpinning-forest-hill
+    neighborhood: Forest Hill
+    parent_type: homepage
+    parent_slug: null
+    earned_relevance: Premium high-end home stock drives larger project scopes — home theatres, gyms, and wine cellars enabled by the new ceiling height. Longer timelines are acceptable for premium finishes, and projects are typically integrated with whole-house renovation.
+  - slug: basement-underpinning-high-park
+    neighborhood: High Park
+    parent_type: homepage
+    parent_slug: null
+    earned_relevance: Historic housing stock near the ravine system creates elevated drainage and water-table considerations. Underpinning in this microclimate almost always pairs with interior waterproofing, and excavation logistics must respect the area's mature tree canopy.
+  - slug: basement-underpinning-little-italy
+    neighborhood: Little Italy
+    parent_type: homepage
+    parent_slug: null
+    earned_relevance: Older brick row homes with characteristically low basements. Shared-wall structural considerations dominate planning, narrow lot access requires specialized equipment staging, and neighborhood demographics drive secondary-suite conversion demand.
+  - slug: basement-underpinning-north-york
+    neighborhood: North York
+    parent_type: homepage
+    parent_slug: null
+    earned_relevance: 1950s–70s post-war bungalow stock with low original ceiling heights — among the strongest underpinning candidates in the GTA. Larger lots simplify excavation access, and the housing layout is naturally suited to legal basement apartments.
+  - slug: basement-underpinning-etobicoke
+    neighborhood: Etobicoke
+    parent_type: homepage
+    parent_slug: null
+    earned_relevance: Older lakeshore homes with elevated water tables and varied soil conditions across the borough. Underpinning here is almost always integrated with waterproofing; soil reports often dictate sequencing changes and specialized backfill.
+  - slug: basement-underpinning-mississauga
+    neighborhood: Mississauga
+    parent_type: homepage
+    parent_slug: null
+    earned_relevance: Established 1960s–80s housing stock with strong demand for ceiling-height upgrades and legal secondary suites. Larger suburban lots simplify excavation logistics, and the City of Mississauga building permit process differs meaningfully from City of Toronto — requiring separate permit-handling expertise.
+excluded_topics:
+  - topic: How much does basement underpinning cost in Toronto
+    reason: Cost Page Geo-Modifier Rule — city-level cost belongs on the Homepage as a section, not as a standalone Support Page. A standalone page would cannibalize the Homepage's primary keyword.
+  - topic: How much does interior waterproofing cost in Toronto
+    reason: Same Cost Page Geo-Modifier Rule — city-level cost belongs on the Hub page, not as a standalone Support Page. Provincial cost (Ontario) is kept as a standalone page.
+  - topic: How much does basement finishing cost in Toronto
+    reason: Same Cost Page Geo-Modifier Rule — city-level finishing cost belongs on the Hub page. Provincial-level cost is kept as a standalone Support Page.
+  - topic: How much does foundation repair cost in Toronto
+    reason: Same Cost Page Geo-Modifier Rule — city-level foundation repair cost belongs on the Hub. Provincial cost is kept as a standalone Support Page.
+  - topic: Bench Footing service hub
+    reason: The factsheet does not list bench footing as a service the business offers. Building a Hub for it would fabricate a service. Captured instead as a Comparison Support Page on the Homepage (underpinning-vs-bench-footing).
+  - topic: Symptom/Problem pages from factsheet draft (Low Basement Ceiling, Leaking Foundation Walls, Flooded Basement)
+    reason: Factsheet's flat draft structure rejected. 'Low ceiling' merged into the Homepage Qualifier Support Page (signs-you-need-basement-underpinning). 'Leaking foundation walls' covered by Interior Waterproofing Hub's Qualifier (signs-basement-needs-waterproofing). 'Flooded basement' covered by Sump Pumps Hub's Qualifier (signs-sump-pump-needs-replacement).
+  - topic: Industry trend pieces ('The Future of Basement Underpinning')
+    reason: Editorial-only; not locally-commercial; better fit for off-site channels.
+  - topic: Generic listicles ('Top 10 Toronto Underpinning Contractors')
+    reason: Not appropriate for the business's own site; competitor-listicle pattern.
+  - topic: DIY underpinning guides
+    reason: Self-serve content that would eliminate the need to hire a contractor; counter to the business's commercial intent.

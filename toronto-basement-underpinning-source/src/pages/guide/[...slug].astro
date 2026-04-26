@@ -1,0 +1,41 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import GuideLayout from '../../layouts/GuideLayout.astro';
+import Callout from '../../components/ui/Callout.astro';
+import ContentImage from '../../components/ui/ContentImage.astro';
+
+export async function getStaticPaths() {
+  const guides = await getCollection('guides', ({ data }) => !data.draft);
+  return guides.map((guide) => ({
+    params: { slug: guide.slug },
+    props: { guide },
+  }));
+}
+
+const { guide } = Astro.props;
+const { Content } = await guide.render();
+
+const parentType = guide.data.parentType;
+const parentSlug = guide.data.parentSlug;
+let parent = null;
+if (parentType === 'hub' && parentSlug) {
+  const entry = await getEntry('services', parentSlug);
+  if (entry) {
+    parent = { slug: entry.slug, data: { title: entry.data.title } };
+  }
+}
+
+const allGuides = await getCollection('guides', ({ data }) => !data.draft);
+const related = allGuides
+  .filter((g) =>
+    g.slug !== guide.slug &&
+    g.data.parentType === parentType &&
+    g.data.parentSlug === parentSlug
+  )
+  .slice(0, 3)
+  .map((g) => ({ slug: g.slug, data: { title: g.data.title, description: g.data.description } }));
+---
+
+<GuideLayout guide={guide.data} parent={parent} related={related}>
+  <Content components={{ Callout, ContentImage }} />
+</GuideLayout>

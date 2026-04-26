@@ -1,0 +1,113 @@
+{
+  "source": ".data/sample.html",
+  "styleClassification": {
+    "primaryStyle": "corporate-pro",
+    "mood": "trustworthy",
+    "secondaryTraits": ["bold-typography", "high-contrast", "uppercase-headings", "industrial"]
+  },
+  "colors": {
+    "primary": "#041627",
+    "primaryLight": "#1a2b3c",
+    "primaryDark": "#0b1d2d",
+    "secondary": "#545f72",
+    "accent": "#FF7E21",
+    "onPrimary": "#ffffff",
+    "onSecondary": "#ffffff",
+    "neutral": "slate",
+    "textDark": "#191c1e",
+    "textMuted": "#44474c",
+    "background": "#f7f9fb",
+    "surface": "#ffffff"
+  },
+  "fonts": {
+    "heading": "Work Sans",
+    "body": "Inter",
+    "headingWeight": "700",
+    "bodyWeight": "400",
+    "headingTransform": "uppercase"
+  },
+  "components": {
+    "buttons": {
+      "borderRadius": "0px",
+      "padding": "16px 32px",
+      "fontWeight": "700",
+      "textTransform": "uppercase",
+      "shadow": "none",
+      "hoverEffect": "opacity-90"
+    },
+    "cards": {
+      "border": "1px solid #CBD5E0",
+      "borderRadius": "0px",
+      "shadow": "none",
+      "hoverShadow": "none"
+    },
+    "badges": {
+      "borderRadius": "0px",
+      "fontWeight": "700",
+      "transform": "none"
+    },
+    "images": {
+      "borderRadius": "0px",
+      "frameShadow": "none",
+      "hoverEffect": "transform: scale(1.02)"
+    }
+  },
+  "layout": {
+    "containerWidth": "1280px",
+    "sectionPadding": "80px 0"
+  },
+  "imageStyle": {
+    "type": "photo",
+    "authenticity": "raw",
+    "promptSuffix": "Professional construction photography, workers in hard hats, concrete basement foundations, excavation work, Toronto residential homes, documentary-style, natural light, neutral color temperature, authentic real environment",
+    "negativePrompt": "stock photo, overly posed, perfect smile, studio backdrop, airbrushed, too clean, generic, artificial, cartoon, illustration"
+  },
+  "header_navigation": {
+    "layout_type": "bar-above-hero",
+    "page_type_behavior": {
+      "homepage": "bar-above-hero",
+      "service_pages": "bar-above-hero",
+      "location_pages": "bar-above-hero",
+      "blog_pages": "bar-above-hero",
+      "contact_page": "bar-above-hero",
+      "about_page": "bar-above-hero",
+      "guide_pages": "bar-above-hero"
+    },
+    "transparent_header": {
+      "initial_background": "transparent",
+      "initial_text_color": "#ffffff",
+      "scroll_background": "#ffffff",
+      "scroll_text_color": "#191c1e",
+      "scroll_trigger": "100px"
+    },
+    "sticky_behavior": {
+      "enabled": true,
+      "shadow_on_scroll": "0 4px 20px rgba(0,0,0,0.08)"
+    },
+    "mobile_menu": {
+      "trigger_style": "hamburger",
+      "background": "#041627"
+    }
+  },
+  "specialPatterns": {
+    "sectionDividers": {
+      "enabled": false
+    },
+    "accentBar": {
+      "enabled": true,
+      "color": "#FF7E21",
+      "width": "4rem",
+      "height": "4px"
+    },
+    "cornerBracket": {
+      "enabled": true,
+      "color": "#FF7E21"
+    }
+  },
+  "strategy": {
+    "primary_cta": {
+      "text": "Get a Free Estimate",
+      "href": "/contact/"
+    }
+  }
+}

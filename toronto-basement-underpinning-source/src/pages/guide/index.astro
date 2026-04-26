@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CTA from '../../components/blocks/CTA.astro';
+import { getCollection } from 'astro:content';
+import siteConfig from '../../config/site.json';
+
+const guides = (await getCollection('guides', ({ data }) => !data.draft))
+  .sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+const services = await getCollection('services');
+const hubLookup: Record<string, string> = Object.fromEntries(
+  services.map((s) => [s.slug, s.data.title])
+);
+
+const grouped: Record<string, typeof guides> = {};
+for (const g of guides) {
+  const key = g.data.parentType === 'hub' && g.data.parentSlug ? g.data.parentSlug : '__general__';
+  (grouped[key] ??= []).push(g);
+}
+
+const menuLabel = siteConfig.urlPatterns.guideMenuLabel;
+const guidePath = siteConfig.urlPatterns.guidePath;
+const pageTitle = `${menuLabel} | ${siteConfig.name}`;
+const description = `Plain-language guides on basement underpinning, waterproofing, foundation repair, permits, and the City of Toronto subsidy programs, written by ${siteConfig.name}.`;
+---
+
+<BaseLayout title={pageTitle} description={description} pageType="guide_pages">
+  <section class="bg-primary-800 text-white py-16 lg:py-20">
+    <div class="max-w-container mx-auto px-4">
+      <span class="section-label !text-accent-400">{menuLabel}</span>
+      <h1 class="text-white mt-3 mb-4 max-w-3xl">Toronto Basement Underpinning Guides</h1>
+      <span class="accent-bar"></span>
+      <p class="text-lg text-primary-100 max-w-2xl">
+        Plain-language explanations of how underpinning works, when it's needed, what it costs, and how to choose a contractor. Written for Toronto homeowners. No marketing fluff.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="max-w-container mx-auto px-4">
+      {Object.entries(grouped).map(([parentSlug, entries]) => (
+        <div class="mb-14">
+          <h2 class="mb-2">
+            {parentSlug === '__general__' ? 'General Underpinning Guides' : hubLookup[parentSlug] ?? parentSlug}
+          </h2>
+          <span class="accent-bar"></span>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {entries.map((g) => (
+              <a href={`${guidePath}${g.slug}/`} class="block tbu-card p-6 relative group focus-ring">
+                <span class="corner-bracket"></span>
+                <h3 class="text-lg leading-tight mb-3 group-hover:text-accent-500 transition-colors">
+                  {g.data.title}
+                </h3>
+                <p class="text-sm text-brand-muted leading-relaxed">{g.data.description}</p>
+                <span class="block mt-4 text-xs font-bold uppercase tracking-widest text-accent-500">Read Guide &rarr;</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <CTA />
+</BaseLayout>

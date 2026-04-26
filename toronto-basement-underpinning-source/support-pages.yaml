@@ -1,0 +1,253 @@
+meta:
+  generated_at: "2026-04-25"
+  total_pages: 30
+  guide_path: /guide/
+  guide_menu_label: Guides
+pages:
+  - id: what-is-basement-underpinning
+    slug: what-is-basement-underpinning
+    parent_type: homepage
+    parent_slug: null
+    title: What Is Basement Underpinning? A Plain-Language Guide for Toronto Homeowners
+    h1: What Is Basement Underpinning?
+    type: informational
+    angle: definition
+    stage: informational
+    priority_inherited: priority
+    target_keyword: what is basement underpinning
+    secondary_keywords:
+      - basement underpinning explained
+      - underpinning meaning
+    meta_title: What Is Basement Underpinning? Toronto Guide
+    meta_description: Plain-language definition of basement underpinning, how it differs from lowering a floor, why footings get extended, and when Toronto homeowners need it.
+    search_intent: Top-of-funnel homeowner learning the category before evaluating contractors.
+    primary_job: Define underpinning in plain language and explain when it's needed vs surface-level remodeling.
+    key_content_elements:
+      - "Plain-language definition: extending footings deeper to safely lower the basement floor"
+      - How underpinning differs from 'lowering the floor' alone (the floor follows new footings)
+      - Why footings get extended — bearing load, code requirements, ceiling height gain
+      - When underpinning is needed vs cosmetic remodeling vs bench footing
+      - Brief mention of the engineered, staged process
+    word_count_target: 700
+    reading_time_min: 3
+    image_count: 2
+    image_briefs:
+      - role: hero
+        prompt: Cross-section diagram of basement underpinning showing existing wall and new extended footing below, technical illustration
+      - role: inline
+        prompt: Toronto Victorian home exterior with basement excavation pit visible, neutral natural daylight
+    internal_links_out:
+      - target_slug: signs-you-need-basement-underpinning
+        target_type: support_page
+        anchor_hint: signs you need underpinning
+      - target_slug: underpinning-vs-bench-footing
+        target_type: support_page
+        anchor_hint: underpinning vs bench footing
+      - target_slug: contact
+        target_type: page
+        anchor_hint: request a free estimate
+    faq_seed:
+      - q: Is underpinning the same as lowering the basement?
+        a_hint: Underpinning extends footings; the lowered floor follows. They're sequential, not the same step.
+      - q: How is underpinning different from waterproofing?
+        a_hint: Underpinning is structural (depth, footings); waterproofing is moisture management. Often paired.
+      - q: Do all basements need underpinning to be finished?
+        a_hint: No — only when ceiling height is below code or a legal apartment is planned.
+  - id: signs-you-need-basement-underpinning
+    slug: signs-you-need-basement-underpinning
+    parent_type: homepage
+    parent_slug: null
+    title: 10 Signs You Need Basement Underpinning in Toronto
+    h1: Signs You Need Basement Underpinning
+    type: informational
+    angle: qualifier
+    stage: informational
+    priority_inherited: priority
+    target_keyword: signs you need basement underpinning
+    secondary_keywords:
+      - when do i need underpinning
+      - low basement ceiling solutions
+    meta_title: 10 Signs You Need Basement Underpinning | Toronto Guide
+    meta_description: "Self-qualify before booking a quote: ceiling under 7ft, recurring foundation cracks, plans for a legal apartment, settlement signs, and more."
+    search_intent: Homeowner unsure whether their problem warrants underpinning vs cheaper alternatives.
+    primary_job: Help homeowners self-qualify with concrete signals before requesting a quote.
+    key_content_elements:
+      - Ceiling height below 7 ft (under Ontario Building Code minimum for habitable space)
+      - Plans to add a legal basement apartment or rental suite
+      - Recurring foundation cracks, especially horizontal or stair-step
+      - "Visible settlement: sloped floors, sticking doors, cracks above door frames"
+      - Age of home (pre-1950 with shallow rubble or fieldstone foundations)
+    word_count_target: 800
+    reading_time_min: 4
+    image_count: 2
+    image_briefs:
+      - role: hero
+        prompt: Toronto homeowner inspecting cracked basement foundation wall with flashlight, concerned expression, real environment
+      - role: inline
+        prompt: Stair-step foundation crack pattern in red brick wall, close-up technical reference
+    internal_links_out:
+      - target_slug: what-is-basement-underpinning
+        target_type: support_page
+        anchor_hint: what underpinning is
+      - target_slug: foundation-cracks-that-need-repair
+        target_type: support_page
+        anchor_hint: foundation cracks that need repair
+      - target_slug: contact
+        target_type: page
+        anchor_hint: free estimate
+    faq_seed:
+      - q: What ceiling height do I need for a legal basement apartment in Toronto?
+        a_hint: Ontario Building Code Section 9.36 requires 6'5" minimum; 8 ft is comfortable and standard target.
+      - q: Are hairline cracks always serious?
+        a_hint: Hairline shrinkage cracks are usually cosmetic; horizontal or active cracks signal structural movement.
+      - q: Can I just finish the basement without underpinning?
+        a_hint: Only if ceiling height already meets code and there's no structural concern. Most older Toronto homes need lowering first.
+  - id: basement-underpinning-process
+    slug: basement-underpinning-process
+    parent_type: homepage
+    parent_slug: null
+    title: "The Basement Underpinning Process: Timeline and Stages"
+    h1: The Basement Underpinning Process
+    type: informational
+    angle: process
+    stage: informational
+    priority_inherited: priority
+    target_keyword: basement underpinning process
+    secondary_keywords:
+      - underpinning timeline
+      - how long does underpinning take
+    meta_title: The Basement Underpinning Process & Timeline | Toronto
+    meta_description: "Stage-by-stage walkthrough: drawings, permits, staged excavation, footing pours, curing, waterproofing, backfill. Typical Toronto timelines included."
+    search_intent: Homeowner wanting realistic expectations on stages and total project length.
+    primary_job: Set realistic stage and timeline expectations so the homeowner can plan around the project.
+    key_content_elements:
+      - "Stage 1: Drawings + structural engineering (2–4 weeks)"
+      - "Stage 2: City of Toronto permit submission and review (3–6 weeks)"
+      - "Stage 3: Staged excavation and pin pours (4–6 weeks construction)"
+      - "Stage 4: Curing windows, waterproofing if combined, slab pour (2–3 weeks)"
+      - "Stage 5: Final inspection and finishing handoff"
+    word_count_target: 900
+    reading_time_min: 4
+    image_count: 2
+    image_briefs:
+      - role: hero
+        prompt: Underpinning project timeline visualization, 5 stages with photos at each, technical infographic
+      - role: inline
+        prompt: Concrete pour into engineered pin section in Toronto basement, workers in PPE, natural light
+    internal_links_out:
+      - target_slug: what-to-expect-basement-underpinning
+        target_type: support_page
+        anchor_hint: what to expect during construction
+      - target_slug: city-of-toronto-building-permit-basement-underpinning
+        target_type: support_page
+        anchor_hint: the city permit process
+      - target_slug: contact
+        target_type: page
+        anchor_hint: book a site visit
+    faq_seed:
+      - q: How long does the whole project take from sign-up to move-in?
+        a_hint: "Typical full underpinning: 3–5 months. Add 4–8 weeks for finishing if bundled."
+      - q: Can stages overlap to save time?
+        a_hint: Some — drawings and permits overlap, but excavation and curing must be sequential.
+      - q: Are there delays with Toronto permits?
+        a_hint: Plan review averages 4–6 weeks; Committee of Adjustment hearings add 8–12 weeks if zoning relief is needed.
+  - id: basement-underpinning-cost-ontario
+    slug: basement-underpinning-cost-ontario
+    parent_type: homepage
+    parent_slug: null
+    title: How Much Does Basement Underpinning Cost in Ontario? (2026 Guide)
+    h1: Basement Underpinning Cost in Ontario
+    type: decision_support
+    angle: cost
+    stage: decision
+    priority_inherited: priority
+    target_keyword: basement underpinning cost ontario
+    secondary_keywords:
+      - underpinning price ontario
+      - cost to lower basement
+    meta_title: "Basement Underpinning Cost in Ontario: 2026 Pricing Guide"
+    meta_description: "Real Ontario underpinning prices: $80–$500 per linear foot, $20K–$50K typical project. See 5 cost-driver factors and what's included in a real quote."
+    search_intent: Decision-stage buyer wanting price range before booking estimates.
+    primary_job: Give honest provincial price range with the 5 factors that drive variance.
+    key_content_elements:
+      - "Per-linear-foot range: $80–$500; typical project $20K–$50K"
+      - "5 cost drivers: depth gained, soil condition, accessibility, perimeter length, finishing scope"
+      - What's included in a real quote (drawings, permits, excavation, footings, slab, cleanup)
+      - How Ontario costs compare to other provinces (BC similar, Alberta lower, Quebec lower)
+      - Financing options for a $30K+ structural project
+    word_count_target: 1000
+    reading_time_min: 5
+    image_count: 3
+    image_briefs:
+      - role: hero
+        prompt: Cost comparison chart for basement underpinning in Ontario, three project size tiers, branded clean infographic
+      - role: inline
+        prompt: Ontario homeowner reviewing detailed line-item quote with contractor at kitchen table
+      - role: inline
+        prompt: Basement excavation in progress with depth gauge visible, Toronto residential setting
+    internal_links_out:
+      - target_slug: how-to-choose-basement-underpinning-contractor-toronto
+        target_type: support_page
+        anchor_hint: how to choose a contractor
+      - target_slug: underpinning-vs-bench-footing
+        target_type: support_page
+        anchor_hint: compare with bench footing
+      - target_slug: contact
+        target_type: page
+        anchor_hint: lock a fixed-price quote
+    faq_seed:
+      - q: Why is the price range so wide?
+        a_hint: Depth gained, perimeter linear footage, soil condition, and access drive 90% of the variance.
+      - q: Is the quote fixed or does it change mid-project?
+        a_hint: Our quotes are fixed-price after engineering. Change orders only on homeowner-initiated scope changes.
+      - q: Does insurance cover underpinning?
+        a_hint: Almost never — underpinning is voluntary improvement. Some HELOC and renovation loans exist.
+  - id: how-to-choose-basement-underpinning-contractor-toronto
+    slug: how-to-choose-basement-underpinning-contractor-toronto
+    parent_type: homepage
+    parent_slug: null
+    title: How to Choose a Basement Underpinning Contractor in Toronto
+    h1: How to Choose an Underpinning Contractor
+    type: decision_support
+    angle: decision-stage
+    stage: decision
+    priority_inherited: priority
+    target_keyword: how to choose basement underpinning contractor toronto
+    secondary_keywords:
+      - best underpinning contractor toronto
+      - underpinning contractor checklist
+    meta_title: How to Choose an Underpinning Contractor in Toronto
+    meta_description: "Vetting framework: licensing, insurance, structural engineer involvement, warranty terms, red flags, and the 8 questions every Toronto homeowner should ask."
+    search_intent: Late-stage researcher about to book estimates with multiple contractors.
+    primary_job: Convert late-stage researchers into estimate requests by giving them a clear vetting framework.
+    key_content_elements:
+      - Licensing and insurance verification (ask for COI)
+      - Structural engineer involvement (in-house vs subcontracted)
+      - Project portfolio depth — at least 50+ similar Toronto projects
+      - Warranty terms (zero-risk vs limited language)
+      - Red flags vs green flags + 8 questions to ask
+    word_count_target: 1100
+    reading_time_min: 5
+    image_count: 2
+    image_briefs:
+      - role: hero
+        prompt: Toronto homeowner shaking hands with contractor in front of underpinning project site, professional setting
+      - role: inline
+        prompt: Branded contractor checklist on clipboard with credentials and warranty highlighted, clean composition
+    internal_links_out:
+      - target_slug: basement-underpinning-cost-ontario
+        target_type: support_page
+        anchor_hint: underpinning cost in Ontario
+      - target_slug: what-to-expect-basement-underpinning
+        target_type: support_page
+        anchor_hint: what to expect during construction
+      - target_slug: contact
+        target_type: page
+        anchor_hint: request our credentials
+    faq_seed:
+      - q: Should the contractor or the homeowner hire the structural engineer?
+        a_hint: Either works, but contractor-coordinated engineering avoids communication gaps and is faster.
+      - q: What's the biggest red flag?
+        a_hint: Quotes that skip a site visit or don't include engineered drawings — almost always lead to scope creep.
+      - q: How many quotes should I get?
+        a_hint: 2–3 from licensed underpinning specialists. Avoid generic 'general renovators' for structural work.

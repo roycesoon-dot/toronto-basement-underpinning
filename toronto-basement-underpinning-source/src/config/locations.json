@@ -1,0 +1,1803 @@
+[
+  {
+    "id": "toronto",
+    "slug": "toronto",
+    "name": "Toronto",
+    "shortName": "Toronto",
+    "type": "primary",
+    "council": "City of Toronto",
+    "metaTitle": "Basement Underpinning Toronto | Toronto Basement Underpinning",
+    "h1Title": "Toronto's #1 Basement Underpinning Specialists",
+    "metaDescription": "Basement underpinning across the City of Toronto  - from Victorian semis in the core to post-war detached homes. 20 crews, turnkey scope, free estimate.",
+    "description": "Toronto's housing stock spans 1880s Victorian semis to 1980s detached homes, every era with a different foundation type and a different underpinning playbook. Our 20 crews work across all six City of Toronto wards.",
+    "responseTime": "Same-day estimate",
+    "areas": [
+      "Downtown Toronto",
+      "Midtown",
+      "Riverdale",
+      "The Beaches",
+      "Trinity Bellwoods",
+      "Cabbagetown",
+      "The Junction"
+    ],
+    "nearby": [
+      "the-annex",
+      "leslieville",
+      "north-york"
+    ],
+    "landmarks": [
+      "Toronto City Hall (City of Toronto Building Department)",
+      "Toronto Reference Library (Yonge & Bloor)",
+      "Casa Loma (Spadina Road)"
+    ],
+    "transport": {
+      "highways": [
+        "Gardiner Expressway",
+        "DVP (Hwy 404)",
+        "Hwy 401",
+        "Allen Road"
+      ],
+      "transit": [
+        "Yonge-University subway line",
+        "Bloor-Danforth subway line",
+        "Eglinton Crosstown LRT"
+      ],
+      "description": "Accessed via the Gardiner Expressway and DVP, with subway connections across all six wards."
+    },
+    "coordinates": {
+      "lat": 43.6532,
+      "lng": -79.3832
+    },
+    "uniqueValue": "20+ years underpinning every foundation type across six City of Toronto wards, with in-house heritage permit and Committee of Adjustment expertise.",
+    "mapEmbed": "https://maps.google.com/maps?q=Toronto,%20ON,%20Canada&t=&z=12&ie=UTF8&iwloc=&output=embed",
+    "modules": {
+      "localLogistics": {
+        "headline": "How We Work in Toronto",
+        "content": "Our 20 crews dispatch from across the city. We know the GO-DVP-Gardiner traffic windows, the city's overnight construction-vehicle rules, and the parking-permit process for narrow downtown streets. Most Toronto sites get a same-day site visit and a fixed-price quote within two business hours of the inquiry. Permit submissions go through the City of Toronto Building Department at City Hall and through the appropriate district office."
+      },
+      "buildingFamiliarity": {
+        "headline": "Toronto Foundations We've Worked",
+        "content": "Toronto homes range from 1880s rubble-and-fieldstone Victorian semis with 5'10\" basements, through 1920s-1950s brick foundations, to post-war concrete-block detached homes in the inner suburbs. Each era takes a different staging plan, a different excavation depth, and a different waterproofing detail. Our project managers have personally underpinned every one of these foundation types."
+      },
+      "whyChooseUs": {
+        "headline": "Why Toronto Homeowners Choose Us",
+        "points": [
+          "Local Toronto crews, fastest scheduling in the city for a structural project",
+          "20+ years specializing in Toronto's mixed-era housing stock",
+          "City of Toronto Building Permit + Committee of Adjustment expertise",
+          "Heritage Conservation District compliance",
+          "Zero-risk, no-questions-asked warranty across every project",
+          "Coordinates Ontario-licensed structural engineers in-house"
+        ]
+      }
+    },
+    "sectionHeadings": {
+      "painPoints": "Basement Underpinning Problems in Toronto? Fast Help Available",
+      "services": "Our Basement Lowering & Finishing Services",
+      "process": "How It Works in 3 Simple Steps",
+      "midCta": "Ready to Lower Your Toronto Basement?",
+      "whyChooseUs": "Why Customers Choose Our Toronto Crews",
+      "localContent": "Foundation Expertise Across All Six Wards",
+      "faq": "Toronto Underpinning Questions Answered",
+      "finalCta": "Book Your Toronto Basement Underpinning"
+    },
+    "localFAQs": [
+      {
+        "question": "How quickly can you start a Toronto underpinning project?",
+        "answer": "Once drawings and the City of Toronto permit are in hand, our crews typically start within 2-4 weeks. We're the only Toronto specialist running 20 simultaneous crews, so scheduling pressure is far lower than the 6+ months most contractors quote."
+      },
+      {
+        "question": "Do you work in Toronto Heritage Conservation Districts?",
+        "answer": "Yes. We've underpinned homes in the Annex, Cabbagetown, Riverdale, and the Junction, all subject to Heritage Conservation District rules. Underpinning itself is interior work, but any visible exterior excavation or window-well change goes through the heritage permit process, and we handle that coordination."
+      },
+      {
+        "question": "How is Toronto different from other GTA municipalities for permits?",
+        "answer": "The City of Toronto plan review is more rigorous than most surrounding municipalities, and Toronto requires a structural engineer's stamp on every basement underpinning project. Committee of Adjustment timelines are 8-12 weeks if zoning relief is needed. We pre-screen every project for these issues during the estimate."
+      },
+      {
+        "question": "What Toronto neighbourhoods do you serve most often?",
+        "answer": "Our highest-volume neighbourhoods are the Annex, Leslieville, North York, Etobicoke, Forest Hill, Little Italy, and High Park. We've completed projects in every postal code from M1 through M9."
+      },
+      {
+        "question": "Can you handle Toronto Basement Flooding Protection Subsidy paperwork?",
+        "answer": "Yes. The subsidy reimburses up to $3,400 combined for sump pump install, backwater valve, and foundation drain disconnection. We pre-fill the application during the project and coordinate the city inspection that triggers the rebate."
+      }
+    ],
+    "stats": {
+      "projectsInArea": "Hundreds of Toronto projects",
+      "yearsServing": "Serving Toronto since 2006",
+      "localTeam": "20 crews based across the GTA"
+    }
+  },
+  {
+    "id": "the-annex",
+    "slug": "the-annex",
+    "name": "The Annex",
+    "shortName": "Annex",
+    "type": "primary",
+    "council": "City of Toronto (Toronto and East York)",
+    "metaTitle": "Basement Underpinning The Annex | TBU Toronto",
+    "h1Title": "Underpinning Specialists for The Annex's Victorian Homes",
+    "metaDescription": "The Annex's pre-1920 Victorian and Edwardian homes need specialist underpinning. Narrow lots, shallow rubble foundations, heritage considerations. We handle it all.",
+    "description": "The Annex sits on some of Toronto's oldest housing, pre-1920 Victorian and Edwardian homes with shallow rubble or fieldstone foundations. We've underpinned dozens of homes along Bedford, Madison, and Walmer.",
+    "responseTime": "Same-day estimate",
+    "areas": [
+      "Spadina Road corridor",
+      "Bedford Road",
+      "Madison Avenue",
+      "Walmer Road",
+      "Brunswick Avenue"
+    ],
+    "nearby": [
+      "toronto",
+      "little-italy",
+      "forest-hill"
+    ],
+    "landmarks": [
+      "Casa Loma",
+      "Spadina Museum",
+      "University of Toronto"
+    ],
+    "transport": {
+      "highways": [
+        "Spadina Avenue",
+        "Bloor Street West",
+        "Allen Road"
+      ],
+      "transit": [
+        "Spadina subway station (Bloor-Danforth line)",
+        "Dupont station (Yonge-University line)",
+        "Spadina streetcar"
+      ],
+      "description": "Accessible via Spadina Avenue and Bloor Street, with Spadina and Dupont subway stations within walking distance of most homes."
+    },
+    "coordinates": {
+      "lat": 43.6711,
+      "lng": -79.4108
+    },
+    "uniqueValue": "Annex Victorian and Edwardian foundations require heritage-aware excavation sequencing. We've done it dozens of times along Bedford, Madison, and Walmer without a heritage citation.",
+    "mapEmbed": "https://maps.google.com/maps?q=The%20Annex,%20Toronto,%20ON,%20Canada&t=&z=14&ie=UTF8&iwloc=&output=embed",
+    "modules": {
+      "localLogistics": {
+        "headline": "Underpinning Logistics in The Annex",
+        "content": "The Annex's narrow lots (often under 22 feet wide) and old-growth tree canopy demand careful excavation staging. We use compact excavators that fit through the side passages and stage spoil in the front yard within city street-permit windows. Spadina Road parking restrictions mean materials are scheduled for early-morning delivery; we co-ordinate with the local BIA and the Annex Residents' Association on noise windows."
+      },
+      "buildingFamiliarity": {
+        "headline": "The Annex's Foundation Stock",
+        "content": "Most Annex homes are 1890s-1915 brick semis with rubble or fieldstone foundations, 6'2\" original ceiling height, and at-grade window wells. Shared walls between semis demand simultaneous structural sign-off from both engineers when neighbours are also planning underpinning. We coordinate the heritage permit when window-well changes face a public street."
+      },
+      "whyChooseUs": {
+        "headline": "Why The Annex Homeowners Trust TBU",
+        "points": [
+          "Dozens of Annex homes underpinned along Bedford, Madison, and Walmer",
+          "Heritage Conservation District compliance built into our process",
+          "Narrow-lot excavation expertise, we fit equipment where others can't",
+          "Shared-wall coordination with neighbour projects",
+          "Annex Residents' Association familiar with our crews"
+        ]
+      }
+    },
+    "sectionHeadings": {
+      "painPoints": "Annex Victorian Foundation Issues, Professional Response",
+      "services": "Our Underpinning Services",
+      "process": "Getting Underpinning Done in 3 Steps",
+      "midCta": "Ready for Annex Basement Underpinning?",
+      "whyChooseUs": "What Sets Our Heritage Work Apart",
+      "localContent": "Specialists for Pre-1920 Foundations",
+      "faq": "The Annex Underpinning Questions Answered",
+      "finalCta": "Book Your Annex Basement Assessment"
+    },
+    "localFAQs": [
+      {
+        "question": "Are Annex Victorian foundations safe to underpin?",
+        "answer": "Yes, and they're often the strongest candidates. The original rubble foundations are at the end of their useful life; the new engineered footings replace material that was already failing. Every project is staged under an Ontario-licensed structural engineer's design."
+      },
+      {
+        "question": "How do shared walls work in Annex semis?",
+        "answer": "When the neighbour's basement isn't being underpinned, we sequence pin sections so the shared wall is always supported on existing footings while new ones cure. When the neighbour is also underpinning, we coordinate engineer drawings and crew schedules so both sides advance together, faster and cheaper for both homeowners."
+      },
+      {
+        "question": "Does the Annex Heritage Conservation District affect basement work?",
+        "answer": "Interior underpinning isn't restricted by the heritage district. But window-well enlargements, stairwell additions, or any visible exterior change goes through a heritage permit. We screen for this in the initial site visit and handle the heritage permit alongside the building permit."
+      },
+      {
+        "question": "How long does an Annex Victorian project take?",
+        "answer": "A standard 1,500-2,000 sq ft Annex Victorian semi takes 5-7 weeks of construction plus 6-10 weeks of drawings and permits. Heritage permit hearings, when needed, add 4-6 weeks. We give realistic timelines in writing during the estimate."
+      },
+      {
+        "question": "What's the typical project cost in the Annex?",
+        "answer": "Annex Victorians typically run $35,000-$60,000 for full-perimeter underpinning, before waterproofing or finishing. The rubble-foundation premium and the heritage-permit overhead push Annex projects toward the upper end of the Toronto range."
+      }
+    ],
+    "stats": {
+      "projectsInArea": "50+ Annex projects",
+      "yearsServing": "Serving the Annex since 2006",
+      "localTeam": "Heritage-experienced crews"
+    }
+  },
+  {
+    "id": "leslieville",
+    "slug": "leslieville",
+    "name": "Leslieville",
+    "shortName": "Leslieville",
+    "type": "primary",
+    "council": "City of Toronto (Toronto and East York)",
+    "metaTitle": "Basement Underpinning Leslieville | TBU Toronto",
+    "h1Title": "Underpinning Leslieville's Semi-Detached & Row Houses",
+    "metaDescription": "Leslieville's renovation-heavy semi-detached and row-house stock needs shared-wall underpinning expertise. Tight lots, tenant-suite focus, professional execution.",
+    "description": "Leslieville's renovation culture is built on semi-detached and row houses, homes where every underpinning project shares a foundation wall with at least one neighbour. We've handled hundreds of shared-wall sequences along Queen East, Logan, and Carlaw.",
+    "responseTime": "Same-day estimate",
+    "areas": [
+      "Queen Street East",
+      "Gerrard Street East (East Chinatown)",
+      "Greenwood Avenue",
+      "Logan Avenue",
+      "Carlaw Avenue"
+    ],
+    "nearby": [
+      "toronto",
+      "the-beaches",
+      "east-york"
+    ],
+    "landmarks": [
+      "Greenwood Park",
+      "Jonathan Ashbridge Park",
+      "Queen Street East shopping district"
+    ],
+    "transport": {
+      "highways": [
+        "Queen Street East",
+        "Eastern Avenue",
+        "Dundas Street East"
+      ],
+      "transit": [
+        "Queen streetcar (504)",
+        "King streetcar (514)",
+        "Pape subway station (Bloor-Danforth line)"
+      ],
+      "description": "Served by Queen and King streetcar routes, with the Bloor-Danforth subway accessible at Pape station."
+    },
+    "coordinates": {
+      "lat": 43.6629,
+      "lng": -79.333
+    },
+    "uniqueValue": "Hundreds of shared-wall projects on Queen East, Logan, and Carlaw. Our party-wall sequencing and neighbour coordination is standard scope, not an add-on.",
+    "mapEmbed": "https://maps.google.com/maps?q=Leslieville,%20Toronto,%20ON,%20Canada&t=&z=14&ie=UTF8&iwloc=&output=embed",
+    "modules": {
+      "localLogistics": {
+        "headline": "Working in Leslieville's Tight Lots",
+        "content": "Leslieville's lot widths (often 14-18 feet) demand the smallest excavation footprint in our crew toolkit. We use compact tracked excavators, stage spoil to the rear lane where one is available, and schedule deliveries off-peak to keep Queen and Logan moving. Crews check in with the Leslieville BIA when work fronts the Queen Street commercial strip."
+      },
+      "buildingFamiliarity": {
+        "headline": "Leslieville's Semi & Row House Stock",
+        "content": "Most Leslieville projects are 1900-1925 semi-detached or row houses on shared-wall foundations. Original ceiling heights of 5'8\"-6'4\" are routine; we lower these to 8'+ for legal apartments or family living space. Many homes have been re-renovated multiple times. We open up surprises during demo and budget contingency for them in the quote."
+      },
+      "whyChooseUs": {
+        "headline": "Leslieville-Specific Expertise",
+        "points": [
+          "Hundreds of shared-wall projects on Queen East, Logan, Carlaw",
+          "Party-wall coordination and neighbour notice as standard scope",
+          "Toronto Secondary Suite Bylaw compliance for legal apartments",
+          "Narrow-lot excavation logistics dialed in",
+          "Site cleanliness, we sweep daily, the neighbours notice"
+        ]
+      }
+    },
+    "sectionHeadings": {
+      "painPoints": "Leslieville Basement Too Low for a Legal Suite?",
+      "services": "Services for Semi-Detached & Row Houses",
+      "process": "How Our Shared-Wall Underpinning Works",
+      "midCta": "Need Underpinning in Leslieville? Call Us Now",
+      "whyChooseUs": "Why Local Row-House Owners Choose Our Crews",
+      "localContent": "Queen East & Carlaw Underpinning Expertise",
+      "faq": "Leslieville Underpinning FAQs",
+      "finalCta": "Get Your Leslieville Basement Lowered Today"
+    },
+    "localFAQs": [
+      {
+        "question": "What's involved in shared-wall underpinning?",
+        "answer": "When you underpin a semi-detached or row house and the neighbour isn't, we stage one short pin section at a time so the shared wall is always supported on existing footings while new ones cure. We also serve formal neighbour notice and document the wall condition before excavation starts, protecting both homeowners legally."
+      },
+      {
+        "question": "Can I legalize my Leslieville basement as a rental apartment?",
+        "answer": "Yes, if the lowered basement meets Ontario Building Code 9.36 (ceiling height, egress, fire separation, smoke alarm interconnection). Most Leslieville underpinning projects are scoped for legal apartment compliance from day one. We register the secondary suite with the City of Toronto as a standard step."
+      },
+      {
+        "question": "How tight does the lot need to be for you to handle it?",
+        "answer": "We've worked on lots as narrow as 14 feet. The excavator fits, the wheelbarrow staging works, and the spoil moves out through the rear lane or scheduled front-yard windows. If your lot is tighter than that, we'll tell you straight at the site visit."
+      },
+      {
+        "question": "Do you serve formal neighbour notice for shared walls?",
+        "answer": "Yes, every shared-wall project gets a written neighbour notice before construction starts, with the engineer's design summary and the proposed schedule. We also do a pre-construction wall-condition document with photos so any later disputes start from a clear baseline."
+      }
+    ],
+    "stats": {
+      "projectsInArea": "100+ Leslieville projects",
+      "yearsServing": "Serving Leslieville since 2008",
+      "localTeam": "Shared-wall specialists"
+    }
+  },
+  {
+    "id": "forest-hill",
+    "slug": "forest-hill",
+    "name": "Forest Hill",
+    "shortName": "Forest Hill",
+    "type": "primary",
+    "council": "City of Toronto (Toronto and East York)",
+    "metaTitle": "Basement Underpinning Forest Hill | TBU Toronto",
+    "h1Title": "Premium Underpinning for Forest Hill Homes",
+    "metaDescription": "Forest Hill's high-end home stock calls for premium basement conversions, home theatres, gyms, wine cellars. Whole-house renovation integration, premium finishes.",
+    "description": "Forest Hill projects don't just lower a basement, they unlock premium living square footage. Most homes pair underpinning with luxury finishing: home theatres, full gyms, climate-controlled wine cellars, and guest suites.",
+    "responseTime": "Same-day estimate",
+    "areas": [
+      "Spadina Road North",
+      "Bathurst Street North",
+      "Forest Hill Village",
+      "St. Clair Avenue West"
+    ],
+    "nearby": [
+      "the-annex",
+      "toronto"
+    ],
+    "landmarks": [
+      "Forest Hill Village",
+      "Upper Canada College",
+      "Cedarvale Park & Ravine"
+    ],
+    "transport": {
+      "highways": [
+        "Allen Road",
+        "Bathurst Street",
+        "Eglinton Avenue West",
+        "St. Clair Avenue West"
+      ],
+      "transit": [
+        "Eglinton Crosstown LRT (Forest Hill station)",
+        "St. Clair West subway station",
+        "Bathurst bus"
+      ],
+      "description": "Accessible via Allen Road and Bathurst Street, with the Eglinton Crosstown LRT providing transit access along the southern border."
+    },
+    "coordinates": {
+      "lat": 43.696,
+      "lng": -79.4143
+    },
+    "uniqueValue": "Forest Hill's premium homes demand underpinning that integrates with luxury renovation scopes. Home theatres, wine cellars, gyms. We coordinate with your designer from week one.",
+    "mapEmbed": "https://maps.google.com/maps?q=Forest%20Hill,%20Toronto,%20ON,%20Canada&t=&z=14&ie=UTF8&iwloc=&output=embed",
+    "modules": {
+      "localLogistics": {
+        "headline": "Forest Hill Project Logistics",
+        "content": "Forest Hill projects are typically integrated with whole-house renovations, so our underpinning crew co-ordinates with your interior designer, custom millwork shop, and finishing contractors from week one. Larger lots simplify access; we stage equipment in the rear and protect mature landscaping with plywood matting and tree-protection fencing as standard."
+      },
+      "buildingFamiliarity": {
+        "headline": "Forest Hill's Premium Housing Stock",
+        "content": "Most Forest Hill homes are 1920s-1940s detached on substantial lots, often with original lath-and-plaster interiors and custom millwork that must be preserved. Foundations are concrete or stone-and-mortar, 6'4\"-7'0\" original ceilings. Underpinning here usually targets 9 ft+ for theatre and wine-cellar height. Engineering and finishing budgets are higher; the trade-off is no surprises."
+      },
+      "whyChooseUs": {
+        "headline": "Forest Hill Quality Standards",
+        "points": [
+          "Whole-house renovation integration with designers and millwork shops",
+          "Mature landscape and tree-canopy protection protocols",
+          "Original millwork preservation across upper floors",
+          "Premium finishing crews: theatres, gyms, wine cellars",
+          "Engineering depth tuned to higher ceiling-height targets"
+        ]
+      }
+    },
+    "sectionHeadings": {
+      "painPoints": "Forest Hill Basement Not Matching the Home Above?",
+      "services": "Premium Underpinning & Finishing Services",
+      "process": "How We Deliver Premium Forest Hill Projects",
+      "midCta": "Ready to Unlock Premium Basement Space?",
+      "whyChooseUs": "Why High-End Homeowners Choose Our Crews",
+      "localContent": "Precision Underpinning for Established Homes",
+      "faq": "Forest Hill Underpinning Questions Answered",
+      "finalCta": "Start Your Forest Hill Basement Project"
+    },
+    "localFAQs": [
+      {
+        "question": "Can underpinning add a home theatre or wine cellar?",
+        "answer": "Yes, Forest Hill is our most common neighbourhood for theatre and wine-cellar projects. Underpinning to 9 ft+ gives the ceiling height for projector throws and wine-rack storage, plus the structural depth for acoustic isolation and climate-control infrastructure. We coordinate the AV consultant and the wine-storage specialist during structural design."
+      },
+      {
+        "question": "How do you protect heritage interior millwork?",
+        "answer": "Underpinning is contained to the basement, but the staged structural sequence still transmits some movement through the upper floors. We monitor with crack gauges on original plaster, support visible mouldings during peak excavation phases, and document everything photographically before work starts."
+      },
+      {
+        "question": "What's the typical Forest Hill project budget?",
+        "answer": "Forest Hill underpinning plus premium finishing projects typically range $150,000-$400,000 depending on perimeter, depth gain, and the finishing scope. The higher end covers theatre, gym, wine cellar, and guest-suite finishing all in one project. We provide line-item engineering quotes  - no 'to-be-determined' pricing."
+      },
+      {
+        "question": "Can you start during the school year?",
+        "answer": "Yes. Most Forest Hill projects schedule excavation outside summer to avoid Upper Canada College and Bishop Strachan school traffic. We'll work backward from your finishing-occupancy date to set a structural-pour schedule that doesn't collide with the school year."
+      }
+    ],
+    "stats": {
+      "projectsInArea": "30+ Forest Hill projects",
+      "yearsServing": "Serving Forest Hill since 2010",
+      "localTeam": "Premium-finish specialists"
+    }
+  },
+  {
+    "id": "high-park",
+    "slug": "high-park",
+    "name": "High Park",
+    "shortName": "High Park",
+    "type": "primary",
+    "council": "City of Toronto (Toronto and East York)",
+    "metaTitle": "Basement Underpinning High Park | TBU Toronto",
+    "h1Title": "Underpinning High Park's Historic Ravine-Adjacent Homes",
+    "metaDescription": "High Park homes near the ravine system face elevated water-table challenges. Underpinning here always pairs with waterproofing, done right by Toronto specialists.",
+    "description": "Homes around High Park sit near the ravine system, where the water table is high and drainage is anything but standard. Almost every underpinning project here is paired with interior waterproofing.",
+    "responseTime": "Same-day estimate",
+    "areas": [
+      "Bloor West Village",
+      "Roncesvalles",
+      "Swansea",
+      "Junction Triangle"
+    ],
+    "nearby": [
+      "the-junction",
+      "toronto"
+    ],
+    "landmarks": [
+      "High Park",
+      "Grenadier Pond",
+      "Sunnyside Beach",
+      "Humber River"
+    ],
+    "transport": {
+      "highways": [
+        "Bloor Street West",
+        "Gardiner Expressway",
+        "Parkside Drive"
+      ],
+      "transit": [
+        "High Park subway station (Bloor-Danforth line)",
+        "Keele subway station",
+        "Roncesvalles streetcar (505)"
+      ],
+      "description": "Connected via Bloor Street West and the Gardiner, with High Park and Keele subway stations providing direct transit access."
+    },
+    "coordinates": {
+      "lat": 43.6465,
+      "lng": -79.4651
+    },
+    "uniqueValue": "Ravine-adjacent homes near High Park and the Humber River require integrated waterproofing on every underpinning project. We build it in automatically, not as an add-on.",
+    "mapEmbed": "https://maps.google.com/maps?q=High%20Park,%20Toronto,%20ON,%20Canada&t=&z=14&ie=UTF8&iwloc=&output=embed",
+    "modules": {
+      "localLogistics": {
+        "headline": "Working Near the Ravine System",
+        "content": "High Park's proximity to the ravine system, Grenadier Pond, and the Humber River means high water tables, mixed clay-and-sand soil, and elevated TRCA scrutiny on any work that disturbs grade. We pull soil reports as a default for projects west of Roncesvalles, and we always pair underpinning with proper interior waterproofing in this microclimate."
+      },
+      "buildingFamiliarity": {
+        "headline": "High Park's Mixed Housing Stock",
+        "content": "From 1890s Victorians along Roncesvalles to 1920s detached homes in Swansea and post-war housing in the Junction Triangle, High Park's housing stock spans every era. The common factor is the water table. We've waterproofed around Grenadier Pond, on the Humber slope, and in the low-lying sections of Bloor West  - every job needs a drainage detail other neighbourhoods don't."
+      },
+      "whyChooseUs": {
+        "headline": "High Park Water-Table Expertise",
+        "points": [
+          "Soil-report-first underpinning standard for ravine-adjacent homes",
+          "Interior waterproofing integrated with every project",
+          "TRCA conservation-overlay coordination",
+          "Mature tree-canopy excavation protocols",
+          "Battery-backup sump systems sized for the local water table"
+        ]
+      }
+    },
+    "sectionHeadings": {
+      "painPoints": "High Park Basement Water or Height Problems?",
+      "services": "Services for Ravine-Adjacent Homes",
+      "process": "How We Handle High Water-Table Projects",
+      "midCta": "Need Underpinning Near High Park?",
+      "whyChooseUs": "Why Ravine-Adjacent Owners Trust Our Approach",
+      "localContent": "Water-Table Expertise Around Grenadier Pond",
+      "faq": "High Park Underpinning FAQs",
+      "finalCta": "Book Your High Park Basement Assessment"
+    },
+    "localFAQs": [
+      {
+        "question": "Why does underpinning need waterproofing in High Park?",
+        "answer": "The water table near High Park, Grenadier Pond, and the Humber River sits much higher than the rest of the city. Without integrated interior waterproofing, the lowered basement becomes a moisture trap. We install weeping tile, dimpled membrane, and a sealed sump pit on every High Park project, regardless of whether the homeowner asked for it."
+      },
+      {
+        "question": "Does TRCA approval delay High Park projects?",
+        "answer": "TRCA conservation overlays apply to homes in defined ravine and floodplain zones. We screen the property at the initial site visit. When TRCA approval is required, it adds 6-10 weeks to the permit timeline; we factor that into the schedule rather than discover it after construction starts."
+      },
+      {
+        "question": "Are mature trees a problem for excavation?",
+        "answer": "They're a constraint, not a problem. Toronto's tree bylaw protects mature canopy on private property. We design the excavation footprint to avoid critical root zones, install tree-protection fencing per the city standard, and stage equipment to keep root impact minimal."
+      },
+      {
+        "question": "What sump pump system works best in High Park?",
+        "answer": "A high-volume primary sump with a sealed battery backup, sized for the local water table, not the standard suburban spec. Most High Park installs qualify for the City of Toronto Basement Flooding Protection Subsidy, which we file as a standard step."
+      }
+    ],
+    "stats": {
+      "projectsInArea": "40+ High Park projects",
+      "yearsServing": "Serving High Park since 2009",
+      "localTeam": "Water-table specialists"
+    }
+  },
+  {
+    "id": "little-italy",
+    "slug": "little-italy",
+    "name": "Little Italy",
+    "shortName": "Little Italy",
+    "type": "primary",
+    "council": "City of Toronto (Toronto and East York)",
+    "metaTitle": "Basement Underpinning Little Italy | TBU Toronto",
+    "h1Title": "Underpinning Little Italy's Brick Row Houses",
+    "metaDescription": "Little Italy's older brick row homes have famously low basements. Shared-wall sequencing, narrow lot logistics, secondary-suite conversion expertise.",
+    "description": "Little Italy's brick row houses are some of Toronto's tightest underpinning projects, narrow lots (often under 17 feet), shared walls on both sides, and original basements rarely above 6'2\".",
+    "responseTime": "Same-day estimate",
+    "areas": [
+      "College Street",
+      "Clinton Street",
+      "Grace Street",
+      "Manning Avenue",
+      "Beatrice Street"
+    ],
+    "nearby": [
+      "the-annex",
+      "toronto"
+    ],
+    "landmarks": [
+      "College Street restaurant district",
+      "Bickford Park",
+      "Royal Cinema"
+    ],
+    "transport": {
+      "highways": [
+        "College Street",
+        "Bloor Street West",
+        "Bathurst Street"
+      ],
+      "transit": [
+        "College streetcar (506)",
+        "Bathurst streetcar (511)",
+        "Spadina streetcar (510)"
+      ],
+      "description": "Served by the College, Bathurst, and Spadina streetcar routes. Crews schedule deliveries before 7 AM to avoid the College Street morning rush."
+    },
+    "coordinates": {
+      "lat": 43.6549,
+      "lng": -79.4178
+    },
+    "uniqueValue": "Little Italy's brick row houses on lots under 17 feet are among Toronto's tightest jobs. We've refined the staging process across hundreds of College Street projects.",
+    "mapEmbed": "https://maps.google.com/maps?q=Little%20Italy,%20Toronto,%20ON,%20Canada&t=&z=14&ie=UTF8&iwloc=&output=embed",
+    "modules": {
+      "localLogistics": {
+        "headline": "Little Italy's Tight-Lot Logistics",
+        "content": "College Street's row stock means lots under 17 feet wide with shared walls on both sides. We schedule deliveries before 7 AM to avoid the College Street commercial rush, stage materials in the front yard with city street-permit windows, and coordinate with the Little Italy BIA for any work fronting the restaurant strip. Crews use the smallest tracked excavator in our fleet."
+      },
+      "buildingFamiliarity": {
+        "headline": "Little Italy's Brick Row Stock",
+        "content": "Most projects are 1890s-1920s brick row houses, three-storey, 16-17 ft wide, on shared walls left and right. Original basements are typically 5'10\"-6'2\", well below code for legal apartments. Underpinning to 8 ft enables secondary-suite legalization, which is the goal for almost every project we run here. Shared-wall sequencing is standard, not exceptional."
+      },
+      "whyChooseUs": {
+        "headline": "Little Italy Row-House Expertise",
+        "points": [
+          "Hundreds of College Street row-house projects",
+          "Both-sides shared-wall coordination as routine work",
+          "Secondary-suite conversion focus, OBC 9.36 compliant from drawings forward",
+          "BIA-coordinated scheduling for restaurant-row addresses",
+          "Smallest-footprint excavation equipment in the GTA"
+        ]
+      }
+    },
+    "sectionHeadings": {
+      "painPoints": "Little Italy Basement Below Legal Height?",
+      "services": "Row-House Underpinning & Suite Conversion",
+      "process": "How It Works on College Street Row Houses",
+      "midCta": "Ready to Raise Your Basement Ceiling?",
+      "whyChooseUs": "Why Row-House Owners on Clinton & Manning Choose Us",
+      "localContent": "Specialists in Narrow-Lot Foundation Work",
+      "faq": "Little Italy Underpinning Questions",
+      "finalCta": "Book Your Little Italy Basement Lowering"
+    },
+    "localFAQs": [
+      {
+        "question": "Can both my neighbours' walls be underpinned at the same time?",
+        "answer": "Yes, and on row houses where all three homeowners are doing it together, the per-home cost drops 15-25% from coordinated engineering and shared excavation logistics. We've sequenced four-row blocks on Clinton and Manning where all four properties underpinned in one campaign."
+      },
+      {
+        "question": "How narrow can a lot be for underpinning?",
+        "answer": "We've underpinned 14-foot lots on Manning. The compact tracked excavator fits, the wheelbarrow staging works, and the spoil exits via the front yard with a city street-permit window. Below 14 feet we'd want a site visit before quoting; that's specialist territory."
+      },
+      {
+        "question": "Will underpinning enable a basement apartment in Little Italy?",
+        "answer": "That's the typical Little Italy project. We underpin to 8 ft+, plan the secondary-suite layout into the structural drawings, coordinate the bathroom and kitchenette rough-ins during slab pour, and register the unit with the City of Toronto Secondary Suite program. The building permit folds basement-apartment compliance into the underpinning permit."
+      },
+      {
+        "question": "How do you handle the College Street restaurant noise hours?",
+        "answer": "We're crew on-site by 7:30 AM and off by 4:30 PM. The College Street BIA's evening restaurant operations are unaffected. For the noisiest excavation phases, we coordinate noise-window schedules with neighbours and the BIA so nobody is surprised."
+      }
+    ],
+    "stats": {
+      "projectsInArea": "80+ Little Italy projects",
+      "yearsServing": "Serving Little Italy since 2007",
+      "localTeam": "Row-house specialists"
+    }
+  },
+  {
+    "id": "north-york",
+    "slug": "north-york",
+    "name": "North York",
+    "shortName": "North York",
+    "type": "primary",
+    "council": "City of Toronto (North York)",
+    "metaTitle": "Basement Underpinning North York | TBU Toronto",
+    "h1Title": "Underpinning North York Bungalows for Legal Apartments",
+    "metaDescription": "North York's post-war bungalow stock is prime underpinning territory. Larger lots, low original ceilings, ideal for legal basement apartments. Free estimate.",
+    "description": "North York's 1950s-70s post-war bungalow stock is the GTA's strongest underpinning market, homes built with low original ceiling heights (typically 6'8\") that become 8 ft legal apartments after lowering.",
+    "responseTime": "Same-day estimate",
+    "areas": [
+      "Willowdale",
+      "Bayview Village",
+      "Don Mills",
+      "Lawrence Manor",
+      "Bathurst Manor",
+      "Newtonbrook"
+    ],
+    "nearby": [
+      "toronto",
+      "markham",
+      "vaughan"
+    ],
+    "landmarks": [
+      "Mel Lastman Square",
+      "North York Civic Centre",
+      "Edithvale Community Centre"
+    ],
+    "transport": {
+      "highways": [
+        "Yonge Street",
+        "Hwy 401",
+        "DVP (Hwy 404)",
+        "Sheppard Avenue"
+      ],
+      "transit": [
+        "Sheppard-Yonge subway station",
+        "Finch subway station (Yonge-University line)",
+        "Eglinton Crosstown LRT (Yonge/Eglinton)"
+      ],
+      "description": "Accessible via Yonge Street and Hwy 401, with Sheppard and Finch subway stations in the heart of the bungalow belt."
+    },
+    "coordinates": {
+      "lat": 43.7615,
+      "lng": -79.4145
+    },
+    "uniqueValue": "North York's 1950s-70s bungalow stock is the GTA's most predictable underpinning candidate. Consistent foundation types, rear-yard access, and Yonge corridor rental demand make the ROI calculation straightforward.",
+    "mapEmbed": "https://maps.google.com/maps?q=North%20York,%20Toronto,%20ON,%20Canada&t=&z=12&ie=UTF8&iwloc=&output=embed",
+    "modules": {
+      "localLogistics": {
+        "headline": "North York Bungalow Logistics",
+        "content": "North York's larger suburban lots mean rear-yard equipment access on most projects. Spoil stages to the rear, the front yard stays clean, and the neighbours barely notice. North York Civic Centre is the local building permit office; we have a dedicated permit coordinator who runs the North York pipeline. Yonge subway access also means consistent rental demand for the resulting basement apartments."
+      },
+      "buildingFamiliarity": {
+        "headline": "North York's Bungalow Stock",
+        "content": "Most North York underpinning is 1950s-70s detached bungalows, concrete-block foundations, 6'6\"-6'10\" original ceilings, often a side-door entrance from the original build that's perfect for legal-apartment compliance. We've underpinned hundreds of these along Bayview, Willowdale, and through Bathurst Manor. The bungalow archetype is so consistent that we run a near-standard project plan adapted to the specific lot."
+      },
+      "whyChooseUs": {
+        "headline": "North York Legal-Apartment Expertise",
+        "points": [
+          "Hundreds of post-war bungalow underpinnings completed",
+          "City of Toronto Secondary Suite registration as standard scope",
+          "OBC 9.36 legal apartment compliance from drawings forward",
+          "Larger lots mean simpler logistics and lower costs",
+          "Yonge corridor rental demand maximizes ROI on legal apartments"
+        ]
+      }
+    },
+    "sectionHeadings": {
+      "painPoints": "North York Bungalow Ceiling Too Low for a Legal Suite?",
+      "services": "Legal Basement Apartment Underpinning Services",
+      "process": "How We Deliver Legal Basement Apartments",
+      "midCta": "Ready to Legalize Your North York Basement?",
+      "whyChooseUs": "Why Bungalow Owners Along the Yonge Corridor Choose Us",
+      "localContent": "Post-War Bungalow Foundation Expertise",
+      "faq": "North York Underpinning Questions Answered",
+      "finalCta": "Start Your North York Basement Project"
+    },
+    "localFAQs": [
+      {
+        "question": "Why are North York bungalows ideal for underpinning?",
+        "answer": "Three reasons: original ceiling heights (6'6\"-6'10\") are right at the threshold where 1.5-2 feet of underpinning gain creates a code-legal 8-foot apartment; lot widths and rear-yard access simplify excavation; and Yonge corridor rental demand makes the legal apartment a financial no-brainer. Most North York projects pay back the underpinning cost within 4-6 years of rental income."
+      },
+      {
+        "question": "Does North York have its own permit process?",
+        "answer": "North York is part of the City of Toronto, so permits go through the City of Toronto Building Department but file at the North York Civic Centre district office. The plan-review process is the same as the rest of Toronto. We have a coordinator who works the North York office daily."
+      },
+      {
+        "question": "Can I keep living upstairs while you work?",
+        "answer": "Almost always. Bungalows have a clear separation between main floor and basement, and the side-door entrance many North York bungalows have is perfect for an isolated work zone. Daily on-site hours are 7:30 AM to 4:30 PM. Main-floor utilities, kitchen, and bathrooms remain in service throughout."
+      },
+      {
+        "question": "How much can I rent the legal apartment for?",
+        "answer": "North York legal basement apartments along the Yonge corridor typically rent for $1,800-$2,800 per month depending on size and finish, as of 2026. Those numbers shift with the rental market. Verify with a local real-estate agent before you bank on them. The point is that the rental income usually covers the underpinning and finishing investment in 4-6 years."
+      },
+      {
+        "question": "What about the side-door entrance, does that need work?",
+        "answer": "Most 1950s-70s North York bungalows already have a side-door entrance that's legal-apartment ready or close to it. We assess the entrance during the site visit and fold any required modifications (egress, weather-sealing, separate metering) into the project scope. Often the existing door just needs a stair extension to match the lowered floor level."
+      }
+    ],
+    "stats": {
+      "projectsInArea": "200+ North York projects",
+      "yearsServing": "Serving North York since 2006",
+      "localTeam": "Legal-apartment specialists"
+    }
+  },
+  {
+    "id": "etobicoke",
+    "slug": "etobicoke",
+    "name": "Etobicoke",
+    "shortName": "Etobicoke",
+    "type": "primary",
+    "council": "City of Toronto (Etobicoke York)",
+    "metaTitle": "Basement Underpinning Etobicoke | TBU Toronto",
+    "h1Title": "Underpinning Etobicoke's Lakeshore & Established Homes",
+    "metaDescription": "Etobicoke's older lakeshore properties face mixed soil and elevated water tables. Underpinning paired with waterproofing, engineered for the borough's microclimate.",
+    "description": "Etobicoke's housing stock varies wildly across the borough, older lakeshore homes in Mimico and New Toronto with high water tables, mid-century homes in Markland Wood, and substantial detached stock in The Kingsway.",
+    "responseTime": "Same-day estimate",
+    "areas": [
+      "Mimico",
+      "New Toronto",
+      "Long Branch",
+      "Islington-City Centre West",
+      "The Kingsway",
+      "Markland Wood"
+    ],
+    "nearby": [
+      "toronto",
+      "mississauga"
+    ],
+    "landmarks": [
+      "Humber Bay Shores",
+      "Centennial Park",
+      "Sherway Gardens"
+    ],
+    "transport": {
+      "highways": [
+        "Hwy 427",
+        "Gardiner Expressway/QEW",
+        "Hwy 401",
+        "Burnhamthorpe Road"
+      ],
+      "transit": [
+        "Kipling subway station (Bloor-Danforth line)",
+        "Islington subway station",
+        "Royal York subway station"
+      ],
+      "description": "Accessed via Hwy 427 and the Gardiner/QEW, with three Bloor-Danforth subway stations serving the eastern corridor."
+    },
+    "coordinates": {
+      "lat": 43.63,
+      "lng": -79.54
+    },
+    "uniqueValue": "Etobicoke spans coastline-adjacent lakeshore homes with high water tables through stable inland clay. We sequence soil reports and waterproofing integration differently across the borough.",
+    "mapEmbed": "https://maps.google.com/maps?q=Etobicoke,%20Toronto,%20ON,%20Canada&t=&z=12&ie=UTF8&iwloc=&output=embed",
+    "modules": {
+      "localLogistics": {
+        "headline": "Etobicoke's Microclimate Logistics",
+        "content": "Etobicoke spans coastline-adjacent neighbourhoods (Mimico, New Toronto, Long Branch) with elevated water tables, through inland sections (Markland Wood, The Kingsway) with stable clay. Soil reports drive the staging plan more here than in any other Toronto borough. We coordinate permits through the Etobicoke Civic Centre district office; lot sizes generally allow rear-yard equipment staging."
+      },
+      "buildingFamiliarity": {
+        "headline": "Etobicoke's Mixed Housing Stock",
+        "content": "Lakeshore Mimico/New Toronto homes are typically 1900s-1930s small lots with original stone foundations and elevated water tables  - underpinning here always pairs with waterproofing. Markland Wood is 1950s-60s post-war detached on stable clay. The Kingsway is 1920s-1940s detached on substantial lots. Each requires a different staging and waterproofing detail; we sequence the engineering accordingly."
+      },
+      "whyChooseUs": {
+        "headline": "Etobicoke Borough Expertise",
+        "points": [
+          "Lakeshore water-table experience (Mimico, New Toronto, Long Branch)",
+          "Markland Wood and Kingsway substantial-detached project history",
+          "Etobicoke Civic Centre permit coordinator on staff",
+          "Soil-report-first underpinning for any lakeshore project",
+          "Integrated waterproofing on every coastline-adjacent project"
+        ]
+      }
+    },
+    "sectionHeadings": {
+      "painPoints": "Etobicoke Basement Problems? Expert Help Available",
+      "services": "Our Services for Lakeshore & Inland Homes",
+      "process": "How We Sequence Etobicoke Projects",
+      "midCta": "Get Fast Underpinning Help in Etobicoke",
+      "whyChooseUs": "Borough-Wide Expertise You Can Count On",
+      "localContent": "Lakeshore & Inland Foundation Specialists",
+      "faq": "Etobicoke Underpinning Questions Answered",
+      "finalCta": "Book Your Etobicoke Underpinning Estimate"
+    },
+    "localFAQs": [
+      {
+        "question": "Why do lakeshore Etobicoke projects need waterproofing?",
+        "answer": "Mimico, New Toronto, and Long Branch sit close to Lake Ontario and the Humber Bay water table is high. Underpinning without integrated waterproofing in this zone almost guarantees moisture problems within 2-3 years. We install weeping tile, dimpled membrane, and a battery-backup sump on every lakeshore Etobicoke project."
+      },
+      {
+        "question": "Are Kingsway and Markland Wood projects different?",
+        "answer": "Yes. Kingsway and Markland Wood sit on stable clay further from the water table. Underpinning there is a more standard project, closer to North York or Mississauga in terms of soil and logistics. Lot widths in the Kingsway also allow heavier excavation equipment and faster site work."
+      },
+      {
+        "question": "How do Etobicoke permits work?",
+        "answer": "Etobicoke is part of the City of Toronto, so permits go through the City of Toronto Building Department, but they file and inspect through the Etobicoke Civic Centre district office on Burnhamthorpe. Plan review is the same; the inspection cadence is regional. We have a permit coordinator who runs the Etobicoke pipeline daily."
+      },
+      {
+        "question": "What's the typical Etobicoke underpinning cost?",
+        "answer": "Standard Etobicoke detached homes (Markland Wood, the Kingsway) run $25,000-$45,000 for full-perimeter underpinning. Lakeshore homes (Mimico, New Toronto, Long Branch) run higher  - $35,000-$60,000  - once integrated waterproofing and battery-backup sump systems are folded in. Quotes are line-item; nothing hidden."
+      }
+    ],
+    "stats": {
+      "projectsInArea": "120+ Etobicoke projects",
+      "yearsServing": "Serving Etobicoke since 2006",
+      "localTeam": "Lakeshore + inland crews"
+    }
+  },
+  {
+    "id": "mississauga",
+    "slug": "mississauga",
+    "name": "Mississauga",
+    "shortName": "Mississauga",
+    "type": "primary",
+    "council": "City of Mississauga",
+    "metaTitle": "Basement Underpinning Mississauga | TBU",
+    "h1Title": "Underpinning Mississauga's Established Communities",
+    "metaDescription": "Mississauga's 1960s-80s housing stock is ripe for ceiling-height upgrades. Larger lots, growing legal-secondary-suite demand, dedicated permit handling.",
+    "description": "Mississauga's established communities, Port Credit, Streetsville, Cooksville, Erin Mills, are full of 1960s-80s homes ripe for basement-height upgrades and legal secondary suites.",
+    "responseTime": "Next-day estimate",
+    "areas": [
+      "Port Credit",
+      "Streetsville",
+      "Erin Mills",
+      "Mississauga Valley",
+      "Cooksville",
+      "Lorne Park",
+      "Clarkson"
+    ],
+    "nearby": [
+      "etobicoke",
+      "oakville",
+      "brampton"
+    ],
+    "landmarks": [
+      "Square One",
+      "Port Credit Harbour",
+      "Mississauga Civic Centre"
+    ],
+    "transport": {
+      "highways": [
+        "Hwy 403",
+        "QEW",
+        "Hwy 401",
+        "Hwy 410"
+      ],
+      "transit": [
+        "Port Credit GO station (Lakeshore West line)",
+        "Streetsville GO station",
+        "MiWay transit"
+      ],
+      "description": "Accessible via Hwy 403, the QEW, and Hwy 401, with Port Credit and Streetsville GO stations for project coordination."
+    },
+    "coordinates": {
+      "lat": 43.589,
+      "lng": -79.6441
+    },
+    "uniqueValue": "Dedicated Mississauga permit coordinator who handles the City's separate Second Unit Bylaw and inspection cadence. Permits don't stall your project.",
+    "mapEmbed": "https://maps.google.com/maps?q=Mississauga,%20ON,%20Canada&t=&z=12&ie=UTF8&iwloc=&output=embed",
+    "modules": {
+      "localLogistics": {
+        "headline": "Mississauga Permit & Project Logistics",
+        "content": "The City of Mississauga's permit process differs meaningfully from City of Toronto's: separate Second Unit Bylaw, different inspection cadence, separate fee structure. We have a dedicated Mississauga permit coordinator who handles the differences as a routine part of the project. Crew dispatches operate from our Etobicoke staging yard, putting Mississauga sites within a 30-45 minute window."
+      },
+      "buildingFamiliarity": {
+        "headline": "Mississauga's Suburban Stock",
+        "content": "Most Mississauga underpinning is 1960s-80s detached and semi-detached on substantial suburban lots. Concrete-block foundations, 6'6\"-7'0\" original ceilings, side-door access common. Port Credit and Lorne Park have older lakefront stock with elevated water tables; Streetsville and Erin Mills are stable inland clay. We sequence engineering accordingly."
+      },
+      "whyChooseUs": {
+        "headline": "Mississauga-Specific Expertise",
+        "points": [
+          "City of Mississauga permit coordinator on staff",
+          "Mississauga Second Unit Bylaw legal-apartment compliance",
+          "Port Credit and Lorne Park lakefront water-table experience",
+          "Larger suburban lots simplify excavation and lower cost",
+          "Region of Peel coordination when projects span multiple lots"
+        ]
+      }
+    },
+    "sectionHeadings": {
+      "painPoints": "Mississauga Basement Too Low? Fast Help Available",
+      "services": "Our Underpinning & Finishing Services",
+      "process": "How It Works in 3 Simple Steps",
+      "midCta": "Ready for Underpinning in Mississauga?",
+      "whyChooseUs": "Why Established-Community Owners Choose Us",
+      "localContent": "Your Dedicated Mississauga Permit Team",
+      "faq": "Mississauga Underpinning Questions Answered",
+      "finalCta": "Book Your Mississauga Basement Assessment"
+    },
+    "localFAQs": [
+      {
+        "question": "How is Mississauga's permit process different from Toronto's?",
+        "answer": "Mississauga has its own building department, fees, and Second Unit Bylaw, so legal-apartment compliance is governed by City of Mississauga rules, not the City of Toronto's secondary-suite framework. Plan review timelines are typically 3-5 weeks (faster than Toronto). Inspection scheduling is more flexible. Our coordinator handles all of it."
+      },
+      {
+        "question": "Can I add a legal second unit in Mississauga?",
+        "answer": "Yes, Mississauga's Second Unit Bylaw permits secondary suites in most residential zones, subject to OBC 9.36 compliance (ceiling height, egress, fire separation). Underpinning to 8 ft+ enables the ceiling-height requirement; we coordinate the registration with the City of Mississauga as a standard step."
+      },
+      {
+        "question": "Do you serve Port Credit and lakefront Mississauga?",
+        "answer": "Yes. Port Credit and Lorne Park lakefront homes have higher water tables; we always pair underpinning with interior waterproofing here, plus a battery-backup sump system. We've worked dozens of homes between Lakeshore Road East and the lake."
+      },
+      {
+        "question": "How does Mississauga response time compare to Toronto?",
+        "answer": "Toronto-core estimates are typically same-day. Mississauga estimates are typically next business day, since the crew is travelling further. Once a project is booked, our scheduling capacity is identical to Toronto's. 20 active crews, no Mississauga-specific delay."
+      }
+    ],
+    "stats": {
+      "projectsInArea": "150+ Mississauga projects",
+      "yearsServing": "Serving Mississauga since 2008",
+      "localTeam": "Mississauga permit specialists"
+    }
+  },
+  {
+    "id": "scarborough",
+    "slug": "scarborough",
+    "name": "Scarborough",
+    "shortName": "Scarborough",
+    "type": "secondary",
+    "council": "City of Toronto (Scarborough)",
+    "metaTitle": "Basement Underpinning Scarborough | TBU",
+    "h1Title": "Basement Underpinning Across Scarborough",
+    "metaDescription": "Post-war Scarborough bungalows and detached homes are ideal underpinning candidates. Cliffside, Agincourt, Wexford and beyond. Free estimate.",
+    "description": "Scarborough's post-war bungalow and detached stock is well-suited to underpinning for legal apartments. Larger lots, accessible permits, City of Toronto framework.",
+    "responseTime": "Next-day estimate",
+    "areas": [
+      "Agincourt",
+      "Bendale",
+      "Cliffside",
+      "Wexford",
+      "Highland Creek"
+    ],
+    "nearby": [
+      "toronto",
+      "pickering"
+    ],
+    "landmarks": [
+      "Scarborough Town Centre",
+      "Bluffer's Park"
+    ],
+    "transport": {
+      "highways": [
+        "Hwy 401",
+        "Kingston Road (Hwy 2)",
+        "Morningside Avenue"
+      ],
+      "transit": [
+        "Kennedy subway station (Bloor-Danforth line)",
+        "Warden subway station",
+        "Scarborough Town Centre bus terminal"
+      ],
+      "description": "Accessible via Hwy 401 and Kingston Road, with Bloor-Danforth subway connections at Warden and Kennedy stations."
+    },
+    "coordinates": {
+      "lat": 43.7731,
+      "lng": -79.2577
+    },
+    "uniqueValue": "Scarborough's post-war bungalow stock on larger lots makes for straightforward underpinning with rear-yard access  - typically lower-cost projects versus the Toronto core.",
+    "mapEmbed": "https://maps.google.com/maps?q=Scarborough,%20Toronto,%20ON,%20Canada&t=&z=12&ie=UTF8&iwloc=&output=embed",
+    "modules": {
+      "whyChooseUs": {
+        "headline": "Why Scarborough Picks TBU",
+        "points": [
+          "City of Toronto framework familiar to our crews",
+          "Post-war bungalow legal-apartment specialty",
+          "Suburban lots allow rear-yard equipment staging",
+          "Coordinates with Scarborough Civic Centre permit office"
+        ]
+      }
+    },
+    "sectionHeadings": {
+      "painPoints": "Scarborough Basement Ceiling Too Low?",
+      "services": "Our Underpinning Services",
+      "process": "How Our Process Works",
+      "midCta": "Get a Free Scarborough Estimate",
+      "whyChooseUs": "Why Homeowners Choose Our Crews",
+      "localContent": "Post-War Bungalow Foundation Specialists",
+      "faq": "Common Questions About Our Service",
+      "finalCta": "Book Your Scarborough Underpinning"
+    },
+    "localFAQs": [
+      {
+        "question": "Do you serve all of Scarborough?",
+        "answer": "Yes, from Cliffside and the Bluffs east through Wexford, Agincourt, and Highland Creek. Travel time from our Toronto staging yard is 30-45 minutes."
+      },
+      {
+        "question": "How does Scarborough's permit process compare to Toronto?",
+        "answer": "Scarborough is part of the City of Toronto, so permits go through the same Building Department but file at the Scarborough Civic Centre district office. Plan review and fees are identical to the rest of Toronto."
+      },
+      {
+        "question": "Can I add a legal apartment in a Scarborough bungalow?",
+        "answer": "Yes  - Scarborough bungalows are ideal candidates. Original ceiling heights (6'8\"-7'0\") fit the underpinning math, and side-door entrances on many post-war Scarborough builds make legal-apartment compliance straightforward."
+      }
+    ],
+    "stats": {
+      "projectsInArea": "60+ Scarborough projects",
+      "yearsServing": "Serving Scarborough since 2007"
+    }
+  },
+  {
+    "id": "york",
+    "slug": "york",
+    "name": "York",
+    "shortName": "York",
+    "type": "secondary",
+    "council": "City of Toronto (Etobicoke York)",
+    "metaTitle": "Basement Underpinning York | TBU Toronto",
+    "h1Title": "Basement Underpinning Across York",
+    "metaDescription": "York's pre-war and post-war homes along the Eglinton Crosstown LRT need specialist underpinning. We handle Mount Dennis, Weston, and Silverthorn.",
+    "description": "Underpinning across the former City of York, Mount Dennis, Weston, Silverthorn, Rockcliffe-Smythe.",
+    "responseTime": "Next-day estimate",
+    "areas": [
+      "Mount Dennis",
+      "Weston",
+      "Silverthorn",
+      "Rockcliffe-Smythe"
+    ],
+    "nearby": [
+      "toronto",
+      "etobicoke"
+    ],
+    "landmarks": [
+      "Eglinton West Crosstown LRT corridor",
+      "Humber River Hospital"
+    ],
+    "transport": {
+      "highways": [
+        "Hwy 400",
+        "Weston Road",
+        "Jane Street",
+        "Eglinton Avenue West"
+      ],
+      "transit": [
+        "Eglinton Crosstown LRT (Keelesdale station)",
+        "Weston GO station",
+        "Weston bus"
+      ],
+      "description": "Served by Eglinton Avenue West and the new Crosstown LRT corridor, with Weston GO station providing rail access."
+    },
+    "coordinates": {
+      "lat": 43.7001,
+      "lng": -79.4815
+    },
+    "uniqueValue": "York's mix of pre-war and post-war housing in an established urban neighbourhood  - our crews are familiar with the Eglinton Crosstown corridor permit considerations.",
+    "mapEmbed": "https://maps.google.com/maps?q=York,%20Toronto,%20ON,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed",
+    "modules": {
+      "whyChooseUs": {
+        "headline": "Why York Homes Choose TBU",
+        "points": [
+          "Familiar with the Eglinton Crosstown corridor permit considerations",
+          "Pre-war and post-war York housing stock experience",
+          "Etobicoke York district office permit coordinator on staff",
+          "Smaller-lot excavation logistics dialed in"
+        ]
+      }
+    },
+    "sectionHeadings": {
+      "painPoints": "York Basement Problems? We Can Help",
+      "services": "Our Basement Underpinning Services",
+      "process": "How We Serve York Homeowners",
+      "midCta": "Get a Free Estimate Today",
+      "whyChooseUs": "What Sets Our Service Apart",
+      "localContent": "Crosstown-Corridor Foundation Expertise",
+      "faq": "Common Questions About Our Work",
+      "finalCta": "Book Your York Basement Assessment"
+    },
+    "localFAQs": [
+      {
+        "question": "Are York homes good underpinning candidates?",
+        "answer": "Yes. York's mix of pre-war detached homes and post-war bungalows generally have low original ceilings (6'4\"-6'10\") that benefit substantially from underpinning. Many homes target legal secondary suites for rental income."
+      },
+      {
+        "question": "Does the Eglinton Crosstown construction affect access?",
+        "answer": "It can. Crews scheduling work along Eglinton West coordinate around active LRT construction zones. We pre-screen the route during the estimate and adjust delivery and staging plans as needed."
+      },
+      {
+        "question": "How do York permits work?",
+        "answer": "York is part of the City of Toronto, filed through the Etobicoke York Civic Centre district office. Same plan review, same fees as the rest of Toronto."
+      }
+    ],
+    "stats": {
+      "projectsInArea": "30+ York projects",
+      "yearsServing": "Serving York since 2010"
+    }
+  },
+  {
+    "id": "east-york",
+    "slug": "east-york",
+    "name": "East York",
+    "shortName": "East York",
+    "type": "secondary",
+    "council": "City of Toronto (Toronto and East York)",
+    "metaTitle": "Basement Underpinning East York | TBU",
+    "h1Title": "Basement Underpinning Across East York",
+    "metaDescription": "Leaside, the Danforth, and East York's mature neighbourhoods need a specialist who knows the Toronto and East York permit office. We do.",
+    "description": "Underpinning across East York, Pape Village, Leaside, Thorncliffe Park, Crescent Town and the Danforth.",
+    "responseTime": "Next-day estimate",
+    "areas": [
+      "Leaside",
+      "Pape Village",
+      "Thorncliffe Park",
+      "Crescent Town"
+    ],
+    "nearby": [
+      "toronto",
+      "leslieville"
+    ],
+    "landmarks": [
+      "Pape subway station",
+      "Leaside Memorial Park"
+    ],
+    "transport": {
+      "highways": [
+        "DVP (Hwy 404)",
+        "Danforth Avenue",
+        "Pape Avenue",
+        "O'Connor Drive"
+      ],
+      "transit": [
+        "Pape subway station (Bloor-Danforth line)",
+        "Donlands subway station",
+        "Chester subway station"
+      ],
+      "description": "Connected via the Bloor-Danforth subway at Pape, Donlands, and Chester stations, with DVP access for crew dispatch."
+    },
+    "coordinates": {
+      "lat": 43.687,
+      "lng": -79.336
+    },
+    "uniqueValue": "East York's Leaside detached homes and Pape Village semi-detached row stock offer stable, predictable foundations. Strong rental candidates post-underpinning given Bloor-Danforth subway proximity.",
+    "mapEmbed": "https://maps.google.com/maps?q=East%20York,%20Toronto,%20ON,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed",
+    "modules": {
+      "whyChooseUs": {
+        "headline": "Why East York Homeowners Choose TBU",
+        "points": [
+          "Leaside detached and Pape Village semi-detached experience",
+          "Toronto and East York permit office on speed dial",
+          "Heritage-aware in original Leaside neighbourhoods",
+          "Same crews, same scheduling priority as Toronto core"
+        ]
+      }
+    },
+    "sectionHeadings": {
+      "painPoints": "East York Basement Ceiling Too Low?",
+      "services": "What We Offer",
+      "process": "How It Works in 3 Steps",
+      "midCta": "Need Underpinning in East York?",
+      "whyChooseUs": "Why Danforth-Area Owners Trust Us",
+      "localContent": "Specialists for Leaside & Pape Village Homes",
+      "faq": "East York Underpinning FAQs",
+      "finalCta": "Book Your East York Estimate"
+    },
+    "localFAQs": [
+      {
+        "question": "Are Leaside homes underpinning-friendly?",
+        "answer": "Yes. Leaside's 1930s-50s detached stock has stable concrete foundations and original ceiling heights of 6'8\"-7'0\". Underpinning produces clean 8'+ ceilings without engineering surprises."
+      },
+      {
+        "question": "Do you serve Pape Village semi-detached homes?",
+        "answer": "Yes. Pape Village's narrow-lot semi-detached row stock is similar to Leslieville. Shared-wall sequencing as standard scope, secondary-suite legalization as the typical goal."
+      },
+      {
+        "question": "How does East York's permit process work?",
+        "answer": "East York is part of the City of Toronto, filed through the Toronto and East York district office. Same plan review and fees as the rest of central Toronto."
+      }
+    ],
+    "stats": {
+      "projectsInArea": "40+ East York projects",
+      "yearsServing": "Serving East York since 2008"
+    }
+  },
+  {
+    "id": "brampton",
+    "slug": "brampton",
+    "name": "Brampton",
+    "shortName": "Brampton",
+    "type": "secondary",
+    "council": "City of Brampton",
+    "metaTitle": "Basement Underpinning Brampton | TBU",
+    "h1Title": "Basement Underpinning in Brampton",
+    "metaDescription": "Brampton homeowners trust our dedicated City of Brampton permit coordinator \u2014 we handle Peel Region framework and older Downtown and Heart Lake housing stock.",
+    "description": "Underpinning across Brampton's older neighbourhoods. City of Brampton building permit coordination included.",
+    "responseTime": "Next-day estimate",
+    "areas": [
+      "Downtown Brampton",
+      "Bramalea",
+      "Heart Lake",
+      "Mount Pleasant"
+    ],
+    "nearby": [
+      "mississauga",
+      "caledon"
+    ],
+    "landmarks": [
+      "Brampton City Hall",
+      "Gage Park"
+    ],
+    "transport": {
+      "highways": [
+        "Hwy 410",
+        "Hwy 407",
+        "Hwy 50",
+        "Queen Street"
+      ],
+      "transit": [
+        "Bramalea GO station (Kitchener line)",
+        "Brampton GO station",
+        "Zum BRT (Queen Street corridor)"
+      ],
+      "description": "Accessible via Hwy 410 and Hwy 407, with Bramalea and Brampton GO stations providing rail connections."
+    },
+    "coordinates": {
+      "lat": 43.7315,
+      "lng": -79.7624
+    },
+    "uniqueValue": "City of Brampton permit coordinator on staff. We handle the separate building department, fees, and inspection cadence as routine project management.",
+    "mapEmbed": "https://maps.google.com/maps?q=Brampton,%20ON,%20Canada&t=&z=12&ie=UTF8&iwloc=&output=embed",
+    "modules": {
+      "whyChooseUs": {
+        "headline": "Why Brampton Picks TBU",
+        "points": [
+          "City of Brampton permit coordinator on staff",
+          "Region of Peel framework familiarity",
+          "Bramalea post-war bungalow expertise",
+          "Larger suburban lots simplify excavation"
+        ]
+      }
+    },
+    "sectionHeadings": {
+      "painPoints": "Brampton Basement Too Low? Fast Help Available",
+      "services": "Our Underpinning Services",
+      "process": "How It Works in 3 Simple Steps",
+      "midCta": "Ready to Lower Your Brampton Basement?",
+      "whyChooseUs": "Why GTA Homeowners Choose Our Crews",
+      "localContent": "Your Dedicated Brampton Permit Specialists",
+      "faq": "Common Questions About Our Service",
+      "finalCta": "Book Your Brampton Underpinning Estimate"
+    },
+    "localFAQs": [
+      {
+        "question": "Do you serve all of Brampton?",
+        "answer": "Yes, Downtown Brampton, Bramalea, Heart Lake, Mount Pleasant. Crews dispatch from our Etobicoke staging yard within 45-55 minutes."
+      },
+      {
+        "question": "How is Brampton's permit process different?",
+        "answer": "Brampton has its own building department, fees, and inspection schedule, different from both City of Toronto and City of Mississauga. Our permit coordinator handles the differences."
+      },
+      {
+        "question": "Can I add a legal second unit in Brampton?",
+        "answer": "Yes. The City of Brampton permits secondary suites in most residential zones; underpinning to 8 ft+ supports the OBC 9.36 ceiling-height requirement."
+      }
+    ],
+    "stats": {
+      "projectsInArea": "30+ Brampton projects",
+      "yearsServing": "Serving Brampton since 2010"
+    }
+  },
+  {
+    "id": "markham",
+    "slug": "markham",
+    "name": "Markham",
+    "shortName": "Markham",
+    "type": "secondary",
+    "council": "City of Markham",
+    "metaTitle": "Basement Underpinning Markham | TBU",
+    "h1Title": "Basement Underpinning in Markham",
+    "metaDescription": "Markham operates under York Region with its own building department \u2014 our coordinator handles it and coordinates heritage overlay work in Unionville.",
+    "description": "Underpinning across Markham, Unionville, Thornhill, Cornell, Cathedraltown.",
+    "responseTime": "Next-day estimate",
+    "areas": [
+      "Unionville",
+      "Thornhill",
+      "Cornell",
+      "Cathedraltown",
+      "Berczy"
+    ],
+    "nearby": [
+      "north-york",
+      "richmond-hill"
+    ],
+    "landmarks": [
+      "Markham Civic Centre",
+      "Main Street Unionville"
+    ],
+    "transport": {
+      "highways": [
+        "Hwy 407",
+        "Hwy 7",
+        "Hwy 404",
+        "16th Avenue"
+      ],
+      "transit": [
+        "Unionville GO station (Stouffville line)",
+        "Markham Centre (VIVA transit)",
+        "York Region VIVA rapid bus"
+      ],
+      "description": "Accessible via Hwy 407 and Hwy 404, with Unionville GO station providing Stouffville line connection."
+    },
+    "coordinates": {
+      "lat": 43.8561,
+      "lng": -79.337
+    },
+    "uniqueValue": "City of Markham permit coordinator handling York Region's separate building department, plus heritage-overlay experience for Unionville's historic Main Street.",
+    "mapEmbed": "https://maps.google.com/maps?q=Markham,%20ON,%20Canada&t=&z=12&ie=UTF8&iwloc=&output=embed",
+    "modules": {
+      "whyChooseUs": {
+        "headline": "Why Markham Homeowners Choose TBU",
+        "points": [
+          "City of Markham permit coordinator on staff",
+          "York Region framework familiarity",
+          "Unionville heritage-overlay coordination",
+          "Cornell and Cathedraltown new-construction-era underpinning experience"
+        ]
+      }
+    },
+    "sectionHeadings": {
+      "painPoints": "Markham Basement Issues? Expert Help Available",
+      "services": "Our Services for York Region Homes",
+      "process": "How Our Markham Service Works",
+      "midCta": "Ready for a Free Markham Estimate?",
+      "whyChooseUs": "Why York Region Homeowners Choose Us",
+      "localContent": "Heritage & Suburban Foundation Expertise",
+      "faq": "Markham Underpinning Questions",
+      "finalCta": "Book Your Markham Basement Assessment"
+    },
+    "localFAQs": [
+      {
+        "question": "Do you handle Markham heritage overlays?",
+        "answer": "Yes. Main Street Unionville and parts of historic Markham have heritage overlays. We coordinate the heritage permit alongside the building permit when visible exterior work is needed."
+      },
+      {
+        "question": "How is Markham different from Toronto for permits?",
+        "answer": "Markham operates under York Region with its own building department. Plan review timelines are typically 4-6 weeks; fees and inspection cadence differ from Toronto. Our permit coordinator handles it."
+      },
+      {
+        "question": "What's typical project size in Markham?",
+        "answer": "Markham detached homes are usually larger than Toronto's, and project budgets follow. Underpinning typically $30,000-$55,000, often paired with premium finishing."
+      }
+    ],
+    "stats": {
+      "projectsInArea": "50+ Markham projects",
+      "yearsServing": "Serving Markham since 2009"
+    }
+  },
+  {
+    "id": "vaughan",
+    "slug": "vaughan",
+    "name": "Vaughan",
+    "shortName": "Vaughan",
+    "type": "secondary",
+    "council": "City of Vaughan",
+    "metaTitle": "Basement Underpinning Vaughan | TBU",
+    "h1Title": "Basement Underpinning in Vaughan",
+    "metaDescription": "Vaughan's York Region building department handles permit submissions \u2014 our in-house coordinator also manages Kleinburg conservation overlay requirements.",
+    "description": "Underpinning across Vaughan, Woodbridge, Maple, Thornhill, Concord, and Kleinburg.",
+    "responseTime": "Next-day estimate",
+    "areas": [
+      "Woodbridge",
+      "Maple",
+      "Thornhill",
+      "Concord",
+      "Kleinburg"
+    ],
+    "nearby": [
+      "north-york",
+      "richmond-hill"
+    ],
+    "landmarks": [
+      "Vaughan City Hall",
+      "Vaughan Mills"
+    ],
+    "transport": {
+      "highways": [
+        "Hwy 400",
+        "Hwy 407",
+        "Major Mackenzie Drive",
+        "Hwy 427 north extension"
+      ],
+      "transit": [
+        "Vaughan Metropolitan Centre (TTC Line 1 extension)",
+        "Maple GO station (Barrie line)",
+        "York Region VIVA transit"
+      ],
+      "description": "Accessible via Hwy 400 and Hwy 407, with the TTC Line 1 extension at Vaughan Metropolitan Centre providing direct subway access to Toronto."
+    },
+    "coordinates": {
+      "lat": 43.8361,
+      "lng": -79.4981
+    },
+    "uniqueValue": "City of Vaughan permit coordinator on staff, plus Kleinburg conservation-overlay experience. We handle the approval steps that catch other contractors off guard.",
+    "mapEmbed": "https://maps.google.com/maps?q=Vaughan,%20ON,%20Canada&t=&z=12&ie=UTF8&iwloc=&output=embed",
+    "modules": {
+      "whyChooseUs": {
+        "headline": "Why Vaughan Homeowners Choose TBU",
+        "points": [
+          "City of Vaughan permit coordinator on staff",
+          "Woodbridge older brick foundation experience",
+          "Newer-construction Maple and Concord underpinning familiarity",
+          "Kleinburg conservation-overlay coordination"
+        ]
+      }
+    },
+    "sectionHeadings": {
+      "painPoints": "Vaughan Basement Too Low? Get Help Fast",
+      "services": "Our Underpinning Services",
+      "process": "How It Works in 3 Steps",
+      "midCta": "Ready for a Free Vaughan Estimate?",
+      "whyChooseUs": "Why Woodbridge & Maple Owners Trust Us",
+      "localContent": "City of Vaughan Permit Specialists",
+      "faq": "Common Questions",
+      "finalCta": "Book Your Vaughan Basement Project"
+    },
+    "localFAQs": [
+      {
+        "question": "Do you serve Woodbridge older homes?",
+        "answer": "Yes. Woodbridge has substantial pre-1980 brick housing stock with original ceiling heights of 6'6\"-7'0\". Underpinning here is similar to North York. Straightforward staging on stable suburban lots."
+      },
+      {
+        "question": "Can underpinning be done in Kleinburg conservation zones?",
+        "answer": "Yes, with conservation-overlay coordination. Interior underpinning isn't restricted by the conservation overlay, but visible exterior work (window-well changes, stairwell additions) goes through the conservation permit alongside the building permit."
+      },
+      {
+        "question": "How is Vaughan permit timing?",
+        "answer": "City of Vaughan plan review averages 5-7 weeks. Faster than Toronto, comparable to Markham. Fees are typically lower than Toronto core. Our coordinator handles all of it."
+      }
+    ],
+    "stats": {
+      "projectsInArea": "40+ Vaughan projects",
+      "yearsServing": "Serving Vaughan since 2010"
+    }
+  },
+  {
+    "id": "richmond-hill",
+    "slug": "richmond-hill",
+    "name": "Richmond Hill",
+    "shortName": "Richmond Hill",
+    "type": "secondary",
+    "council": "City of Richmond Hill",
+    "metaTitle": "Basement Underpinning Richmond Hill | TBU",
+    "h1Title": "Basement Underpinning in Richmond Hill",
+    "metaDescription": "York Region building permits and Oak Ridges Moraine screening are routine for us. Our Richmond Hill coordinator handles every step for you.",
+    "description": "Underpinning across Richmond Hill, Bayview, Oak Ridges, Mill Pond, Jefferson.",
+    "responseTime": "Next-day estimate",
+    "areas": [
+      "Bayview",
+      "Oak Ridges",
+      "Mill Pond",
+      "Jefferson"
+    ],
+    "nearby": [
+      "markham",
+      "vaughan",
+      "aurora"
+    ],
+    "landmarks": [
+      "Mill Pond Park",
+      "Lake Wilcox"
+    ],
+    "transport": {
+      "highways": [
+        "Hwy 404",
+        "Hwy 7",
+        "Yonge Street",
+        "Leslie Street"
+      ],
+      "transit": [
+        "Richmond Hill GO station (Barrie line)",
+        "VIVA rapid bus (Yonge corridor)",
+        "York Region Transit"
+      ],
+      "description": "Accessible via Hwy 404 and Yonge Street, with Richmond Hill GO station on the Barrie line."
+    },
+    "coordinates": {
+      "lat": 43.8828,
+      "lng": -79.4403
+    },
+    "uniqueValue": "Oak Ridges Moraine ecological-overlay experience and City of Richmond Hill permit coordinator on staff. We screen every project for Moraine review requirements at the initial site visit.",
+    "mapEmbed": "https://maps.google.com/maps?q=Richmond%20Hill,%20ON,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed",
+    "modules": {
+      "whyChooseUs": {
+        "headline": "Why Richmond Hill Picks TBU",
+        "points": [
+          "City of Richmond Hill permit coordinator on staff",
+          "Oak Ridges Moraine ecological-overlay experience",
+          "Established Bayview substantial-detached project history",
+          "York Region inspection familiarity"
+        ]
+      }
+    },
+    "sectionHeadings": {
+      "painPoints": "Richmond Hill Basement Problems? Fast Help",
+      "services": "Our Services for Richmond Hill Homes",
+      "process": "How It Works in 3 Simple Steps",
+      "midCta": "Get a Free Estimate Today",
+      "whyChooseUs": "Why Oak Ridges & Bayview Owners Choose Us",
+      "localContent": "Specialists Serving York Region's North End",
+      "faq": "Richmond Hill Underpinning Questions",
+      "finalCta": "Book Your Richmond Hill Assessment"
+    },
+    "localFAQs": [
+      {
+        "question": "Does the Oak Ridges Moraine affect underpinning?",
+        "answer": "It can. Properties within the Oak Ridges Moraine Conservation Plan area have additional approval steps for any work affecting drainage or grade. Interior underpinning is generally exempt; exterior excavation work may require Moraine review. We screen during the site visit."
+      },
+      {
+        "question": "Do you do projects around Mill Pond?",
+        "answer": "Yes. Mill Pond and the Jefferson neighbourhood have older detached stock that benefits from underpinning. Lake Wilcox proximity raises water-table considerations on some lots; we pull soil reports as needed."
+      },
+      {
+        "question": "How long is Richmond Hill's permit timeline?",
+        "answer": "City of Richmond Hill plan review averages 4-6 weeks. Comparable to Markham. Add Moraine review (4-8 weeks) only when applicable."
+      }
+    ],
+    "stats": {
+      "projectsInArea": "30+ Richmond Hill projects",
+      "yearsServing": "Serving Richmond Hill since 2011"
+    }
+  },
+  {
+    "id": "oakville",
+    "slug": "oakville",
+    "name": "Oakville",
+    "shortName": "Oakville",
+    "type": "secondary",
+    "council": "Town of Oakville",
+    "metaTitle": "Basement Underpinning Oakville | TBU",
+    "h1Title": "Basement Underpinning in Oakville",
+    "metaDescription": "Oakville's Halton Region framework means a separate permit process \u2014 our coordinator handles Old Oakville heritage and Bronte's elevated lakeshore water table.",
+    "description": "Underpinning across Oakville, Old Oakville, Glen Abbey, Bronte, Kerr Village.",
+    "responseTime": "Next-day estimate",
+    "areas": [
+      "Old Oakville",
+      "Glen Abbey",
+      "Bronte",
+      "Kerr Village",
+      "West Oak Trails"
+    ],
+    "nearby": [
+      "mississauga",
+      "burlington"
+    ],
+    "landmarks": [
+      "Oakville Trafalgar Memorial Hospital",
+      "Bronte Harbour"
+    ],
+    "transport": {
+      "highways": [
+        "QEW",
+        "Hwy 403",
+        "Trafalgar Road",
+        "Dundas Street West"
+      ],
+      "transit": [
+        "Oakville GO station (Lakeshore West line)",
+        "Bronte GO station",
+        "Clarkson GO station"
+      ],
+      "description": "Accessible via the QEW and Hwy 403, with three Lakeshore West GO stations providing fast rail access to Toronto."
+    },
+    "coordinates": {
+      "lat": 43.4675,
+      "lng": -79.6877
+    },
+    "uniqueValue": "Town of Oakville permit coordinator handling Halton Region's building department, plus heritage-district expertise for Old Oakville's protected residential area.",
+    "mapEmbed": "https://maps.google.com/maps?q=Oakville,%20ON,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed",
+    "modules": {
+      "whyChooseUs": {
+        "headline": "Why Oakville Homeowners Choose TBU",
+        "points": [
+          "Town of Oakville permit coordinator on staff",
+          "Old Oakville heritage-district expertise",
+          "Bronte lakefront water-table experience",
+          "Halton Region framework familiarity"
+        ]
+      }
+    },
+    "sectionHeadings": {
+      "painPoints": "Oakville Basement Too Low? Professional Help",
+      "services": "Our Services for Halton Region Homes",
+      "process": "How We Deliver Oakville Projects",
+      "midCta": "Get a Free Oakville Estimate Today",
+      "whyChooseUs": "Old Oakville & Glen Abbey Heritage Expertise",
+      "localContent": "Halton Region Foundation Specialists",
+      "faq": "Common Questions",
+      "finalCta": "Book Your Oakville Basement Assessment"
+    },
+    "localFAQs": [
+      {
+        "question": "Do you handle Old Oakville heritage homes?",
+        "answer": "Yes. Old Oakville has a heritage conservation district affecting visible exterior work. Interior underpinning isn't restricted; window-well changes, exterior stairwells, or facade-affecting work go through the heritage permit. We screen and coordinate."
+      },
+      {
+        "question": "What about Bronte lakefront properties?",
+        "answer": "Bronte's lakefront proximity raises water-table considerations. We pull soil reports for any project within 300 m of the lake and pair underpinning with interior waterproofing as a default."
+      },
+      {
+        "question": "How is Oakville's permit process?",
+        "answer": "Town of Oakville has its own building department under Halton Region. Plan review averages 4-6 weeks; fees are higher than Toronto core but comparable to other GTA municipalities. Our coordinator handles it."
+      }
+    ],
+    "stats": {
+      "projectsInArea": "30+ Oakville projects",
+      "yearsServing": "Serving Oakville since 2011"
+    }
+  },
+  {
+    "id": "burlington",
+    "slug": "burlington",
+    "name": "Burlington",
+    "shortName": "Burlington",
+    "type": "secondary",
+    "council": "City of Burlington",
+    "metaTitle": "Basement Underpinning Burlington | TBU",
+    "h1Title": "Basement Underpinning in Burlington",
+    "metaDescription": "Burlington operates under Halton Region alongside Oakville \u2014 our coordinator handles permits for Aldershot's mature neighbourhood housing stock.",
+    "description": "Underpinning across Burlington, Aldershot, Roseland, Tyandaga, Alton.",
+    "responseTime": "Next-day estimate",
+    "areas": [
+      "Aldershot",
+      "Roseland",
+      "Tyandaga",
+      "Alton"
+    ],
+    "nearby": [
+      "oakville",
+      "milton"
+    ],
+    "landmarks": [
+      "Burlington City Hall",
+      "Spencer Smith Park"
+    ],
+    "transport": {
+      "highways": [
+        "QEW",
+        "Hwy 403",
+        "Hwy 407",
+        "Appleby Line"
+      ],
+      "transit": [
+        "Burlington GO station (Lakeshore West line)",
+        "Aldershot GO station",
+        "Burlington Transit"
+      ],
+      "description": "Accessible via the QEW and Hwy 403, with Burlington and Aldershot GO stations providing Lakeshore West rail connections."
+    },
+    "coordinates": {
+      "lat": 43.3255,
+      "lng": -79.799
+    },
+    "uniqueValue": "Halton Region framework familiarity shared with our Oakville team. Same permit coordinator, consistent process across both municipalities.",
+    "mapEmbed": "https://maps.google.com/maps?q=Burlington,%20ON,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed",
+    "modules": {
+      "whyChooseUs": {
+        "headline": "Why Burlington Picks TBU",
+        "points": [
+          "City of Burlington permit coordinator on staff",
+          "Halton Region familiar, same framework as Oakville and Milton",
+          "Aldershot older housing-stock expertise",
+          "Newer-construction Alton underpinning project history"
+        ]
+      }
+    },
+    "sectionHeadings": {
+      "painPoints": "Burlington Basement Issues? Fast Help Available",
+      "services": "What We Offer",
+      "process": "How It Works in 3 Steps",
+      "midCta": "Ready to Lower Your Burlington Basement?",
+      "whyChooseUs": "Why Aldershot & Roseland Owners Trust Us",
+      "localContent": "Halton Region Foundation Expertise",
+      "faq": "Burlington Underpinning Questions",
+      "finalCta": "Book Your Burlington Project Today"
+    },
+    "localFAQs": [
+      {
+        "question": "Do you serve all of Burlington?",
+        "answer": "Yes, Aldershot, Roseland, Tyandaga, Alton. Travel time from our Etobicoke staging yard is 60-75 minutes; estimates are next business day."
+      },
+      {
+        "question": "How is Burlington's permit process?",
+        "answer": "City of Burlington under Halton Region. Plan review averages 5-7 weeks; fees and inspection cadence are similar to Oakville. Our coordinator handles it."
+      },
+      {
+        "question": "What's typical Burlington project cost?",
+        "answer": "Burlington underpinning typically runs $25,000-$50,000 for full perimeter. Roseland and Aldershot older homes lean toward the upper end; newer Alton construction lands at the lower end."
+      }
+    ],
+    "stats": {
+      "projectsInArea": "20+ Burlington projects",
+      "yearsServing": "Serving Burlington since 2012"
+    }
+  },
+  {
+    "id": "pickering",
+    "slug": "pickering",
+    "name": "Pickering",
+    "shortName": "Pickering",
+    "type": "secondary",
+    "council": "City of Pickering",
+    "metaTitle": "Basement Underpinning Pickering | TBU",
+    "h1Title": "Basement Underpinning in Pickering",
+    "metaDescription": "Durham Region homes near Frenchman's Bay need integrated waterproofing with every underpin. Our Pickering team builds it in by default.",
+    "description": "Underpinning across Pickering, Liverpool, Bay Ridges, Rosebank, Amberlea.",
+    "responseTime": "Next-day estimate",
+    "areas": [
+      "Liverpool",
+      "Bay Ridges",
+      "Rosebank",
+      "Amberlea"
+    ],
+    "nearby": [
+      "scarborough",
+      "ajax"
+    ],
+    "landmarks": [
+      "Pickering Town Centre",
+      "Frenchman's Bay"
+    ],
+    "transport": {
+      "highways": [
+        "Hwy 401",
+        "Kingston Road",
+        "Liverpool Road",
+        "Bayly Street"
+      ],
+      "transit": [
+        "Pickering GO station (Lakeshore East line)",
+        "Ajax GO station",
+        "Durham Region Transit"
+      ],
+      "description": "Accessible via Hwy 401 and Kingston Road, with Pickering GO station on the Lakeshore East line providing direct rail access to Toronto."
+    },
+    "coordinates": {
+      "lat": 43.8384,
+      "lng": -79.0868
+    },
+    "uniqueValue": "Durham Region permit coordination and Bay Ridges lakefront water-table experience. We pair underpinning with waterproofing by default for any project within 300 m of Frenchman's Bay.",
+    "mapEmbed": "https://maps.google.com/maps?q=Pickering,%20ON,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed",
+    "modules": {
+      "whyChooseUs": {
+        "headline": "Why Pickering Homeowners Choose TBU",
+        "points": [
+          "City of Pickering permit coordinator on staff",
+          "Durham Region framework familiarity",
+          "Bay Ridges lakefront water-table experience",
+          "Larger suburban lots simplify staging"
+        ]
+      }
+    },
+    "sectionHeadings": {
+      "painPoints": "Pickering Basement Too Low? We Can Help",
+      "services": "Our Underpinning Services",
+      "process": "How Our Durham Region Service Works",
+      "midCta": "Ready for a Free Pickering Estimate?",
+      "whyChooseUs": "Why Homeowners in Durham Choose Us",
+      "localContent": "Bay Ridges & Liverpool Foundation Expertise",
+      "faq": "Pickering Underpinning Questions",
+      "finalCta": "Book Your Pickering Basement Assessment"
+    },
+    "localFAQs": [
+      {
+        "question": "Do you serve all of Pickering?",
+        "answer": "Yes, Liverpool, Bay Ridges, Rosebank, Amberlea. Travel time from our Toronto-east staging is 30-45 minutes."
+      },
+      {
+        "question": "Are Bay Ridges lakefront homes a special case?",
+        "answer": "Yes. Bay Ridges and Frenchman's Bay proximity raises water-table considerations. We pull soil reports and pair underpinning with interior waterproofing as a default in this zone."
+      },
+      {
+        "question": "How is Pickering's permit process?",
+        "answer": "City of Pickering under Durham Region. Plan review averages 4-6 weeks; fees are lower than Toronto core. Our coordinator handles it."
+      }
+    ],
+    "stats": {
+      "projectsInArea": "20+ Pickering projects",
+      "yearsServing": "Serving Pickering since 2012"
+    }
+  }
+]

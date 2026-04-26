@@ -1,0 +1,152 @@
+{
+  "name": "Toronto Basement Underpinning",
+  "shortName": "TBU",
+  "domain": "https://torontobasementunderpinning.ca",
+  "url": "https://torontobasementunderpinning.ca",
+  "industry": "Basement Underpinning & Foundation Contractor",
+  "primaryKeyword": "Basement Underpinning",
+  "businessType": "local-service",
+  "country": "CA",
+  "currency": "CAD",
+  "currencySymbol": "$",
+  "locale": "en-CA",
+  "tagline": "Toronto's highest-volume basement underpinning specialists. 20 dedicated crews. Drawings, permits, lowering, waterproofing, and finishing, all under one roof.",
+  "shortTagline": "Toronto's #1 basement underpinning specialists.",
+  "contact": {
+    "phone": "(416) 900-4982",
+    "phoneIntl": "+16478588211",
+    "phoneRaw": "6478588211",
+    "phoneHref": "tel:+16478588211",
+    "email": "info@torontobasementunderpinning.ca",
+    "whatsapp": "",
+    "whatsappUrl": ""
+  },
+  "address": {
+    "street": "",
+    "city": "Toronto",
+    "state": "ON",
+    "postcode": "",
+    "country": "CA",
+    "full": "Toronto, Ontario, Canada"
+  },
+  "social": {
+    "facebook": "",
+    "instagram": "",
+    "linkedin": ""
+  },
+  "trustIndicators": {
+    "rating": "4.9",
+    "ratingCount": "49+",
+    "ratingSource": "Google",
+    "responseTime": "Free Estimate Within 2 Hours",
+    "projectsCount": "Hundreds",
+    "yearsExperience": "20+",
+    "guarantee": "Zero Risk, No Questions Asked Warranty",
+    "crewCount": "20"
+  },
+  "urlPatterns": {
+    "services": "flat",
+    "locations": "nested",
+    "locationsPath": "service-areas",
+    "locationsMenuLabel": "Service Areas",
+    "guidePath": "/guide/",
+    "guideMenuLabel": "Guides",
+    "blog": "nested"
+  },
+  "schema": {
+    "type": "GeneralContractor",
+    "serviceRadiusKm": 60,
+    "knowsAbout": [
+      "Mass Concrete Underpinning",
+      "Staged Excavation Sequencing",
+      "Engineered Footing Extension",
+      "Ontario Building Code Section 9.13",
+      "Delta MS Membrane Waterproofing",
+      "City of Toronto Basement Flooding Protection Subsidy",
+      "Legal Basement Apartment Compliance (OBC 9.36)",
+      "Committee of Adjustment Representation"
+    ],
+    "credentials": [
+      "Fully Licensed General Contractor",
+      "Fully Insured",
+      "Coordinates Ontario-Licensed Structural Engineers",
+      "City of Toronto Building Permit Applicant"
+    ],
+    "paymentAccepted": [
+      "Cash",
+      "Cheque",
+      "Credit Card",
+      "E-Transfer",
+      "Financing on Approval"
+    ],
+    "openingHours": {
+      "weekdays": "08:00-18:00",
+      "saturday": "09:00-15:00",
+      "sunday": "Closed"
+    }
+  },
+  "strategy": {
+    "primaryCta": {
+      "text": "Get a Free Estimate",
+      "action": "form",
+      "href": "/contact/",
+      "urgencyText": "Typical Response Time: 2 Hours"
+    },
+    "secondaryCta": {
+      "text": "Call (416) 900-4982",
+      "action": "call",
+      "href": "tel:+16478588211"
+    },
+    "uniqueValueProposition": {
+      "oneLiner": "Toronto's highest-volume basement underpinning specialist. 20 dedicated crews handle drawings, permits, lowering, waterproofing, and finishing under one roof, with a zero-risk no-questions warranty.",
+      "keyDifferentiators": [
+        "20 active crews, fastest scheduling in Toronto for a structural project",
+        "Turnkey scope: architectural drawings, city permits, underpinning, waterproofing, and finishing, all in-house",
+        "Zero risk, no-questions-asked warranty across every project"
+      ],
+      "proofPoints": [
+        "20+ years specializing in Toronto basement underpinning",
+        "4.9-star rating across 49+ Google reviews",
+        "Hundreds of completed Toronto underpinning projects",
+        "Fully licensed and insured general contractors"
+      ]
+    }
+  },
+  "testimonials": [
+    {
+      "quote": "We finally finished our 1920s Annex basement after underpinning lowered the slab to a real 8-foot ceiling. The crew warned us about every dust event in advance, swept the site daily, and finished a week ahead of the engineered schedule.",
+      "name": "Megan R.",
+      "rating": 5,
+      "location": "The Annex, Toronto",
+      "service": "interior-waterproofing"
+    },
+    {
+      "quote": "Bought a North York bungalow specifically to legalize a basement apartment. TBU handled drawings, the City of Toronto permit, structural engineering, and the finishing. Tenant moved in two months after the pour cured. Zero callbacks since.",
+      "name": "Daniel T.",
+      "rating": 5,
+      "location": "North York, Toronto",
+      "service": "basement-finishing"
+    },
+    {
+      "quote": "We had three contractors quote our Leslieville semi. TBU was the only one who explained the shared-wall sequencing and walked our neighbour through the process before booking. Underpinning, waterproofing, and a sump pump done in five weeks.",
+      "name": "Priya S.",
+      "rating": 5,
+      "location": "Leslieville, Toronto",
+      "service": "interior-waterproofing"
+    },
+    {
+      "quote": "Forest Hill home, full underpinning plus high-end finishing. The drawings were thorough, the engineer's site visits were on schedule, and the crew respected the original mouldings on the upper floors. Pricing was exactly what was quoted  -  no surprise change orders.",
+      "name": "Charles W.",
+      "rating": 5,
+      "location": "Forest Hill, Toronto",
+      "service": "basement-finishing"
+    },
+    {
+      "quote": "We had a chronic leak that the previous waterproofer never solved. TBU diagnosed hydrostatic pressure under the slab, installed new weeping tile and a battery-backup sump. Bone dry through this year's spring melt. Worth every dollar.",
+      "name": "Olu A.",
+      "rating": 5,
+      "location": "Etobicoke, Toronto",
+      "service": "sump-pumps"
+    }
+  ]
+}

@@ -1,0 +1,527 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TrustBar from '../components/blocks/TrustBar.astro';
+import Testimonials from '../components/blocks/Testimonials.astro';
+import FAQ from '../components/blocks/FAQ.astro';
+import CTA from '../components/blocks/CTA.astro';
+import Callout from '../components/ui/Callout.astro';
+import ContentImage from '../components/ui/ContentImage.astro';
+import site from '../config/site.json';
+
+export async function getStaticPaths() {
+  const services = await getCollection('services');
+  return services.map((service) => ({
+    params: { slug: service.slug },
+    props: { service },
+  }));
+}
+
+const { service } = Astro.props;
+const { Content } = await service.render();
+
+const meta = service.data.seo?.metaTitle || `${service.data.title} Toronto | ${site.name}`;
+const description = service.data.seo?.metaDescription || service.data.description;
+const h1 = service.data.h1Title || `Professional ${service.data.title} in Toronto`;
+
+const formattedUpdated = service.data.lastUpdated
+  ? new Date(service.data.lastUpdated).toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' })
+  : null;
+
+// Look up related services
+const allServices = await getCollection('services');
+const relatedSlugs = service.data.relatedServices || [];
+const relatedServices = allServices.filter((s) => relatedSlugs.includes(s.slug));
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': `${site.url}/${service.slug}/#service`,
+  name: service.data.title,
+  description: service.data.description,
+  provider: { '@id': `${site.url}/#organization` },
+  serviceType: service.data.title,
+  areaServed: {
+    '@type': 'City',
+    name: site.address.city,
+    containedInPlace: { '@type': 'State', name: 'Ontario' },
+  },
+  ...(service.data.pricing && {
+    offers: {
+      '@type': 'Offer',
+      price: service.data.pricing.from,
+      priceCurrency: 'CAD',
+      ...(service.data.pricing.to && {
+        priceSpecification: {
+          '@type': 'PriceSpecification',
+          minPrice: service.data.pricing.from,
+          maxPrice: service.data.pricing.to,
+          priceCurrency: 'CAD',
+        },
+      }),
+    },
+  }),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: site.url + '/' },
+    { '@type': 'ListItem', position: 2, name: service.data.title, item: `${site.url}/${service.slug}/` },
+  ],
+};
+
+const howToSchema = service.data.process && service.data.process.length > 0
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: `How ${service.data.shortTitle || service.data.title} Works`,
+      description: `Our professional ${service.data.shortTitle || service.data.title} process in Toronto.`,
+      step: service.data.process.map((p: { step: number; title: string; description: string }) => ({
+        '@type': 'HowToStep',
+        name: p.title,
+        text: p.description,
+        position: p.step,
+      })),
+    }
+  : null;
+---
+
+<BaseLayout title={meta} description={description} image={service.data.image} pageType="service_pages">
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} slot="head" />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} slot="head" />
+  {howToSchema && <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} slot="head" />}
+
+  <section class="relative overflow-hidden bg-primary-800 text-white">
+    <div class="absolute inset-0 z-0">
+      <img src={service.data.image} alt="" class="w-full h-full object-cover" loading="eager" />
+      <div class="absolute inset-0 bg-gradient-to-r from-primary-800/95 via-primary-800/80 to-primary-700/55"></div>
+    </div>
+    <div class="relative z-10 max-w-container mx-auto px-4 py-14 lg:py-24">
+      <nav class="text-xs text-primary-200 mb-4 flex flex-wrap gap-1.5 items-center" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-accent-400">Home</a>
+        <span class="text-primary-400">&rsaquo;</span>
+        <span class="text-white">{service.data.title}</span>
+      </nav>
+
+      {service.data.badge && (
+        <span class="inline-block bg-accent-500 text-white text-xs font-bold uppercase tracking-widest px-3 py-1.5 mb-4">
+          {service.data.badge}
+        </span>
+      )}
+      <h1 class="text-white mb-4 max-w-4xl">{h1}</h1>
+      <span class="accent-bar"></span>
+      <p class="text-lg text-primary-100 max-w-2xl mb-8">{service.data.description}</p>
+
+      <div class="flex flex-wrap gap-3 mb-8">
+        <a href="/contact/" class="btn btn-primary">Get a Free Estimate</a>
+        <a href={site.contact.phoneHref} class="btn btn-outline-light">
+          Call {site.contact.phone}
+        </a>
+      </div>
+
+      {service.data.pricing && (
+        <div class="text-sm text-primary-100">
+          <span class="font-bold uppercase tracking-widest text-accent-400">Typical project:</span>
+          <span class="ml-2 font-bold">
+            {service.data.pricing.currency}{service.data.pricing.from?.toLocaleString()}
+            {service.data.pricing.to ? `-${service.data.pricing.currency}${service.data.pricing.to.toLocaleString()}` : '+'}
+          </span>
+          {service.data.pricing.unit && <span class="ml-1 text-primary-200">{service.data.pricing.unit}</span>}
+        </div>
+      )}
+      {formattedUpdated && (
+        <p class="text-xs text-primary-300 mt-4">
+          <time datetime={service.data.lastUpdated}>Last updated: {formattedUpdated}</time>
+        </p>
+      )}
+    </div>
+  </section>
+
+  <TrustBar />
+
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="max-w-container mx-auto px-4">
+      <div class="lg:grid lg:grid-cols-[1fr_320px] lg:gap-10">
+        <!-- Main Content -->
+        <article class="prose-tbu">
+          <Content components={{ Callout, ContentImage }} />
+        </article>
+        <!-- Sticky Sidebar -->
+        <aside class="hidden lg:block">
+          <div class="sticky top-24 space-y-4">
+
+            {/* CARD 1: QUICK FACTS */}
+            <div class="rounded-xl overflow-hidden" style="background-color: #1A2942;">
+              <div class="px-5 pt-5 pb-4">
+                <p class="text-xs font-bold uppercase tracking-widest mb-3" style="color: #FF7E21;">Quick Facts</p>
+                <div class="space-y-2">
+                  <div class="flex justify-between text-sm">
+                    <span class="text-primary-200">Permit</span>
+                    <span class="text-white font-medium text-right">City of Toronto Building Permit</span>
+                  </div>
+                  <div class="flex justify-between text-sm">
+                    <span class="text-primary-200">Code</span>
+                    <span class="text-white font-medium text-right">Ontario Building Code Section 9.13</span>
+                  </div>
+                  <div class="flex justify-between text-sm">
+                    <span class="text-primary-200">Service Areas</span>
+                    <span class="text-white font-medium text-right">Toronto, North York, Mississauga</span>
+                  </div>
+                  <div class="flex justify-between text-sm">
+                    <span class="text-primary-200">Warranty</span>
+                    <span class="text-white font-medium text-right">Zero-Risk Structural</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 2: US VS THEM */}
+            <div class="rounded-xl bg-white border" style="border-color: #CBD5E0;">
+              <div class="px-5 pt-5 pb-4">
+                <p class="text-xs font-bold uppercase tracking-widest mb-3" style="color: #FF7E21;">Us vs Generic Renovator</p>
+                <div class="space-y-2">
+                  <div class="flex items-start gap-2 text-sm">
+                    <svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                    <span class="text-brand-text">Structural engineer + permits under one contract</span>
+                  </div>
+                  <div class="flex items-start gap-2 text-sm">
+                    <svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                    <span class="text-brand-text">20 dedicated crews on payroll</span>
+                  </div>
+                  <div class="flex items-start gap-2 text-sm">
+                    <svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                    <span class="text-brand-text">Single warranty covers entire scope</span>
+                  </div>
+                  <div class="flex items-start gap-2 text-sm">
+                    <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                    <span class="text-brand-muted">Generic renovators sub out the structural piece</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 3: FREE ASSESSMENT */}
+            <div class="rounded-xl overflow-hidden" style="background-color: #1A2942;">
+              <div class="px-5 pt-5 pb-5">
+                <p class="text-xs font-bold uppercase tracking-widest mb-2" style="color: #FF7E21;">Free Assessment</p>
+                <h3 class="text-white text-lg font-bold mb-2">Free Assessment in Toronto</h3>
+                <p class="text-primary-200 text-sm mb-4">Free on-site assessment + written fixed-price quote within 48 hours. Engineered drawings and permits included in scope.</p>
+                <a href="/contact/" class="block text-center font-bold py-3 px-4 rounded-none transition-opacity" style="background-color: #FF7E21; color: white;">Request Free Estimate</a>
+                <p class="text-primary-300 text-sm text-center mt-3">{site.contact.phone}</p>
+              </div>
+            </div>
+
+            {/* CARD 4: WHAT'S INCLUDED — dynamic per service */}
+            <div class="rounded-xl bg-white border" style="border-color: #CBD5E0;">
+              <div class="px-5 pt-5 pb-4">
+                <p class="text-xs font-bold uppercase tracking-widest mb-3" style="color: #FF7E21;">What's Included</p>
+                <ul class="space-y-2">
+                  {service.slug === 'interior-waterproofing' && (
+                    <>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Weeping tile installation</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Sealed sump pit + primary pump</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Delta MS dimple membrane</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Slab saw-cut + restoration</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Battery backup sump pump</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Backwater valve install</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Dust isolation + site cleanup</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">City inspection + warranty</span></li>
+                    </>
+                  )}
+                  {service.slug === 'basement-finishing' && (
+                    <>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Structural underpinning (if needed)</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Framing + insulation</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Electrical + plumbing rough-ins</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Drywall + mudding + primer</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Flooring + trim + fixtures</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">OBC 9.36 legal apartment compliance</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Secondary suite registration</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Final inspection + warranty</span></li>
+                    </>
+                  )}
+                  {service.slug === 'sump-pumps' && (
+                    <>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">High-volume primary pump sized for local water table</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Sealed Group 31 AGM battery backup</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Auto AC-DC switchover system</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Sealed pit lid + discharge line</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">City permit + inspection</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Subsidy paperwork filed for you</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Backwater valve install</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Zero-risk warranty</span></li>
+                    </>
+                  )}
+                  {service.slug === 'concrete-foundation-repair' && (
+                    <>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Engineered crack assessment</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Polyurethane or epoxy crack injection</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Localized footing repair</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Concrete patching + slab repair</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Post-repair crack monitoring</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Engineer's sign-off</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Honest diagnosis-no upselling</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Zero-risk warranty</span></li>
+                    </>
+                  )}
+                  {service.slug === 'drawings-permits' && (
+                    <>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Architectural site plan + foundation drawings</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Structural engineering (Ontario-licensed P.Eng.)</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">City of Toronto building permit submission</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Committee of Adjustment representation</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Heritage permit coordination</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Inspection scheduling during construction</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Soils report if required</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Final permit close-out documentation</span></li>
+                    </>
+                  )}
+                  {service.slug === 'plumbing-drain-services' && (
+                    <>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Camera drain inspection</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Main drain replacement (clay/cast-iron to PVC)</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Bathroom/kitchenette rough-ins</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Backwater valve installation</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Drain cleaning + snaking</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Cleanout access installation</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">City inspection</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Subsidy paperwork (backwater valve rebate)</span></li>
+                    </>
+                  )}
+                </ul>
+              </div>
+            </div>
+
+            {/* CARD 5: TYPICAL PRICING — dynamic per service */}
+            <div class="rounded-xl bg-white border" style="border-color: #CBD5E0;">
+              <div class="px-5 pt-5 pb-4">
+                <p class="text-xs font-bold uppercase tracking-widest mb-3" style="color: #FF7E21;">Typical Pricing</p>
+                <div class="space-y-2">
+                  {service.slug === 'interior-waterproofing' && (
+                    <>
+                      <div class="flex justify-between text-sm"><span class="text-brand-muted">Partial perimeter</span><span class="text-brand-text font-bold">$8K-$15K</span></div>
+                      <div class="flex justify-between text-sm"><span class="text-brand-muted">Full perimeter waterproofing</span><span class="text-brand-text font-bold">$15K-$25K</span></div>
+                      <div class="flex justify-between text-sm"><span class="text-brand-muted">Bundled with underpinning</span><span class="text-brand-text font-bold">$12K-$20K</span></div>
+                    </>
+                  )}
+                  {service.slug === 'basement-finishing' && (
+                    <>
+                      <div class="flex justify-between text-sm"><span class="text-brand-muted">Basic legal apartment</span><span class="text-brand-text font-bold">$30K-$45K</span></div>
+                      <div class="flex justify-between text-sm"><span class="text-brand-muted">Mid-range family suite</span><span class="text-brand-text font-bold">$45K-$70K</span></div>
+                      <div class="flex justify-between text-sm"><span class="text-brand-muted">Luxury suite + theatre/wine</span><span class="text-brand-text font-bold">$70K-$150K+</span></div>
+                    </>
+                  )}
+                  {service.slug === 'sump-pumps' && (
+                    <>
+                      <div class="flex justify-between text-sm"><span class="text-brand-muted">Pump replacement (primary + battery)</span><span class="text-brand-text font-bold">$1,200-$2,500</span></div>
+                      <div class="flex justify-between text-sm"><span class="text-brand-muted">New pit + pump install</span><span class="text-brand-text font-bold">$2,000-$3,500</span></div>
+                      <div class="flex justify-between text-sm"><span class="text-brand-muted">With backwater valve bundle</span><span class="text-brand-text font-bold">$3,000-$5,000</span></div>
+                    </>
+                  )}
+                  {service.slug === 'concrete-foundation-repair' && (
+                    <>
+                      <div class="flex justify-between text-sm"><span class="text-brand-muted">Single crack injection</span><span class="text-brand-text font-bold">$600-$900</span></div>
+                      <div class="flex justify-between text-sm"><span class="text-brand-muted">Multiple crack campaign</span><span class="text-brand-text font-bold">$2,500-$4,500</span></div>
+                      <div class="flex justify-between text-sm"><span class="text-brand-muted">Localized footing repair</span><span class="text-brand-text font-bold">$3,000-$8,000</span></div>
+                    </>
+                  )}
+                  {service.slug === 'drawings-permits' && (
+                    <>
+                      <div class="flex justify-between text-sm"><span class="text-brand-muted">Drawings + permit (underpinning)</span><span class="text-brand-text font-bold">$2,500-$5,000</span></div>
+                      <div class="flex justify-between text-sm"><span class="text-brand-muted">Committee of Adjustment hearing</span><span class="text-brand-text font-bold">+$1,500-$2,500</span></div>
+                      <div class="flex justify-between text-sm"><span class="text-brand-muted">Soils report (if required)</span><span class="text-brand-text font-bold">$1,500-$2,500</span></div>
+                    </>
+                  )}
+                  {service.slug === 'plumbing-drain-services' && (
+                    <>
+                      <div class="flex justify-between text-sm"><span class="text-brand-muted">Camera inspection + drain cleaning</span><span class="text-brand-text font-bold">$300-$700</span></div>
+                      <div class="flex justify-between text-sm"><span class="text-brand-muted">Main drain partial replacement</span><span class="text-brand-text font-bold">$4,000-$8,000</span></div>
+                      <div class="flex justify-between text-sm"><span class="text-brand-muted">Full main drain replacement</span><span class="text-brand-text font-bold">$8,000-$15,000</span></div>
+                    </>
+                  )}
+                </div>
+                <p class="text-xs italic text-brand-muted mt-3">Fixed-price quote after free on-site assessment.</p>
+              </div>
+            </div>
+
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  {service.data.features && service.data.features.length > 0 && (
+    <section class="py-12 lg:py-16 bg-brand-bg">
+      <div class="max-w-container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-center mb-2">What's Included</h2>
+          <span class="accent-bar accent-bar-center"></span>
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+            {service.data.features.map((f) => (
+              <li class="flex items-start gap-3 bg-white border border-brand-border p-4">
+                <svg class="w-5 h-5 text-accent-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                <span class="text-brand-text">{f}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+  )}
+
+  {service.data.process && service.data.process.length > 0 && (
+    <section class="py-16 lg:py-20 bg-white">
+      <div class="max-w-container mx-auto px-4">
+        <div class="text-center mb-12">
+          <span class="section-label">Process</span>
+          <h2 class="mt-3">How {service.data.shortTitle} Works</h2>
+          <span class="accent-bar accent-bar-center"></span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
+          {service.data.process.map((p, i) => (
+            <div class={i % 2 === 0 ? 'process-card' : 'process-card process-card-accent'}>
+              <div class="text-xs font-bold uppercase tracking-widest text-accent-500 mb-2">Step {p.step}</div>
+              <h3 class="text-base mb-2 leading-tight">{p.title}</h3>
+              <p class="text-sm text-brand-muted leading-relaxed">{p.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {service.data.galleryImages && service.data.galleryImages.length > 0 && (
+    <section class="py-16 lg:py-20 bg-brand-bg">
+      <div class="max-w-container mx-auto px-4">
+        <div class="text-center mb-10">
+          <span class="section-label">Our Work</span>
+          <h2 class="mt-3">{service.data.shortTitle} Project Gallery</h2>
+          <span class="accent-bar accent-bar-center"></span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 max-w-6xl mx-auto">
+          {service.data.galleryImages.map((src, i) => (
+            <figure class="overflow-hidden group">
+              <img
+                src={src}
+                alt={`${service.data.shortTitle} project ${i + 1}`}
+                class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+            </figure>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {service.data.beforeAfter && (
+    <section class="py-16 lg:py-20 bg-white">
+      <div class="max-w-container mx-auto px-4">
+        <div class="text-center mb-10">
+          <span class="section-label">Before &amp; After</span>
+          <h2 class="mt-3">See The Difference</h2>
+          <span class="accent-bar accent-bar-center"></span>
+        </div>
+        <div class="grid md:grid-cols-2 gap-4 max-w-5xl mx-auto">
+          <figure>
+            <img src={service.data.beforeAfter.before} alt={`Before ${service.data.shortTitle}`} class="w-full aspect-[3/2] object-cover" loading="lazy" />
+            <figcaption class="text-center font-heading text-xs uppercase tracking-widest text-brand-muted mt-2">Before</figcaption>
+          </figure>
+          <figure>
+            <img src={service.data.beforeAfter.after} alt={`After ${service.data.shortTitle}`} class="w-full aspect-[3/2] object-cover" loading="lazy" />
+            <figcaption class="text-center font-heading text-xs uppercase tracking-widest text-accent-500 mt-2">After</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  )}
+
+  {service.data.whyChooseUs && service.data.whyChooseUs.length > 0 && (
+    <section class="py-16 lg:py-20 bg-brand-bg">
+      <div class="max-w-container mx-auto px-4">
+        <div class="text-center mb-12">
+          <span class="section-label">Why Choose Us</span>
+          <h2 class="mt-3">For Your {service.data.shortTitle}</h2>
+          <span class="accent-bar accent-bar-center"></span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-5xl mx-auto">
+          {service.data.whyChooseUs.map((w) => (
+            <div class="bg-white border border-brand-border p-6">
+              <h3 class="text-base mb-2">{w.title}</h3>
+              <p class="text-sm text-brand-muted leading-relaxed">{w.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section class="bg-primary-800 text-white py-12">
+    <div class="max-w-container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between gap-6">
+      <div>
+        <h2 class="text-white text-2xl lg:text-3xl mb-1">Get a Free {service.data.shortTitle} Estimate</h2>
+        <p class="text-white/90">Fixed price before work begins. Zero-risk warranty. Typical response: two business hours.</p>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <a href="/contact/" class="btn btn-primary">Book Free Estimate</a>
+        <a href={site.contact.phoneHref} class="btn btn-outline-light">
+          Call {site.contact.phone}
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {service.data.testimonials && service.data.testimonials.length > 0 && (
+    <Testimonials
+      items={service.data.testimonials.map((t) => ({ quote: t.text, name: t.name, rating: t.rating, location: t.location }))}
+      title={`What Customers Say About ${service.data.shortTitle}`}
+    />
+  )}
+
+  {service.data.faqs && service.data.faqs.length > 0 && (
+    <FAQ items={service.data.faqs} title={`${service.data.shortTitle} FAQs`} />
+  )}
+
+  <section class="py-12 lg:py-16 bg-brand-bg">
+    <div class="max-w-container mx-auto px-4">
+      <div class="max-w-3xl mx-auto flex flex-col sm:flex-row items-start sm:items-center gap-6 bg-primary-800 text-white p-6 lg:p-8 relative">
+        <span class="corner-bracket"></span>
+        <div class="flex-1">
+          <p class="text-xs font-bold uppercase tracking-widest text-accent-400 mb-2">Free Tool</p>
+          <h3 class="text-white text-xl mb-1">Toronto Underpinning Cost Estimator</h3>
+          <p class="text-primary-200 text-sm leading-relaxed">Get a calibrated project range in 30 seconds. Underpinning, waterproofing, sump pump &amp; finishing add-ons.</p>
+        </div>
+        <a href="/tools/" class="btn btn-primary flex-shrink-0">Use Estimator</a>
+      </div>
+    </div>
+  </section>
+
+  {relatedServices.length > 0 && (
+    <section class="py-16 bg-white">
+      <div class="max-w-container mx-auto px-4">
+        <div class="text-center mb-10">
+          <span class="section-label">Related Services</span>
+          <h2 class="mt-3">Often Combined With</h2>
+          <span class="accent-bar accent-bar-center"></span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl mx-auto">
+          {relatedServices.map((rs) => (
+            <a href={`/${rs.slug}/`} class="block tbu-card p-6 relative group focus-ring">
+              <span class="corner-bracket"></span>
+              <h3 class="text-lg mb-3 leading-tight group-hover:text-accent-500 transition-colors">{rs.data.title}</h3>
+              <p class="text-sm text-brand-muted leading-relaxed">{rs.data.description}</p>
+              <span class="block mt-4 text-xs font-bold uppercase tracking-widest text-accent-500">Learn More &rarr;</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <CTA
+    headline={`Ready For ${service.data.shortTitle}?`}
+    subheadline="Free engineered estimate within two business hours."
+  />
+</BaseLayout>

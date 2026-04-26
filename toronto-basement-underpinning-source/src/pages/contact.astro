@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TrustBar from '../components/blocks/TrustBar.astro';
+import site from '../config/site.json';
+---
+
+<BaseLayout
+  title={`Contact | ${site.name}`}
+  description={`Request a free basement underpinning estimate from ${site.name}. Typical response within two business hours. Serving the Greater Toronto Area.`}
+  pageType="contact_page"
+>
+  <section class="bg-primary-800 text-white py-14 lg:py-16">
+    <div class="max-w-container mx-auto px-4">
+      <span class="section-label !text-accent-400">Contact</span>
+      <h1 class="text-white mt-3 mb-4 max-w-3xl">Request A Free Estimate</h1>
+      <span class="accent-bar"></span>
+      <p class="text-lg text-primary-100 max-w-2xl">
+        Send us your address and a few details about your basement project. Our team responds within two business hours with a fixed-price quote, no obligation, no upselling.
+      </p>
+    </div>
+  </section>
+
+  <TrustBar />
+
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="max-w-container mx-auto px-4">
+      <div class="grid lg:grid-cols-5 gap-10 max-w-6xl mx-auto">
+        <div class="lg:col-span-3 relative bg-brand-bg border border-brand-border p-8">
+          <span class="corner-bracket"></span>
+          <h2 class="mb-2">Free Estimate Request</h2>
+          <span class="accent-bar"></span>
+          <form action="https://formsubmit.co/roycc77@gmail.com" method="POST" class="space-y-4 mt-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label for="name" class="block text-xs font-bold uppercase tracking-widest text-brand-text mb-2">Your Name *</label>
+                <input id="name" type="text" name="name" required class="w-full px-4 py-3 border border-brand-border focus:border-accent-500 focus:outline-none text-base" />
+              </div>
+              <div>
+                <label for="phone" class="block text-xs font-bold uppercase tracking-widest text-brand-text mb-2">Phone *</label>
+                <input id="phone" type="tel" name="phone" required class="w-full px-4 py-3 border border-brand-border focus:border-accent-500 focus:outline-none text-base" />
+              </div>
+            </div>
+            <div>
+              <label for="email" class="block text-xs font-bold uppercase tracking-widest text-brand-text mb-2">Email *</label>
+              <input id="email" type="email" name="email" required class="w-full px-4 py-3 border border-brand-border focus:border-accent-500 focus:outline-none text-base" />
+            </div>
+            <div>
+              <label for="address" class="block text-xs font-bold uppercase tracking-widest text-brand-text mb-2">Property Address</label>
+              <input id="address" type="text" name="address" class="w-full px-4 py-3 border border-brand-border focus:border-accent-500 focus:outline-none text-base" />
+            </div>
+            <div>
+              <label for="service" class="block text-xs font-bold uppercase tracking-widest text-brand-text mb-2">Service Interest</label>
+              <select id="service" name="service" class="w-full px-4 py-3 border border-brand-border focus:border-accent-500 focus:outline-none text-base bg-white">
+                <option value="">Select a service</option>
+                <option value="basement-underpinning">Basement Underpinning &amp; Lowering</option>
+                <option value="interior-waterproofing">Interior Waterproofing</option>
+                <option value="basement-finishing">Basement Finishing</option>
+                <option value="sump-pumps">Sump Pumps &amp; Battery Backups</option>
+                <option value="concrete-foundation-repair">Concrete &amp; Foundation Repair</option>
+                <option value="drawings-permits">Drawings &amp; Permits</option>
+                <option value="plumbing-drain-services">Plumbing &amp; Drains</option>
+                <option value="multiple">Multiple / Not Sure</option>
+              </select>
+            </div>
+            <div>
+              <label for="message" class="block text-xs font-bold uppercase tracking-widest text-brand-text mb-2">Tell Us About Your Project</label>
+              <textarea id="message" name="message" rows="5" placeholder="Current ceiling height, year home was built, problems you're seeing..." class="w-full px-4 py-3 border border-brand-border focus:border-accent-500 focus:outline-none text-base"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-full">Send Estimate Request</button>
+            <p class="text-xs text-brand-muted text-center pt-2">
+              Typical response within two business hours during business hours.
+            </p>
+          </form>
+        </div>
+
+        <div class="lg:col-span-2 space-y-6">
+          <div class="bg-primary-800 text-white p-6 relative">
+            <span class="corner-bracket"></span>
+            <h3 class="text-white mb-3">Direct Contact</h3>
+            <div class="space-y-3 text-sm">
+              <div>
+                <div class="text-xs font-bold uppercase tracking-widest text-accent-400 mb-1">Phone</div>
+                <a href={site.contact.phoneHref} class="text-white hover:text-accent-400 text-base font-bold">{site.contact.phone}</a>
+              </div>
+              <div>
+                <div class="text-xs font-bold uppercase tracking-widest text-accent-400 mb-1">Service Area</div>
+                <p class="text-primary-100">Greater Toronto Area: Toronto, North York, Etobicoke, Scarborough, York, East York, Mississauga, Brampton, Markham, Vaughan, Richmond Hill, Oakville, Burlington, Pickering and surrounding regions.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white border border-brand-border p-6">
+            <h3 class="mb-3">Hours</h3>
+            <dl class="space-y-2 text-sm">
+              <div class="flex justify-between">
+                <dt class="text-brand-muted">Monday &ndash; Friday</dt>
+                <dd class="font-bold text-brand-text">8:00 AM &ndash; 6:00 PM</dd>
+              </div>
+              <div class="flex justify-between">
+                <dt class="text-brand-muted">Saturday</dt>
+                <dd class="font-bold text-brand-text">9:00 AM &ndash; 3:00 PM</dd>
+              </div>
+              <div class="flex justify-between">
+                <dt class="text-brand-muted">Sunday</dt>
+                <dd class="font-bold text-brand-text">Closed</dd>
+              </div>
+            </dl>
+            <p class="text-xs text-brand-muted mt-4 leading-relaxed">
+              On-site construction operates standard business hours. Emergency callbacks for active projects handled outside hours.
+            </p>
+          </div>
+
+          <div class="bg-accent-500/10 border-l-4 border-accent-500 p-5 text-sm">
+            <p class="text-brand-text leading-relaxed">
+              Prefer to talk now? Call us directly at <a href={site.contact.phoneHref} class="font-bold text-accent-600">{site.contact.phone}</a>. We answer during business hours and return after-hours messages the same day.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

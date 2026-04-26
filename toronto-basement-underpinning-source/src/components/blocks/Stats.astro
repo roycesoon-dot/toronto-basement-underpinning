@@ -1,0 +1,33 @@
+---
+interface Stat {
+  value: string;
+  label: string;
+}
+
+interface Props {
+  items?: Stat[];
+}
+
+const defaultStats: Stat[] = [
+  { value: '20+', label: 'Years Specialty' },
+  { value: '20', label: 'Active Crews' },
+  { value: '4.9', label: 'Star Rating' },
+  { value: '100%', label: 'Licensed & Insured' },
+];
+
+const { items = defaultStats } = Astro.props;
+---
+
+<section class="relative py-16 lg:py-20 bg-primary-800 text-white overflow-hidden">
+  <div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,white_0%,transparent_70%)]"></div>
+  <div class="max-w-container mx-auto px-4 relative z-10">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      {items.map((s) => (
+        <div class="text-center">
+          <div class="font-heading text-4xl lg:text-5xl font-bold text-accent-400 mb-2">{s.value}</div>
+          <div class="text-xs uppercase tracking-widest text-primary-100">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

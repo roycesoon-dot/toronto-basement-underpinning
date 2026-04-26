@@ -1,0 +1,10 @@
+{
+  "name": "Toronto Basement Underpinning",
+  "short_name": "TBU",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "theme_color": "#041627",
+  "background_color": "#f7f9fb",
+  "display": "standalone"
+}

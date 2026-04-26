@@ -1,0 +1,152 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TrustBar from '../components/blocks/TrustBar.astro';
+import Stats from '../components/blocks/Stats.astro';
+import CTA from '../components/blocks/CTA.astro';
+import authors from '../config/authors.json';
+import site from '../config/site.json';
+
+const profileSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfilePage',
+  mainEntity: {
+    '@type': 'Organization',
+    '@id': `${site.url}/#organization`,
+    name: site.name,
+    member: authors.map((a) => ({
+      '@type': 'Person',
+      '@id': `${site.url}/about/#${a.id}`,
+      name: a.name,
+      jobTitle: a.role,
+      description: a.shortBio,
+      image: a.image,
+      url: `${site.url}/about/#${a.id}`,
+      worksFor: { '@id': `${site.url}/#organization` },
+      hasCredential: a.credentials.map((c) => ({
+        '@type': 'EducationalOccupationalCredential',
+        name: c,
+      })),
+    })),
+  },
+};
+---
+
+<BaseLayout
+  title={`About | ${site.name}`}
+  description={`Meet the team behind ${site.name} - 20+ years specializing in Toronto basement underpinning. 20 active crews. Hundreds of completed projects.`}
+  pageType="about_page"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(profileSchema)} slot="head" />
+
+  <section class="bg-primary-800 text-white py-16 lg:py-20">
+    <div class="max-w-container mx-auto px-4">
+      <span class="section-label !text-accent-400">About Us</span>
+      <h1 class="text-white mt-3 mb-4 max-w-3xl">Toronto's Specialty Underpinning Team</h1>
+      <span class="accent-bar"></span>
+      <p class="text-lg text-primary-100 max-w-2xl">
+        Founded in 2006. 20 active crews. The highest-volume basement underpinning specialist in the Greater Toronto Area, focused on one type of work, executed to a high standard.
+      </p>
+    </div>
+  </section>
+
+  <TrustBar />
+
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="max-w-container mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
+        <div>
+          <span class="section-label">Our Story</span>
+          <h2 class="mt-3 mb-2">Built On Specialty, Not Generality</h2>
+          <span class="accent-bar"></span>
+          <p class="text-brand-text leading-relaxed mb-4">
+            We started Toronto Basement Underpinning in 2006 because we saw too many homeowners hire general contractors for structural work. Underpinning is engineered specialty work: the staging, the curing, the engineer coordination, the City of Toronto permit pipeline. A generalist crew that does kitchens, decks, and the occasional underpinning project just doesn't develop the rhythm.
+          </p>
+          <p class="text-brand-text leading-relaxed mb-4">
+            We do underpinning. Then everything that pairs with it: waterproofing, sump pumps, foundation repair, drawings &amp; permits, basement finishing. One trade, deeply understood, executed across hundreds of Toronto homes.
+          </p>
+          <p class="text-brand-text leading-relaxed mb-4">
+            Today we run 20 active crews across the GTA, the largest dedicated underpinning workforce in the city. The crew count matters because scheduling pressure is the single biggest source of homeowner frustration in this trade. When most Toronto specialists quote 6+ months out, we measure scheduling in weeks.
+          </p>
+          <p class="text-brand-muted text-sm leading-relaxed">
+            We're licensed and fully insured. Every project carries an engineered design from an Ontario-licensed structural engineer, our zero-risk warranty, and a project manager who is the homeowner's single point of contact from drawings through final inspection.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <img src="/images/misc/toronto-basement-underpinning-team-at-job-site-in-.webp" alt="The Toronto Basement Underpinning crew at a job site" class="w-full aspect-square object-cover" loading="lazy" />
+          <img src="/images/misc/toronto-basement-excavation-with-staged-pin-sequen.webp" alt="Active basement underpinning excavation showing staged pin-section sequence" class="w-full aspect-square object-cover mt-8" loading="lazy" />
+          <img src="/images/misc/engineered-structural-drawings-being-reviewed-at-t.webp" alt="Engineered drawings reviewed on-site by a structural engineer" class="w-full aspect-square object-cover -mt-8" loading="lazy" />
+          <img src="/images/misc/finished-toronto-basement-suite-after-underpinning.webp" alt="A finished Toronto basement suite after underpinning" class="w-full aspect-square object-cover" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Stats />
+
+  <section class="py-16 lg:py-20 bg-brand-bg">
+    <div class="max-w-container mx-auto px-4">
+      <div class="text-center mb-12">
+        <span class="section-label">Our Team</span>
+        <h2 class="mt-3">Meet The People Behind Your Project</h2>
+        <span class="accent-bar accent-bar-center"></span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        {authors.map((a) => (
+          <div id={a.id} class="flex gap-5 bg-white border border-brand-border p-6">
+            <img src={a.image} alt={a.name} class="w-24 h-24 object-cover flex-shrink-0" loading="lazy" />
+            <div>
+              <h3 class="text-lg mb-1 leading-tight">{a.name}</h3>
+              <p class="text-xs font-bold uppercase tracking-widest text-accent-500 mb-3">{a.role}</p>
+              <p class="text-sm text-brand-text leading-relaxed mb-4">{a.bio}</p>
+              <div class="flex flex-wrap gap-1.5">
+                {a.credentials.map((c) => (
+                  <span class="text-[10px] bg-brand-bg border border-brand-border px-2 py-1 uppercase tracking-widest text-brand-muted">{c}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="max-w-container mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
+        <div>
+          <span class="section-label">Our Approach</span>
+          <h2 class="mt-3 mb-2">How We Work</h2>
+          <span class="accent-bar"></span>
+        </div>
+        <div class="space-y-6">
+          <div class="border-l-4 border-accent-500 pl-5">
+            <h3 class="text-base mb-2">Honest Diagnosis First</h3>
+            <p class="text-sm text-brand-muted leading-relaxed">
+              Every project starts with an engineered site visit. The structural engineer's report tells you which scope actually fits, including when underpinning is <em>not</em> the right answer. We don't pad scope.
+            </p>
+          </div>
+          <div class="border-l-4 border-primary-700 pl-5">
+            <h3 class="text-base mb-2">Fixed-Price Quotes</h3>
+            <p class="text-sm text-brand-muted leading-relaxed">
+              Once the engineered drawings are stamped, the price is fixed. The only changes are homeowner-initiated change orders. No mid-project surprises, no scope creep at the end.
+            </p>
+          </div>
+          <div class="border-l-4 border-accent-500 pl-5">
+            <h3 class="text-base mb-2">One Project Manager</h3>
+            <p class="text-sm text-brand-muted leading-relaxed">
+              The architect, structural engineer, excavation crew, finishing crew, and city inspectors are all coordinated by one project manager. The homeowner has one point of contact.
+            </p>
+          </div>
+          <div class="border-l-4 border-primary-700 pl-5">
+            <h3 class="text-base mb-2">Zero-Risk Warranty</h3>
+            <p class="text-sm text-brand-muted leading-relaxed">
+              If something covered by the work fails, we return and resolve it. No contract scavenger hunt, no fine-print exclusions designed to wear the homeowner down.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTA />
+</BaseLayout>

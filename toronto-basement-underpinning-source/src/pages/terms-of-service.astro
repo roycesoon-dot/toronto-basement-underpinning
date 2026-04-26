@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import site from '../config/site.json';
+
+const lastUpdated = new Date().toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' });
+---
+
+<BaseLayout
+  title={`Terms of Service | ${site.name}`}
+  description={`Terms and conditions for using ${site.name} services.`}
+  pageType="default"
+>
+  <section class="bg-primary-800 text-white py-12">
+    <div class="max-w-container mx-auto px-4">
+      <h1 class="text-white mb-2">Terms of Service</h1>
+      <span class="accent-bar"></span>
+      <p class="text-sm text-primary-200">Last updated: {lastUpdated}</p>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-4 prose-tbu">
+      <h2>1. Agreement</h2>
+      <p>By using this website or engaging {site.name} for services, you agree to these Terms of Service and all applicable Ontario and Canadian laws.</p>
+
+      <h2>2. Services</h2>
+      <p>{site.name} provides basement underpinning and related foundation services in the Greater Toronto Area, including:</p>
+      <ul>
+        <li>Basement underpinning and lowering</li>
+        <li>Interior basement waterproofing</li>
+        <li>Basement finishing and legal apartment conversions</li>
+        <li>Sump pumps and battery backup systems</li>
+        <li>Concrete and foundation repair</li>
+        <li>Architectural drawings and City of Toronto building permits</li>
+        <li>Plumbing and drain services</li>
+      </ul>
+
+      <h2>3. Estimates &amp; Pricing</h2>
+      <p>Estimates are provided after an engineered site visit. Pricing is fixed once engineered drawings are stamped and the contract is signed. Change orders initiated by the homeowner are itemized separately. All pricing is in Canadian dollars unless otherwise stated.</p>
+
+      <h2>4. Permits &amp; Compliance</h2>
+      <p>All structural work performed by {site.name} requires a City of Toronto (or applicable municipality) building permit and engineered drawings stamped by an Ontario-licensed structural engineer. We coordinate the permit submission and inspection scheduling as part of our scope.</p>
+
+      <h2>5. Cancellation</h2>
+      <p>Estimate appointments may be cancelled up to 24 hours in advance with no penalty. Project contracts are governed by the cancellation terms specified in the signed contract.</p>
+
+      <h2>6. Warranty</h2>
+      <p>Every project carries our zero-risk, no-questions-asked warranty as specified in the project contract. If covered work fails, we return and resolve it. The warranty does not cover damage from sources outside our scope of work.</p>
+
+      <h2>7. Limitation of Liability</h2>
+      <p>{site.name} shall not be liable for indirect, incidental, special, consequential, or punitive damages arising from your use of our services, except as required by Ontario law.</p>
+
+      <h2>8. Intellectual Property</h2>
+      <p>All content on this website (text, images, logos) is the property of {site.name} or its licensors and is protected by Canadian copyright laws.</p>
+
+      <h2>9. Changes</h2>
+      <p>We may update these terms at any time. Material changes will be communicated through the website. Continued use of our services after changes constitutes acceptance.</p>
+
+      <h2>10. Governing Law</h2>
+      <p>These Terms are governed by the laws of the Province of Ontario, Canada.</p>
+
+      <h2>11. Contact</h2>
+      <p>Questions about these Terms? Contact us:</p>
+      <ul>
+        <li>Email: <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a></li>
+        <li>Phone: <a href={site.contact.phoneHref}>{site.contact.phone}</a></li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>

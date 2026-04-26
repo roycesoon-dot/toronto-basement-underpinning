@@ -1,0 +1,36 @@
+[
+  {
+    "id": "jay-owner",
+    "name": "Jay Robertson",
+    "role": "Owner & Lead General Contractor",
+    "slug": "jay-owner",
+    "bio": "Jay founded Toronto Basement Underpinning in 2006 and has personally overseen hundreds of structural lowering projects across Toronto, North York, Etobicoke, and the GTA. He coordinates the company's 20 active crews and signs off on every engineered drawing before construction begins.",
+    "shortBio": "Owner of Toronto Basement Underpinning, 20+ years specializing in basement underpinning across the GTA.",
+    "credentials": [
+      "Licensed General Contractor (Ontario)",
+      "Fully Insured Structural Renovations",
+      "20+ Years Basement Underpinning Specialty",
+      "Coordinates Ontario-Licensed Structural Engineers"
+    ],
+    "yearsExperience": 20,
+    "image": "/images/avatars/jay-robertson-owner.webp",
+    "isPrimary": true
+  },
+  {
+    "id": "lead-project-manager",
+    "name": "Marcus Tremblay",
+    "role": "Senior Project Manager",
+    "slug": "lead-project-manager",
+    "bio": "Marcus manages the City of Toronto permit pipeline and structural engineering coordination for Toronto Basement Underpinning. He has shepherded over 200 underpinning projects through Toronto's plan review and Committee of Adjustment process, focusing on legal-apartment compliance under Ontario Building Code Section 9.36.",
+    "shortBio": "Senior Project Manager handling permits and structural engineering coordination across Toronto.",
+    "credentials": [
+      "Diploma in Construction Engineering Technology",
+      "City of Toronto Building Permit Process Specialist",
+      "OBC 9.36 Legal Basement Apartment Compliance",
+      "12+ Years GTA Construction Project Management"
+    ],
+    "yearsExperience": 12,
+    "image": "/images/avatars/marcus-tremblay-pm.webp",
+    "isPrimary": false
+  }
+]

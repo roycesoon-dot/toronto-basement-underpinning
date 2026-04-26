@@ -1,0 +1,13 @@
+{
+  "domain": "newbusiness-city.com",
+  "phone": "03-1234 5678",
+  "phoneIntl": "+60312345678",
+  "email": "hello@newbusiness-city.com",
+  "address": {
+    "street": "123 Main Street",
+    "city": "City Name",
+    "state": "State/Province",
+    "postcode": "12345",
+    "country": "Country"
+  }
+}

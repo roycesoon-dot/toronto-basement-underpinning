@@ -1,0 +1,84 @@
+{
+  "header": {
+    "logo": {
+      "style": "icon-text",
+      "icon_src": "/favicon.svg",
+      "show_text": true,
+      "size": "medium",
+      "alt": "Toronto Basement Underpinning"
+    },
+    "menu": [
+      {
+        "label": "Services",
+        "href": "/interior-waterproofing/",
+        "children": [
+          { "label": "Interior Waterproofing", "href": "/interior-waterproofing/" },
+          { "label": "Basement Finishing", "href": "/basement-finishing/" },
+          { "label": "Sump Pumps & Battery Backups", "href": "/sump-pumps/" },
+          { "label": "Concrete & Foundation Repair", "href": "/concrete-foundation-repair/" },
+          { "label": "Drawings & Permits", "href": "/drawings-permits/" },
+          { "label": "Plumbing & Drains", "href": "/plumbing-drain-services/" }
+        ]
+      },
+      { "label": "Service Areas", "href": "/service-areas/" },
+      { "label": "Guides", "href": "/guide/" },
+      { "label": "Free Tools", "href": "/tools/" },
+      { "label": "About", "href": "/about/" },
+      { "label": "Contact", "href": "/contact/" }
+    ],
+    "cta": {
+      "label": "Free Estimate",
+      "href": "/contact/"
+    },
+    "show_phone": true
+  },
+  "footer": {
+    "columns": [
+      {
+        "title": "Services",
+        "links": [
+          { "label": "Interior Waterproofing", "href": "/interior-waterproofing/" },
+          { "label": "Basement Finishing", "href": "/basement-finishing/" },
+          { "label": "Sump Pumps", "href": "/sump-pumps/" },
+          { "label": "Foundation Repair", "href": "/concrete-foundation-repair/" },
+          { "label": "Drawings & Permits", "href": "/drawings-permits/" },
+          { "label": "Plumbing & Drains", "href": "/plumbing-drain-services/" }
+        ]
+      },
+      {
+        "title": "Service Areas",
+        "links": [
+          { "label": "Toronto", "href": "/service-areas/toronto/" },
+          { "label": "North York", "href": "/service-areas/north-york/" },
+          { "label": "Etobicoke", "href": "/service-areas/etobicoke/" },
+          { "label": "Mississauga", "href": "/service-areas/mississauga/" },
+          { "label": "Markham", "href": "/service-areas/markham/" },
+          { "label": "All Service Areas", "href": "/service-areas/" }
+        ]
+      },
+      {
+        "title": "Guides",
+        "links": [
+          { "label": "What is Basement Underpinning?", "href": "/guide/what-is-basement-underpinning/" },
+          { "label": "Signs You Need Underpinning", "href": "/guide/signs-you-need-basement-underpinning/" },
+          { "label": "Cost in Ontario", "href": "/guide/basement-underpinning-cost-ontario/" },
+          { "label": "Choosing a Contractor", "href": "/guide/how-to-choose-basement-underpinning-contractor-toronto/" },
+          { "label": "All Guides", "href": "/guide/" }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          { "label": "About Us", "href": "/about/" },
+          { "label": "Contact", "href": "/contact/" },
+          { "label": "Free Tools", "href": "/tools/" },
+          { "label": "Privacy Policy", "href": "/privacy-policy/" },
+          { "label": "Terms of Service", "href": "/terms-of-service/" }
+        ]
+      }
+    ],
+    "show_contact": true,
+    "show_hours": true,
+    "show_social": false
+  }
+}

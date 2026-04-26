@@ -1,0 +1,79 @@
+[
+  {
+    "id": "underpinning-cost-toronto",
+    "question": "How much does basement underpinning cost in Toronto?",
+    "answer": "Basement underpinning in Toronto runs $80-$500 per linear foot, with most full-perimeter projects landing between $20,000 and $50,000. Final cost depends on depth gained, soil condition, accessibility, and whether waterproofing or finishing is bundled into the same scope.",
+    "category": "pricing",
+    "featured": true
+  },
+  {
+    "id": "underpinning-safe",
+    "question": "Is basement underpinning safe, will my house collapse?",
+    "answer": "When sequenced correctly, no. Underpinning is staged: we excavate and pour one short pin section at a time so the home is always supported on existing footings while the new ones cure. Every project carries an engineered design stamped by an Ontario-licensed structural engineer.",
+    "category": "process",
+    "featured": true
+  },
+  {
+    "id": "underpinning-timeline",
+    "question": "How long does a Toronto underpinning project take?",
+    "answer": "Most full-perimeter underpinning projects take 4-8 weeks of construction, plus 4-8 weeks beforehand for drawings and the City of Toronto permit. Adding waterproofing or finishing extends the schedule by 2-6 weeks each.",
+    "category": "process",
+    "featured": true
+  },
+  {
+    "id": "permits-coordination",
+    "question": "Do I need a permit, and who handles it?",
+    "answer": "Yes, basement underpinning always requires a City of Toronto building permit and engineered drawings. We handle the architect, structural engineer, plan review, and any Committee of Adjustment hearing, so the homeowner doesn't navigate the city directly.",
+    "category": "process",
+    "featured": true
+  },
+  {
+    "id": "warranty",
+    "question": "What warranty do you offer?",
+    "answer": "Every project carries our zero-risk, no-questions-asked warranty. If something covered by the work fails, we return and resolve it. No contract scavenger hunt.",
+    "category": "warranty",
+    "featured": true
+  },
+  {
+    "id": "service-area-mississauga",
+    "question": "Do you underpin homes outside the City of Toronto, Mississauga, Markham, Oakville?",
+    "answer": "Yes. Our 20 crews cover the full Greater Toronto Area, including Mississauga, Brampton, Markham, Vaughan, Richmond Hill, Oakville, Burlington, Pickering, Ajax, and Whitby. Permit processes vary by municipality; we coordinate with each city's building department.",
+    "category": "service-area",
+    "featured": true
+  },
+  {
+    "id": "ceiling-height-gain",
+    "question": "How much ceiling height can I gain with underpinning?",
+    "answer": "Most Toronto basements gain 1.5-3 feet of clear ceiling height through underpinning, ending up at 8 ft+, enough for legal apartments under Ontario Building Code Section 9.36 and comfortable family living space.",
+    "category": "process",
+    "featured": false
+  },
+  {
+    "id": "underpinning-vs-bench",
+    "question": "What's the difference between underpinning and bench footing?",
+    "answer": "Underpinning extends footings deeper, preserving the entire floor area at the new lower height. Bench footing keeps the existing footings and builds a concrete bench around the perimeter, cheaper and faster, but you lose floor area along every wall. Underpinning is the right call for legal apartments and luxury suites; bench footing fits tight budgets where floor loss is acceptable.",
+    "category": "services",
+    "featured": false
+  },
+  {
+    "id": "city-flooding-subsidy",
+    "question": "Does Toronto have a subsidy for sump pumps and backwater valves?",
+    "answer": "Yes, the City of Toronto Basement Flooding Protection Subsidy reimburses up to $3,400 combined across sump pump installation ($1,750), backwater valve installation ($1,250), and foundation drain disconnection ($400). We handle the application paperwork and inspection requirements.",
+    "category": "pricing",
+    "featured": false
+  },
+  {
+    "id": "live-in-during",
+    "question": "Can we live in the home during underpinning?",
+    "answer": "Yes, in most cases. The basement is fenced off and dust-isolated; main-floor utilities, kitchen, and bathrooms remain in service. Daily on-site hours are typically 7:30 AM to 4:30 PM. Exterior excavation phases or full-house renovations may require a short stay-out window.",
+    "category": "process",
+    "featured": false
+  },
+  {
+    "id": "older-home-safe",
+    "question": "Are older Toronto homes (Victorian, Edwardian) safe to underpin?",
+    "answer": "Yes, and we've done hundreds. Older homes with rubble or fieldstone foundations actually benefit most, the new engineered footings replace material that's already at end-of-life. The structural engineer's assessment guides the staging plan; nothing improvised.",
+    "category": "process",
+    "featured": false
+  }
+]

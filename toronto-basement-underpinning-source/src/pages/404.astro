@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import site from '../config/site.json';
+---
+
+<BaseLayout title={`Page Not Found | ${site.name}`} description="The page you're looking for doesn't exist." noindex={true}>
+  <section class="bg-primary-800 text-white py-24 lg:py-32">
+    <div class="max-w-container mx-auto px-4 text-center">
+      <span class="font-heading font-bold text-6xl lg:text-8xl text-accent-400 block mb-4">404</span>
+      <h1 class="text-white mb-4">Page Not Found</h1>
+      <span class="accent-bar accent-bar-center"></span>
+      <p class="text-lg text-primary-100 max-w-xl mx-auto mb-10">
+        The page you tried to reach has moved or never existed. Use the links below to get back on track, or call us directly.
+      </p>
+      <div class="flex flex-wrap justify-center gap-3">
+        <a href="/" class="btn btn-primary">Back to Home</a>
+        <a href="/contact/" class="btn btn-outline-light">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 bg-white">
+    <div class="max-w-container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-4xl mx-auto">
+        <a href="/interior-waterproofing/" class="block tbu-card p-5 hover:border-accent-500 transition-colors">
+          <h3 class="text-base mb-1">Interior Waterproofing</h3>
+          <p class="text-sm text-brand-muted">Stop basement leaks at the source.</p>
+        </a>
+        <a href="/basement-finishing/" class="block tbu-card p-5 hover:border-accent-500 transition-colors">
+          <h3 class="text-base mb-1">Basement Finishing</h3>
+          <p class="text-sm text-brand-muted">Legal apartment ready basements.</p>
+        </a>
+        <a href="/guide/" class="block tbu-card p-5 hover:border-accent-500 transition-colors">
+          <h3 class="text-base mb-1">Underpinning Guides</h3>
+          <p class="text-sm text-brand-muted">Plain-language explanations.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

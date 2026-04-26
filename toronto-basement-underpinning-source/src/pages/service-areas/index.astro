@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TrustBar from '../../components/blocks/TrustBar.astro';
+import CTA from '../../components/blocks/CTA.astro';
+import locations from '../../config/locations.json';
+import site from '../../config/site.json';
+
+const primary = locations.filter((l) => l.type === 'primary');
+const secondary = locations.filter((l) => l.type === 'secondary');
+---
+
+<BaseLayout
+  title={`Service Areas | ${site.name}`}
+  description="Toronto Basement Underpinning serves the entire Greater Toronto Area  -  Toronto, North York, Etobicoke, Mississauga, Markham, Vaughan, Oakville and surrounding regions."
+  pageType="default"
+>
+  <section class="bg-primary-800 text-white py-16 lg:py-20">
+    <div class="max-w-container mx-auto px-4">
+      <span class="section-label !text-accent-400">Service Areas</span>
+      <h1 class="text-white mt-3 mb-4 max-w-3xl">Serving The Greater Toronto Area</h1>
+      <span class="accent-bar"></span>
+      <p class="text-lg text-primary-100 max-w-2xl">
+        Our 20 active crews dispatch across the GTA  -  from the City of Toronto core through Mississauga, Markham, Vaughan, Oakville, and Pickering. Choose your neighbourhood for local context, permit-handling specifics, and recent project examples.
+      </p>
+    </div>
+  </section>
+
+  <TrustBar />
+
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="max-w-container mx-auto px-4">
+      <div class="mb-14">
+        <h2 class="mb-2">Primary Service Areas</h2>
+        <span class="accent-bar"></span>
+        <p class="text-brand-muted max-w-3xl">
+          Same-day estimates. Highest-volume project history in these communities.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {primary.map((l) => (
+          <a href={`/service-areas/${l.slug}/`} class="block tbu-card p-6 relative group focus-ring">
+            <span class="corner-bracket"></span>
+            <h3 class="text-lg mb-2 leading-tight group-hover:text-accent-500 transition-colors">{l.name}</h3>
+            <p class="text-xs font-bold uppercase tracking-widest text-accent-500 mb-3">{l.responseTime}</p>
+            <p class="text-sm text-brand-muted leading-relaxed mb-4">{l.metaDescription}</p>
+            <span class="block text-xs font-bold uppercase tracking-widest text-primary-800 group-hover:text-accent-500 transition-colors">View {l.shortName} &rarr;</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 lg:py-20 bg-brand-bg">
+    <div class="max-w-container mx-auto px-4">
+      <div class="mb-10">
+        <h2 class="mb-2">Additional Coverage</h2>
+        <span class="accent-bar"></span>
+        <p class="text-brand-muted max-w-3xl">
+          Next-day estimates across the broader Greater Toronto Area. Same crew quality, full permit coordination for each municipality.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        {secondary.map((l) => (
+          <a href={`/service-areas/${l.slug}/`} class="block bg-white border border-brand-border hover:border-accent-500 p-5 group focus-ring">
+            <h3 class="text-base mb-1 leading-tight group-hover:text-accent-500 transition-colors">{l.name}</h3>
+            <p class="text-xs text-brand-muted">{l.council}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CTA />
+</BaseLayout>

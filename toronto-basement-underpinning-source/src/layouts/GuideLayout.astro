@@ -1,0 +1,181 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import CTA from '../components/blocks/CTA.astro';
+import FAQ from '../components/blocks/FAQ.astro';
+import site from '../config/site.json';
+
+interface GuideData {
+  title: string;
+  h1: string;
+  description: string;
+  metaTitle: string;
+  metaDescription: string;
+  parentType: 'hub' | 'homepage' | 'family';
+  parentSlug: string | null;
+  publishDate: Date;
+  updatedDate?: Date;
+  readingTimeMin?: number;
+  image: string;
+  imageAlt: string;
+  faqs?: Array<{ question: string; answer: string }>;
+}
+
+interface RelatedGuide {
+  slug: string;
+  data: { title: string; description: string };
+}
+
+interface ParentEntry {
+  slug: string;
+  data: { title: string };
+}
+
+interface Props {
+  guide: GuideData;
+  parent: ParentEntry | null;
+  related: RelatedGuide[];
+}
+
+const { guide, parent, related } = Astro.props;
+
+const guidePath = site.urlPatterns.guidePath;
+const breadcrumbs: Array<{ label: string; href?: string }> = [
+  { label: 'Home', href: '/' },
+];
+if (guide.parentType === 'hub' && parent) {
+  breadcrumbs.push({ label: parent.data.title, href: `/${parent.slug}/` });
+} else {
+  breadcrumbs.push({ label: site.urlPatterns.guideMenuLabel, href: guidePath });
+}
+breadcrumbs.push({ label: guide.title });
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbs.map((b, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: b.label,
+    ...(b.href ? { item: new URL(b.href, site.url).toString() } : {}),
+  })),
+};
+
+const guideUrl = new URL(Astro.url.pathname, site.url).toString();
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: guide.h1 || guide.title,
+  description: guide.description,
+  image: guide.image ? `${site.url}${guide.image}` : undefined,
+  author: { '@id': `${site.url}/#organization` },
+  publisher: {
+    '@type': 'Organization',
+    '@id': `${site.url}/#organization`,
+    name: site.name,
+    logo: { '@id': `${site.url}/#logo` },
+  },
+  datePublished: guide.publishDate ? new Date(guide.publishDate).toISOString() : undefined,
+  dateModified: guide.updatedDate
+    ? new Date(guide.updatedDate).toISOString()
+    : guide.publishDate ? new Date(guide.publishDate).toISOString() : undefined,
+  isPartOf: { '@id': `${site.url}/#website` },
+  ...(guide.parentType === 'hub' && parent && {
+    about: { '@id': `${site.url}/${parent.slug}/#service` },
+  }),
+  mainEntityOfPage: { '@type': 'WebPage', '@id': guideUrl },
+};
+
+const formattedUpdated = guide.updatedDate
+  ? new Date(guide.updatedDate).toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' })
+  : null;
+---
+
+<BaseLayout
+  title={guide.metaTitle}
+  description={guide.metaDescription}
+  image={guide.image}
+  pageType="guide_pages"
+  type="article"
+  publishedTime={guide.publishDate ? new Date(guide.publishDate).toISOString() : undefined}
+  modifiedTime={guide.updatedDate ? new Date(guide.updatedDate).toISOString() : undefined}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} slot="head" />
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} slot="head" />
+
+  <section class="bg-primary-800 text-white py-12 lg:py-16">
+    <div class="max-w-container mx-auto px-4">
+      <nav class="text-xs text-primary-200 mb-4 flex flex-wrap gap-1.5 items-center" aria-label="Breadcrumb">
+        {breadcrumbs.map((b, i) => (
+          <>
+            {b.href ? (
+              <a href={b.href} class="hover:text-accent-400">{b.label}</a>
+            ) : (
+              <span class="text-white">{b.label}</span>
+            )}
+            {i < breadcrumbs.length - 1 && <span class="text-primary-400">&rsaquo;</span>}
+          </>
+        ))}
+      </nav>
+
+      <span class="section-label !text-accent-400">{site.urlPatterns.guideMenuLabel}</span>
+      <h1 class="text-white mt-3 mb-4 max-w-4xl">{guide.h1}</h1>
+      <span class="accent-bar"></span>
+      <p class="text-base lg:text-lg text-primary-100 max-w-3xl mb-4">{guide.description}</p>
+      <div class="flex flex-wrap items-center gap-4 text-xs text-primary-200">
+        {formattedUpdated && (
+          <time datetime={new Date(guide.updatedDate || guide.publishDate).toISOString()}>
+            Last updated: {formattedUpdated}
+          </time>
+        )}
+        {guide.readingTimeMin && (
+          <>
+            <span>&middot;</span>
+            <span>{guide.readingTimeMin} min read</span>
+          </>
+        )}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 lg:py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-4">
+      <figure class="mb-10">
+        <img src={guide.image} alt={guide.imageAlt} class="w-full" loading="eager" />
+      </figure>
+      <article class="prose-tbu">
+        <slot />
+      </article>
+    </div>
+  </section>
+
+  {related.length > 0 && (
+    <section class="py-16 bg-brand-bg border-t border-brand-border">
+      <div class="max-w-container mx-auto px-4">
+        <div class="text-center mb-10">
+          <span class="section-label">Related Guides</span>
+          <h2 class="mt-3">Keep Reading</h2>
+          <span class="accent-bar accent-bar-center"></span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {related.map((g) => (
+            <a href={`${guidePath}${g.slug}/`} class="block tbu-card p-6 relative group focus-ring">
+              <span class="corner-bracket"></span>
+              <h3 class="text-lg leading-tight mb-3 group-hover:text-accent-500 transition-colors">{g.data.title}</h3>
+              <p class="text-sm text-brand-muted">{g.data.description}</p>
+              <span class="block mt-4 text-xs font-bold uppercase tracking-widest text-accent-500">Read Guide &rarr;</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {guide.faqs && guide.faqs.length > 0 && (
+    <FAQ items={guide.faqs} title="Frequently Asked Questions" background="white" />
+  )}
+
+  <CTA
+    headline="Talk To A Toronto Underpinning Specialist"
+    subheadline="Free estimate within two business hours. Engineered site assessment included."
+  />
+</BaseLayout>

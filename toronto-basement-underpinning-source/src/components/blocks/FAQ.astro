@@ -1,0 +1,61 @@
+---
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+interface Props {
+  items: FAQItem[];
+  title?: string;
+  showSchema?: boolean;
+  background?: 'white' | 'gray';
+}
+const { items, title = 'Frequently Asked Questions', showSchema = true, background = 'gray' } = Astro.props;
+
+const bg = background === 'white' ? 'bg-white' : 'bg-brand-bg';
+
+const schema = showSchema
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: items.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.answer,
+        },
+      })),
+    }
+  : null;
+---
+
+<section class={`py-16 lg:py-20 ${bg}`}>
+  <div class="max-w-container mx-auto px-4">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-10">
+        <span class="section-label">Got Questions?</span>
+        <h2 class="mt-3">{title}</h2>
+        <span class="accent-bar accent-bar-center"></span>
+      </div>
+
+      <div class="space-y-3">
+        {items.map((item) => (
+          <details class="bg-white border border-brand-border group">
+            <summary class="flex items-center justify-between gap-4 p-5 cursor-pointer focus-ring list-none [&::-webkit-details-marker]:hidden">
+              <span class="font-heading font-bold uppercase tracking-tight text-base text-primary-800 leading-snug">
+                {item.question}
+              </span>
+              <svg class="w-5 h-5 text-accent-500 flex-shrink-0 transition-transform group-open:rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+            </summary>
+            <div class="px-5 pb-5 -mt-1 text-brand-text leading-relaxed">
+              {item.answer}
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </div>
+  {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
+</section>

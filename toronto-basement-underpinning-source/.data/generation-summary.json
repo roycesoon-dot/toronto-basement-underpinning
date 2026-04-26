@@ -1,0 +1,35 @@
+{
+  "projectSummary": {
+    "business": "Toronto Basement Underpinning",
+    "domain": "https://torontobasementunderpinning.ca",
+    "industry": "Basement Underpinning & Foundation Contractor",
+    "country": "CA",
+    "generated": "2026-04-26"
+  },
+  "strategySummary": {
+    "targetAudience": "Toronto homeowners (35-65) with older homes who want to add livable square footage by lowering their basement",
+    "uvp": "Toronto's highest-volume basement underpinning specialist — 20 dedicated crews handle drawings, permits, lowering, waterproofing, and finishing under one roof, with a zero-risk no-questions warranty.",
+    "primaryCta": "Get a Free Estimate → form",
+    "brandVoice": "professional-authoritative"
+  },
+  "stats": {
+    "totalPages": 39,
+    "blogPosts": 0,
+    "servicePages": 6,
+    "locationPages": 19,
+    "guidePages": 5,
+    "staticPages": 7,
+    "imagesApplied": 69
+  },
+  "seoImplementation": {
+    "Meta Titles": "Unique per page",
+    "Meta Descriptions": "150-160 chars",
+    "Open Graph Tags": "All pages",
+    "Twitter Card Tags": "All pages",
+    "Canonical URLs": "Set",
+    "robots.txt": "Created",
+    "sitemap.xml": "Auto-generated",
+    "Favicon": "SVG + PNG",
+    "Schema Markup": "Validated"
+  }
+}

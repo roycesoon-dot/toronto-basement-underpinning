@@ -1,0 +1,193 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CTA from '../../components/blocks/CTA.astro';
+import site from '../../config/site.json';
+---
+
+<BaseLayout
+  title={`Free Underpinning Cost Estimator | ${site.name}`}
+  description="Estimate your Toronto basement underpinning project cost in 30 seconds. Includes waterproofing, sump pump, and finishing add-ons. Backed by 20+ years of Toronto pricing data."
+  pageType="default"
+>
+  <section class="bg-primary-800 text-white py-14 lg:py-16">
+    <div class="max-w-container mx-auto px-4">
+      <span class="section-label !text-accent-400">Free Tools</span>
+      <h1 class="text-white mt-3 mb-4 max-w-3xl">Toronto Underpinning Cost Estimator</h1>
+      <span class="accent-bar"></span>
+      <p class="text-base lg:text-lg text-primary-100 max-w-2xl">
+        Estimate your basement underpinning project cost in 30 seconds. Calibrated against typical Toronto projects with 20+ years of pricing data.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-12 lg:py-16 bg-white">
+    <div class="max-w-container mx-auto px-4">
+      <div class="grid lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
+        <div class="lg:col-span-3 bg-brand-bg border border-brand-border p-6 lg:p-8 relative">
+          <span class="corner-bracket"></span>
+          <h2 class="text-xl mb-2">Project Inputs</h2>
+          <span class="accent-bar"></span>
+
+          <form id="estimator-form" class="space-y-5 mt-6">
+            <div>
+              <label for="linearFeet" class="block text-xs font-bold uppercase tracking-widest text-brand-text mb-2">Foundation Perimeter (Linear Feet)</label>
+              <input id="linearFeet" type="number" min="20" max="400" step="5" value="120" class="w-full px-4 py-3 border border-brand-border focus:border-accent-500 focus:outline-none text-base bg-white" />
+              <p class="text-xs text-brand-muted mt-2">Add up the lengths of every basement wall  -  typical Toronto semi-detached: 80-120 ft; detached: 120-180 ft.</p>
+            </div>
+
+            <div>
+              <label for="depthGainFeet" class="block text-xs font-bold uppercase tracking-widest text-brand-text mb-2">Ceiling Height Gain Target</label>
+              <select id="depthGainFeet" class="w-full px-4 py-3 border border-brand-border focus:border-accent-500 focus:outline-none text-base bg-white">
+                <option value="1">1 foot (raise to ~7.5 ft)</option>
+                <option value="2" selected>2 feet (raise to ~8 ft  -  code minimum)</option>
+                <option value="3">3 feet (raise to ~9 ft  -  premium)</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="soilCondition" class="block text-xs font-bold uppercase tracking-widest text-brand-text mb-2">Soil &amp; Access Condition</label>
+              <select id="soilCondition" class="w-full px-4 py-3 border border-brand-border focus:border-accent-500 focus:outline-none text-base bg-white">
+                <option value="easy">Easy  -  sandy/loose soil, walk-out access</option>
+                <option value="standard" selected>Standard  -  typical Toronto clay, narrow lot</option>
+                <option value="difficult">Difficult  -  wet clay, semi-detached, no rear access</option>
+              </select>
+            </div>
+
+            <fieldset class="space-y-3 pt-2">
+              <legend class="text-xs font-bold uppercase tracking-widest text-brand-text mb-2">Optional Add-Ons</legend>
+              <label class="flex items-start gap-3 cursor-pointer">
+                <input id="addWaterproofing" type="checkbox" class="mt-1 w-5 h-5 accent-accent-500" />
+                <div>
+                  <div class="text-sm font-bold text-brand-text">Add Interior Waterproofing</div>
+                  <div class="text-xs text-brand-muted">Weeping tile, dimpled membrane, slab restoration</div>
+                </div>
+              </label>
+              <label class="flex items-start gap-3 cursor-pointer">
+                <input id="addSumpPump" type="checkbox" class="mt-1 w-5 h-5 accent-accent-500" />
+                <div>
+                  <div class="text-sm font-bold text-brand-text">Add Sump Pump + Battery Backup</div>
+                  <div class="text-xs text-brand-muted">High-volume primary + sealed battery backup</div>
+                </div>
+              </label>
+              <label class="flex items-start gap-3 cursor-pointer">
+                <input id="addFinishing" type="checkbox" class="mt-1 w-5 h-5 accent-accent-500" />
+                <div>
+                  <div class="text-sm font-bold text-brand-text">Add Basement Finishing</div>
+                  <div class="text-xs text-brand-muted">Legal apartment ready: framing, drywall, flooring, kitchenette, bath</div>
+                </div>
+              </label>
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="lg:col-span-2 bg-primary-800 text-white p-6 lg:p-8">
+          <h2 class="text-white text-xl mb-2">Estimate</h2>
+          <span class="accent-bar"></span>
+
+          <div class="mt-6 mb-6">
+            <p class="text-xs font-bold uppercase tracking-widest text-accent-400 mb-2">Total Project Range</p>
+            <p id="totalRange" class="text-4xl lg:text-5xl font-heading font-bold text-white mb-1">$32,400 &ndash; $41,400</p>
+            <p class="text-xs text-primary-200">Calibrated against typical Toronto projects.</p>
+          </div>
+
+          <dl class="space-y-3 text-sm border-t border-primary-700 pt-5">
+            <div class="flex justify-between">
+              <dt class="text-primary-200">Underpinning Only</dt>
+              <dd id="outUnderpinning" class="text-white font-bold">$36,000</dd>
+            </div>
+            <div class="flex justify-between">
+              <dt class="text-primary-200">Waterproofing</dt>
+              <dd id="outWaterproofing" class="text-white font-bold">$0</dd>
+            </div>
+            <div class="flex justify-between">
+              <dt class="text-primary-200">Sump Pump Add-On</dt>
+              <dd id="outSumpPump" class="text-white font-bold">$0</dd>
+            </div>
+            <div class="flex justify-between">
+              <dt class="text-primary-200">Finishing Add-On</dt>
+              <dd id="outFinishing" class="text-white font-bold">$0</dd>
+            </div>
+            <div class="flex justify-between border-t border-primary-700 pt-3">
+              <dt class="text-white font-bold">Subtotal</dt>
+              <dd id="outSubtotal" class="text-accent-400 font-bold">$36,000</dd>
+            </div>
+          </dl>
+
+          <p class="text-xs text-primary-300 mt-6 leading-relaxed">
+            Estimates are calibrated against typical Toronto projects but do not constitute a fixed quote. Final pricing depends on engineered drawings, soil report, and on-site inspection.
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-3xl mx-auto mt-12 bg-accent-500/10 border-l-4 border-accent-500 p-6">
+        <h3 class="text-lg mb-2">Lock A Real, Fixed-Price Quote</h3>
+        <p class="text-sm text-brand-text mb-4">
+          This estimator gets you a realistic ballpark. For an exact, engineer-stamped quote, send us your address and basement details  -  typical response within two business hours.
+        </p>
+        <a href="/contact/" class="btn btn-primary">Get a Free Estimate</a>
+      </div>
+    </div>
+  </section>
+
+  <CTA
+    headline="Talk To A Toronto Underpinning Specialist"
+    subheadline="Free site visit. Engineered assessment. Fixed-price quote."
+  />
+</BaseLayout>
+
+<script>
+  function fmtCurrency(n: number) {
+    return '$' + Math.round(n).toLocaleString();
+  }
+
+  function recalculate() {
+    const linearFeet = parseFloat((document.getElementById('linearFeet') as HTMLInputElement).value) || 0;
+    const depthGainFeet = parseInt((document.getElementById('depthGainFeet') as HTMLSelectElement).value, 10);
+    const soilCondition = (document.getElementById('soilCondition') as HTMLSelectElement).value;
+    const addWaterproofing = (document.getElementById('addWaterproofing') as HTMLInputElement).checked;
+    const addSumpPump = (document.getElementById('addSumpPump') as HTMLInputElement).checked;
+    const addFinishing = (document.getElementById('addFinishing') as HTMLInputElement).checked;
+
+    const basePerFoot = depthGainFeet === 1 ? 200 : depthGainFeet === 2 ? 300 : 450;
+    const soilMultiplier = soilCondition === 'easy' ? 0.85 : soilCondition === 'standard' ? 1.0 : 1.25;
+
+    const underpinningCost = linearFeet * basePerFoot * soilMultiplier;
+    const waterproofingCost = addWaterproofing ? linearFeet * 90 : 0;
+    const sumpPumpCost = addSumpPump ? 2800 : 0;
+    const finishingCost = addFinishing ? Math.max(35000, linearFeet * 350) : 0;
+
+    const subtotal = underpinningCost + waterproofingCost + sumpPumpCost + finishingCost;
+    const totalLow = subtotal * 0.9;
+    const totalHigh = subtotal * 1.15;
+
+    const set = (id: string, v: string) => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = v;
+    };
+
+    set('outUnderpinning', fmtCurrency(underpinningCost));
+    set('outWaterproofing', fmtCurrency(waterproofingCost));
+    set('outSumpPump', fmtCurrency(sumpPumpCost));
+    set('outFinishing', fmtCurrency(finishingCost));
+    set('outSubtotal', fmtCurrency(subtotal));
+    set('totalRange', `${fmtCurrency(totalLow)} - ${fmtCurrency(totalHigh)}`);
+  }
+
+  function init() {
+    const ids = ['linearFeet', 'depthGainFeet', 'soilCondition', 'addWaterproofing', 'addSumpPump', 'addFinishing'];
+    ids.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.addEventListener('input', recalculate);
+        el.addEventListener('change', recalculate);
+      }
+    });
+    recalculate();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+</script>

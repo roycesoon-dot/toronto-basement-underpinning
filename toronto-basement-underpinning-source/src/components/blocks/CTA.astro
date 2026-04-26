@@ -1,0 +1,62 @@
+---
+import site from '../../config/site.json';
+
+interface Props {
+  headline?: string;
+  subheadline?: string;
+  bgImage?: string;
+  variant?: 'default' | 'compact';
+}
+
+const {
+  headline = 'Ready to Start Your Toronto Basement Project?',
+  subheadline = 'Free estimate within two business hours. No pressure, no upsell.',
+  bgImage = '/images/cta/toronto-basement-underpinning-crew-at-work-on-resi.webp',
+  variant = 'default',
+} = Astro.props;
+
+const padding = variant === 'compact' ? 'py-12 lg:py-16' : 'py-20 lg:py-28';
+---
+
+<section class={`relative overflow-hidden ${padding}`}>
+  <div class="absolute inset-0 z-0">
+    <img src={bgImage} alt="" class="w-full h-full object-cover" loading="lazy" />
+    <div class="absolute inset-0 bg-gradient-to-r from-primary-800/95 via-primary-800/85 to-primary-700/75"></div>
+  </div>
+
+  <div class="relative z-10 max-w-container mx-auto px-4 text-center text-white">
+    <span class="inline-block font-heading text-xs font-bold uppercase tracking-widest text-accent-400 mb-4">
+      {site.strategy.primaryCta.urgencyText}
+    </span>
+    <h2 class="text-white text-3xl md:text-4xl lg:text-5xl mb-4 max-w-3xl mx-auto">{headline}</h2>
+    <p class="text-base lg:text-lg text-primary-100 mb-8 max-w-2xl mx-auto">{subheadline}</p>
+
+    <div class="flex flex-wrap justify-center gap-4 mb-8">
+      <a href="/contact/" class="btn btn-primary">Get a Free Estimate</a>
+      <a href={site.contact.phoneHref} class="btn btn-outline-light">
+        Call {site.contact.phone}
+      </a>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-6 text-sm text-primary-100">
+      <span class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+        </svg>
+        Zero-Risk Warranty
+      </span>
+      <span class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+        </svg>
+        Licensed &amp; Insured
+      </span>
+      <span class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+        </svg>
+        20+ Years Specialty
+      </span>
+    </div>
+  </div>
+</section>
