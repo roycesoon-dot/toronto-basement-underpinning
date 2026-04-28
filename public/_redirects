@@ -1,3 +1,1 @@
-http://torontobasementunderpinning.ca/* https://torontobasementunderpinning.ca/:splat 301!
-http://www.torontobasementunderpinning.ca/* https://torontobasementunderpinning.ca/:splat 301!
-https://www.torontobasementunderpinning.ca/* https://torontobasementunderpinning.ca/:splat 301!
+# HTTP→HTTPS and www→non-www handled by Cloudflare dashboard (Always Use HTTPS + Redirect from www)
