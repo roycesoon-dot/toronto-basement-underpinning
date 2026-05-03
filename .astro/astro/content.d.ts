@@ -152,6 +152,41 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"guides": {
+"architectural-drawings-basement-underpinning.mdx": {
+	id: "architectural-drawings-basement-underpinning.mdx";
+  slug: "architectural-drawings-basement-underpinning";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".mdx"] };
+"basement-ceiling-height-requirements.mdx": {
+	id: "basement-ceiling-height-requirements.mdx";
+  slug: "basement-ceiling-height-requirements";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".mdx"] };
+"basement-finishing-after-underpinning.mdx": {
+	id: "basement-finishing-after-underpinning.mdx";
+  slug: "basement-finishing-after-underpinning";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".mdx"] };
+"basement-finishing-cost-ontario.mdx": {
+	id: "basement-finishing-cost-ontario.mdx";
+  slug: "basement-finishing-cost-ontario";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".mdx"] };
+"basement-finishing-process-timeline.mdx": {
+	id: "basement-finishing-process-timeline.mdx";
+  slug: "basement-finishing-process-timeline";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".mdx"] };
 "basement-underpinning-cost-ontario.mdx": {
 	id: "basement-underpinning-cost-ontario.mdx";
   slug: "basement-underpinning-cost-ontario";
@@ -166,9 +201,100 @@ declare module 'astro:content' {
   collection: "guides";
   data: InferEntrySchema<"guides">
 } & { render(): Render[".mdx"] };
+"battery-backup-sump-pumps-explained.mdx": {
+	id: "battery-backup-sump-pumps-explained.mdx";
+  slug: "battery-backup-sump-pumps-explained";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".mdx"] };
+"city-of-toronto-building-permit-basement-underpinning.mdx": {
+	id: "city-of-toronto-building-permit-basement-underpinning.mdx";
+  slug: "city-of-toronto-building-permit-basement-underpinning";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".mdx"] };
+"foundation-crack-repair-vs-underpinning.mdx": {
+	id: "foundation-crack-repair-vs-underpinning.mdx";
+  slug: "foundation-crack-repair-vs-underpinning";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".mdx"] };
+"foundation-cracks-that-need-repair.mdx": {
+	id: "foundation-cracks-that-need-repair.mdx";
+  slug: "foundation-cracks-that-need-repair";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".mdx"] };
+"foundation-repair-cost-ontario.mdx": {
+	id: "foundation-repair-cost-ontario.mdx";
+  slug: "foundation-repair-cost-ontario";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".mdx"] };
+"how-long-does-basement-waterproofing-last.mdx": {
+	id: "how-long-does-basement-waterproofing-last.mdx";
+  slug: "how-long-does-basement-waterproofing-last";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".mdx"] };
 "how-to-choose-basement-underpinning-contractor-toronto.mdx": {
 	id: "how-to-choose-basement-underpinning-contractor-toronto.mdx";
   slug: "how-to-choose-basement-underpinning-contractor-toronto";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".mdx"] };
+"interior-basement-waterproofing-cost-ontario.mdx": {
+	id: "interior-basement-waterproofing-cost-ontario.mdx";
+  slug: "interior-basement-waterproofing-cost-ontario";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".mdx"] };
+"interior-vs-exterior-basement-waterproofing.mdx": {
+	id: "interior-vs-exterior-basement-waterproofing.mdx";
+  slug: "interior-vs-exterior-basement-waterproofing";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".mdx"] };
+"interior-waterproofing-process.mdx": {
+	id: "interior-waterproofing-process.mdx";
+  slug: "interior-waterproofing-process";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".mdx"] };
+"is-basement-underpinning-safe.mdx": {
+	id: "is-basement-underpinning-safe.mdx";
+  slug: "is-basement-underpinning-safe";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".mdx"] };
+"legal-basement-apartment-requirements-toronto.mdx": {
+	id: "legal-basement-apartment-requirements-toronto.mdx";
+  slug: "legal-basement-apartment-requirements-toronto";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".mdx"] };
+"signs-basement-needs-waterproofing.mdx": {
+	id: "signs-basement-needs-waterproofing.mdx";
+  slug: "signs-basement-needs-waterproofing";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".mdx"] };
+"signs-sump-pump-needs-replacement.mdx": {
+	id: "signs-sump-pump-needs-replacement.mdx";
+  slug: "signs-sump-pump-needs-replacement";
   body: string;
   collection: "guides";
   data: InferEntrySchema<"guides">
@@ -180,9 +306,58 @@ declare module 'astro:content' {
   collection: "guides";
   data: InferEntrySchema<"guides">
 } & { render(): Render[".mdx"] };
+"toronto-basement-flooding-subsidy.mdx": {
+	id: "toronto-basement-flooding-subsidy.mdx";
+  slug: "toronto-basement-flooding-subsidy";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".mdx"] };
+"underground-plumbing-during-underpinning.mdx": {
+	id: "underground-plumbing-during-underpinning.mdx";
+  slug: "underground-plumbing-during-underpinning";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".mdx"] };
+"underpinning-legal-basement-apartment-toronto.mdx": {
+	id: "underpinning-legal-basement-apartment-toronto.mdx";
+  slug: "underpinning-legal-basement-apartment-toronto";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".mdx"] };
+"underpinning-semi-detached-toronto.mdx": {
+	id: "underpinning-semi-detached-toronto.mdx";
+  slug: "underpinning-semi-detached-toronto";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".mdx"] };
+"underpinning-vs-bench-footing.mdx": {
+	id: "underpinning-vs-bench-footing.mdx";
+  slug: "underpinning-vs-bench-footing";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".mdx"] };
+"waterproofing-during-underpinning.mdx": {
+	id: "waterproofing-during-underpinning.mdx";
+  slug: "waterproofing-during-underpinning";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".mdx"] };
 "what-is-basement-underpinning.mdx": {
 	id: "what-is-basement-underpinning.mdx";
   slug: "what-is-basement-underpinning";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".mdx"] };
+"what-to-expect-basement-underpinning.mdx": {
+	id: "what-to-expect-basement-underpinning.mdx";
+  slug: "what-to-expect-basement-underpinning";
   body: string;
   collection: "guides";
   data: InferEntrySchema<"guides">

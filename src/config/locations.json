@@ -107,7 +107,46 @@
       "projectsInArea": "Hundreds of Toronto projects",
       "yearsServing": "Serving Toronto since 2006",
       "localTeam": "20 crews based across the GTA"
-    }
+    },
+    "reviews": [
+      {
+        "name": "Sarah K.",
+        "location": "Cabbagetown, Toronto",
+        "text": "1880s Cabbagetown rowhouse with a stone-and-rubble foundation no one else would touch. TBU underpinned in pin sections, kept the front-parlor walls pristine, and turned a 5'10\" basement into a real 8-foot ceiling. City of Toronto permit through in six weeks.",
+        "rating": 5
+      },
+      {
+        "name": "Andrew M.",
+        "location": "The Beaches, Toronto",
+        "text": "Beaches semi on a classic narrow lot. The crew worked around the parking-permit quirks for the street and finished the underpinning plus interior waterproofing in five weeks. Basement stays bone-dry through every Lake Ontario humidity spike.",
+        "rating": 5
+      },
+      {
+        "name": "Vanessa H.",
+        "location": "Trinity Bellwoods, Toronto",
+        "text": "Trinity Bellwoods 1905 Victorian. We expected the foundation work to be brutal. The team's pin-section sequencing kept us in the upper floors the entire project. New 8-foot basement, full waterproofing, no surprise change orders.",
+        "rating": 5
+      }
+    ],
+    "problems": [
+      {
+        "title": "Cramped Ceiling Height",
+        "description": "Your Toronto Victorian semi or rowhouse has a 5'10\"-6'4\" basement, typical of 1880s-1920s housing stock. Finishing feels claustrophobic and a legal apartment is impossible at that height."
+      },
+      {
+        "title": "Cracked Foundation Walls",
+        "description": "Original stone-and-rubble or brick foundations under pre-1900 Toronto homes show active settlement after a century of frost cycles. Patches keep failing because the underlying bearing problem continues."
+      },
+      {
+        "title": "Leaking Basement",
+        "description": "Pre-WWII clay tile perimeter drains under Toronto-core homes are long past their service life. Spring melt brings water at the wall-floor cove every year."
+      },
+      {
+        "title": "Stalled By Permits",
+        "description": "City of Toronto plan review can stretch 8-12 weeks, with Heritage Conservation District overlays adding another layer in Cabbagetown, Riverdale, the Junction, and the core. We handle every form and every hearing."
+      }
+    ],
+    "processIntro": "Every Toronto underpinning project routes through the City of Toronto building department, with Heritage Conservation District overlays adding 6-8 weeks to plan review for homes in the Annex, Cabbagetown, Riverdale, and the Junction. We pre-screen heritage status during the estimate and submit drawings under the Master Permit framework so the structural engineer's stamp lands at the same time as the architectural set."
   },
   {
     "id": "the-annex",
@@ -213,7 +252,46 @@
       "projectsInArea": "50+ Annex projects",
       "yearsServing": "Serving the Annex since 2006",
       "localTeam": "Heritage-experienced crews"
-    }
+    },
+    "reviews": [
+      {
+        "name": "Helen B.",
+        "location": "Howland Avenue, The Annex",
+        "text": "1912 Edwardian on Howland with a Heritage Conservation overlay. TBU's coordinator handled the heritage permit, the engineer's stamp, and the City of Toronto plan review. Underpinned to 8'2\" and kept every original moulding upstairs intact.",
+        "rating": 5
+      },
+      {
+        "name": "Jonathan S.",
+        "location": "Bedford Road, The Annex",
+        "text": "Bedford Road Annex semi with tight party walls on both sides. The crew's shared-wall sequencing was the part that sold us on TBU over the cheaper quotes. They walked our neighbour through the timing personally before we signed.",
+        "rating": 5
+      },
+      {
+        "name": "Eliza M.",
+        "location": "Madison Avenue, The Annex",
+        "text": "Madison Avenue 1925 Edwardian, full underpinning plus interior waterproofing. The basement had been chronically damp for decades. After the work it has been dry through three spring melts and we finally finished it as a proper home office.",
+        "rating": 5
+      }
+    ],
+    "problems": [
+      {
+        "title": "Cramped Ceiling Height",
+        "description": "Annex Edwardian semis from 1890-1925 typically have 5'8\"-6'2\" basements, common along Howland, Madison, and Bedford. Finishing the space feels claustrophobic and a legal apartment is impossible."
+      },
+      {
+        "title": "Cracked Foundation Walls",
+        "description": "Original stone foundations under century-old Annex homes show active settlement after decades of frost cycles. Cosmetic crack patches keep failing because the bearing problem continues."
+      },
+      {
+        "title": "Leaking Basement",
+        "description": "1900-era weeping tile around Annex homes has collapsed entirely in many cases, with water damage now reaching original plaster basement walls every spring melt."
+      },
+      {
+        "title": "Stalled By Permits",
+        "description": "Heritage Conservation District compliance applies to most of the Annex, plus U of T-area zoning sensitivity. Permits take 8-12 weeks if heritage applies. We handle the coordination."
+      }
+    ],
+    "processIntro": "Underpinning in the Annex means coordinating both the City of Toronto building permit and the Heritage Conservation District compliance review. Plan review typically runs 8-12 weeks once heritage applies; we submit the heritage application alongside the building permit so the timelines run parallel rather than back-to-back."
   },
   {
     "id": "leslieville",
@@ -315,7 +393,46 @@
       "projectsInArea": "100+ Leslieville projects",
       "yearsServing": "Serving Leslieville since 2008",
       "localTeam": "Shared-wall specialists"
-    }
+    },
+    "reviews": [
+      {
+        "name": "Kate D.",
+        "location": "Carlaw Avenue, Leslieville",
+        "text": "Carlaw Avenue rowhouse. The shared-foundation sequencing with our attached neighbour worried us most, but TBU coordinated the timing so both sides cured properly. Five weeks start to finish, basement now a real living level.",
+        "rating": 5
+      },
+      {
+        "name": "Marcus L.",
+        "location": "Queen Street East, Leslieville",
+        "text": "Queen Street East semi above a former shop. Underpinning had to deal with an old commercial slab and clay tile drains. They re-routed the plumbing, lowered the slab, and waterproofed the perimeter in a single project.",
+        "rating": 5
+      },
+      {
+        "name": "Jessica O.",
+        "location": "Greenwood Avenue, Leslieville",
+        "text": "1920s Leslieville home on Greenwood, finished basement after underpinning. The crew was meticulous about dust isolation upstairs, swept the site daily, and the engineered slab passed inspection on the first visit.",
+        "rating": 5
+      }
+    ],
+    "problems": [
+      {
+        "title": "Cramped Ceiling Height",
+        "description": "Leslieville 1920s east-end semis along Carlaw, Logan, and Greenwood typically have 6'-6'4\" basements with original wood-floor framing. Modern HVAC ducting eats into the available height further."
+      },
+      {
+        "title": "Cracked Foundation Walls",
+        "description": "Victorian brick foundations under century-old Leslieville rowhouses show decades of east-end settlement, with most cracks tracking the party-wall line between attached homes."
+      },
+      {
+        "title": "Leaking Basement",
+        "description": "Original perimeter drains in the Greenwood-Carlaw clay area are past their life, and the Coxwell ravine watershed adds groundwater pressure during spring melt."
+      },
+      {
+        "title": "Stalled By Permits",
+        "description": "City of Toronto plan review for east-end addresses, plus Queen Street East commercial-residential zoning where applicable. Plan review typically 8-10 weeks."
+      }
+    ],
+    "processIntro": "Leslieville projects route through City of Toronto plan review with typical 8-10 week timelines. We sequence party-wall coordination with attached neighbours upfront, since most Carlaw and Logan rowhouses share foundation walls, and the building department wants the neighbour notification on file before excavation begins."
   },
   {
     "id": "forest-hill",
@@ -416,7 +533,46 @@
       "projectsInArea": "30+ Forest Hill projects",
       "yearsServing": "Serving Forest Hill since 2010",
       "localTeam": "Premium-finish specialists"
-    }
+    },
+    "reviews": [
+      {
+        "name": "Robert S.",
+        "location": "Old Forest Hill Road",
+        "text": "Old Forest Hill Road home with a stone foundation and elaborate millwork upstairs. TBU treated the original mouldings like a museum piece. Underpinning was clean, the engineer's stamp arrived two weeks after pour, and the high-end finishing matched the rest of the house.",
+        "rating": 5
+      },
+      {
+        "name": "Nathan G.",
+        "location": "Forest Hill Village",
+        "text": "Forest Hill Village 1920s home, full underpinning plus a complete basement renovation. The drawings package was thorough, every sub-trade showed up on schedule, and the pricing was exactly what the original quote said.",
+        "rating": 5
+      },
+      {
+        "name": "Lauren F.",
+        "location": "Spadina Road North, Forest Hill",
+        "text": "Spadina Road North home in the Heritage District. We expected the heritage permit to take six months. TBU's coordinator pulled it in nine weeks. Underpinning finished on time and they waterproofed every basement wall while the perimeter was open.",
+        "rating": 5
+      }
+    ],
+    "problems": [
+      {
+        "title": "Cramped Ceiling Height",
+        "description": "Forest Hill 1920s-30s heritage homes typically have 6'4\"-6'10\" basements. The space is unusable as a finished living level, and the heritage value of the upstairs makes a tear-down impossible."
+      },
+      {
+        "title": "Cracked Foundation Walls",
+        "description": "Stone-and-rubble foundations under Forest Hill estate homes have endured a century of root pressure from mature trees, frost cycles, and grade water. Active settlement is common on Old Forest Hill Road."
+      },
+      {
+        "title": "Leaking Basement",
+        "description": "Original perimeter drainage on most Forest Hill homes is past its service life. Expensive interior finishes upstairs are at risk every time spring melt overwhelms the failing system."
+      },
+      {
+        "title": "Stalled By Permits",
+        "description": "Forest Hill Heritage Conservation District covers most addresses, including Spadina Road and Forest Hill Village. Heritage permit timelines run 8-12 weeks. We carry the coordination."
+      }
+    ],
+    "processIntro": "Forest Hill underpinning requires both City of Toronto building permits and Heritage Conservation District approval, with most addresses falling under the heritage overlay covering Spadina Road and Forest Hill Village. Heritage review adds 8-12 weeks; our coordinator carries the file and the Committee of Adjustment hearing if an exterior change is involved."
   },
   {
     "id": "high-park",
@@ -517,7 +673,46 @@
       "projectsInArea": "40+ High Park projects",
       "yearsServing": "Serving High Park since 2009",
       "localTeam": "Water-table specialists"
-    }
+    },
+    "reviews": [
+      {
+        "name": "Magda K.",
+        "location": "Roncesvalles, High Park",
+        "text": "1920s Roncesvalles bungalow, the original 6'4\" basement was useless. TBU underpinned to 8'1\" and added interior waterproofing in the same project. Daily site cleanup; the bakery downstairs barely noticed the work happening above.",
+        "rating": 5
+      },
+      {
+        "name": "Pawel N.",
+        "location": "Junction Triangle, High Park",
+        "text": "Junction Triangle semi with a chronic spring leak. The engineer diagnosed under-slab hydrostatic pressure, installed new weeping tile and a battery-backup sump during the underpinning. Bone-dry through this year's snowmelt.",
+        "rating": 5
+      },
+      {
+        "name": "Benjamin H.",
+        "location": "Bloor West Village, High Park",
+        "text": "Bloor West Village 1925 detached. Underpinning plus finishing as one project. The crew's shared-wall protocol with our High Park-side neighbour was textbook. We kept the friendship and got our 8-foot ceiling.",
+        "rating": 5
+      }
+    ],
+    "problems": [
+      {
+        "title": "Cramped Ceiling Height",
+        "description": "Roncesvalles, Junction Triangle, and Bloor West Village homes from the 1920s have original 6'-6'4\" basements. Modern HVAC eats further into available height. Legal apartments are impossible at this height."
+      },
+      {
+        "title": "Cracked Foundation Walls",
+        "description": "Original Roncesvalles and Bloor West Village rubble foundations show grade-slope settlement after a century. The Junction Triangle has its own settlement profile from former rail-corridor disturbance."
+      },
+      {
+        "title": "Leaking Basement",
+        "description": "High Park ravine watershed pushes the local water table up during spring melt. Chronic spring entry is the most common call we get from Roncesvalles and Swansea homeowners."
+      },
+      {
+        "title": "Stalled By Permits",
+        "description": "Heritage overlays apply to parts of Bloor West Village. City of Toronto plan review timelines stretch 8-10 weeks for any underpinning project in the High Park area."
+      }
+    ],
+    "processIntro": "High Park projects go through City of Toronto plan review, with Bloor West Village heritage overlays adding complexity for some addresses. We pair every underpinning project here with integrated waterproofing because the High Park ravine watershed pushes the local water table up during spring melt, and the basement won't stay dry without it."
   },
   {
     "id": "little-italy",
@@ -618,7 +813,46 @@
       "projectsInArea": "80+ Little Italy projects",
       "yearsServing": "Serving Little Italy since 2007",
       "localTeam": "Row-house specialists"
-    }
+    },
+    "reviews": [
+      {
+        "name": "Marco D.",
+        "location": "Clinton Street, Little Italy",
+        "text": "Clinton Street Victorian, narrow row, classic Little Italy. Underpinned to 8 feet, waterproofed the lake-side wall properly, and the espresso machine in our new basement office runs all day. Three years on, still dry.",
+        "rating": 5
+      },
+      {
+        "name": "Gianna R.",
+        "location": "College Street, Little Italy",
+        "text": "College Street semi above a former trattoria. The slab had been patched a hundred times. TBU underpinned cleanly, ran new plumbing for the in-law suite, and the City of Toronto secondary-suite permit came through without a hitch.",
+        "rating": 5
+      },
+      {
+        "name": "Tony C.",
+        "location": "Grace Street, Little Italy",
+        "text": "Grace Street home, 1910 Italianate. The basement was a fieldstone disaster. The crew underpinned in pin sections, kept our nonna's vegetable garden untouched, and the new basement now houses three generations comfortably.",
+        "rating": 5
+      }
+    ],
+    "problems": [
+      {
+        "title": "Cramped Ceiling Height",
+        "description": "Little Italy Italianate row houses from the 1900s-1920s along College, Clinton, and Grace have narrow lots and 5'8\"-6'2\" basements. Modern code basement apartments are impossible at this height."
+      },
+      {
+        "title": "Cracked Foundation Walls",
+        "description": "Original College Street and Clinton Street stone foundations show a century of settlement. Many homes were built atop former trade workshops with mixed bearing soils."
+      },
+      {
+        "title": "Leaking Basement",
+        "description": "Original clay tile drains under Little Italy rowhouses are failing. Narrow lots make exterior excavation difficult, so interior waterproofing is the standard approach."
+      },
+      {
+        "title": "Stalled By Permits",
+        "description": "College Street commercial-residential zoning complicates plan review for some addresses. City of Toronto plan review typically 8-10 weeks. We handle the bylaw interpretation in advance."
+      }
+    ],
+    "processIntro": "Little Italy projects route through City of Toronto plan review under residential or mixed-use zoning depending on the address. College Street commercial-residential zoning complicates approvals on some lots, so we pull the property's zoning report during the estimate and flag any variance requirement before the contract is signed."
   },
   {
     "id": "north-york",
@@ -726,7 +960,46 @@
       "projectsInArea": "200+ North York projects",
       "yearsServing": "Serving North York since 2006",
       "localTeam": "Legal-apartment specialists"
-    }
+    },
+    "reviews": [
+      {
+        "name": "Ahmad M.",
+        "location": "Willowdale, North York",
+        "text": "1965 Willowdale split-level. Bought it specifically to legalize a basement apartment for my parents. TBU handled the underpinning, the City of Toronto Second Suite registration, and our tenant moved in three months after the pour cured.",
+        "rating": 5
+      },
+      {
+        "name": "Helen K.",
+        "location": "Bayview Village, North York",
+        "text": "Bayview Village 1970s detached. Concrete-block foundation, original 6'7\" ceiling. Underpinning to 8'3\" plus a full waterproofing wrap. The basement suite passed final inspection without a single deficiency.",
+        "rating": 5
+      },
+      {
+        "name": "Sergei V.",
+        "location": "Lansing, North York",
+        "text": "Lansing 1968 bungalow with a chronic seepage problem the previous owner had given up on. TBU's engineer found a buried perimeter drain that had collapsed. Replaced it during the underpinning. Dry ever since.",
+        "rating": 5
+      }
+    ],
+    "problems": [
+      {
+        "title": "Cramped Ceiling Height",
+        "description": "North York 1950s-60s split-levels and bungalows in Willowdale, Bayview Village, and Don Mills typically have 6'6\"-7'0\" original basements. Underpinning to 8 feet enables a legal secondary suite."
+      },
+      {
+        "title": "Cracked Foundation Walls",
+        "description": "Concrete-block foundations from post-war North York builds settle on the local clay. Bathurst Manor and Newtonbrook show the highest active-settlement rates we encounter."
+      },
+      {
+        "title": "Leaking Basement",
+        "description": "1960s perimeter drains under North York post-war homes are past their service life. Modern blown-in attic insulation traps the moisture the original design needed to dissipate."
+      },
+      {
+        "title": "Stalled By Permits",
+        "description": "City of Toronto plan review applies to all North York addresses, plus Second Suite registration adds another step. Plan review typically 8-12 weeks. Our coordinator handles it."
+      }
+    ],
+    "processIntro": "North York underpinning runs through the City of Toronto building department with typical 8-12 week plan review. Secondary suite registration adds another step for legal-apartment projects, and we file the registration during the structural permit submission so both processes close out together."
   },
   {
     "id": "etobicoke",
@@ -829,7 +1102,46 @@
       "projectsInArea": "120+ Etobicoke projects",
       "yearsServing": "Serving Etobicoke since 2006",
       "localTeam": "Lakeshore + inland crews"
-    }
+    },
+    "reviews": [
+      {
+        "name": "Stefan K.",
+        "location": "Mimico, Etobicoke",
+        "text": "Mimico waterfront semi, less than a block from Lake Ontario. The water table is brutal. TBU paired underpinning with weeping tile, dimpled membrane, and a battery-backup sump. Three lakeside springs later it is still dry.",
+        "rating": 5
+      },
+      {
+        "name": "Roberto P.",
+        "location": "New Toronto, Etobicoke",
+        "text": "1950s New Toronto bungalow on a deep lot. Underpinned to 8 feet, finished the lower level as a legal in-law suite. The Etobicoke building department was straightforward to work with thanks to TBU's coordinator.",
+        "rating": 5
+      },
+      {
+        "name": "David T.",
+        "location": "The Kingsway, Etobicoke",
+        "text": "The Kingsway 1928 Tudor with a Heritage Conservation overlay. We were nervous about the heritage approval process. TBU's permit team carried the file through nine weeks. Underpinning finished on schedule, original leaded windows untouched.",
+        "rating": 5
+      }
+    ],
+    "problems": [
+      {
+        "title": "Cramped Ceiling Height",
+        "description": "Pre-war Mimico, New Toronto, and Long Branch semis sit at 6'-6'4\" basements. 1950s detached homes in Markland Wood and Stonegate-Queensway run 6'8\"-7'0\". Both need underpinning for a finished or legal lower level."
+      },
+      {
+        "title": "Cracked Foundation Walls",
+        "description": "Original Etobicoke semi foundations near the Humber River show water-induced settlement after decades. The riverside soil profile is unstable in pockets across Mimico and New Toronto."
+      },
+      {
+        "title": "Leaking Basement",
+        "description": "Lake Ontario raises the water table along Mimico and Long Branch lakefront streets. Original drainage failed decades ago, and chronic spring seepage is the norm without proper waterproofing."
+      },
+      {
+        "title": "Stalled By Permits",
+        "description": "The Toronto Hydro / Alectra Utilities boundary runs through North Etobicoke. Disconnect and reconnect coordination depends on which utility serves your address. We confirm before quoting."
+      }
+    ],
+    "processIntro": "Etobicoke projects go through City of Toronto plan review, but utility coordination depends on whether your address sits inside the Toronto Hydro service zone or the Alectra Utilities zone, since the boundary runs through North Etobicoke. We confirm which utility serves your service drop before quoting so the disconnect-reconnect timeline is accurate."
   },
   {
     "id": "mississauga",
@@ -934,7 +1246,46 @@
       "projectsInArea": "150+ Mississauga projects",
       "yearsServing": "Serving Mississauga since 2008",
       "localTeam": "Mississauga permit specialists"
-    }
+    },
+    "reviews": [
+      {
+        "name": "Imran S.",
+        "location": "Erin Mills, Mississauga",
+        "text": "Erin Mills 1980s detached, original 6'8\" ceiling height. We were planning a basement apartment for my in-laws. TBU coordinated the City of Mississauga Second Unit Bylaw registration along with the underpinning. Tenants in by month four.",
+        "rating": 5
+      },
+      {
+        "name": "Maria F.",
+        "location": "Port Credit, Mississauga",
+        "text": "Port Credit lakefront on Lakeshore Road East. The water table was the whole story, three feet down to wet clay. TBU paired underpinning with full perimeter waterproofing and a battery sump. We have been dry for two springs straight.",
+        "rating": 5
+      },
+      {
+        "name": "Jay P.",
+        "location": "Cooksville, Mississauga",
+        "text": "1970s Cooksville home in Mississauga, concrete-block foundation. Underpinning to 8 feet, finished the basement for our extended family. The Region of Peel permit timeline was faster than I expected, and the crew kept Saturday quiet for our neighbours.",
+        "rating": 5
+      }
+    ],
+    "problems": [
+      {
+        "title": "Cramped Ceiling Height",
+        "description": "1960s-70s Mississauga suburban detached homes in Cooksville, Erin Mills, and Mississauga Valley have original 6'6\"-7'0\" basements. Side-door access keeps excavation efficient, but ceiling height limits finishing."
+      },
+      {
+        "title": "Cracked Foundation Walls",
+        "description": "Concrete-block foundations on the Credit River basin clay see expansion-cycle cracking. The underlying bearing problem continues without proper underpinning, no matter how many times the cracks are patched."
+      },
+      {
+        "title": "Leaking Basement",
+        "description": "Port Credit and Lorne Park lakefront homes contend with a high water table. Side-door drainage on suburban detached homes is a common failure point as the original 1970s grading shifts over decades."
+      },
+      {
+        "title": "Stalled By Permits",
+        "description": "City of Mississauga runs its own Second Unit Bylaw separate from Toronto, with a different inspection cadence and fee structure. Our Mississauga coordinator handles the differences as routine."
+      }
+    ],
+    "processIntro": "Mississauga underpinning runs through the City of Mississauga building department, with Region of Peel coordination on cross-jurisdiction projects. The City's Second Unit Bylaw governs legal-apartment compliance, separately from the City of Toronto's secondary-suite framework, and our Mississauga permit coordinator handles the registration alongside the structural permit."
   },
   {
     "id": "scarborough",
@@ -1020,7 +1371,46 @@
     "stats": {
       "projectsInArea": "60+ Scarborough projects",
       "yearsServing": "Serving Scarborough since 2007"
-    }
+    },
+    "reviews": [
+      {
+        "name": "Jasmine A.",
+        "location": "Agincourt, Scarborough",
+        "text": "Agincourt 1970s detached, the basement was a low-ceiling storage cave. TBU underpinned to 8 feet plus a full waterproofing job, and we built a legal apartment for my parents who came over from Chennai. Tenants happy, basement bone-dry.",
+        "rating": 5
+      },
+      {
+        "name": "Devon B.",
+        "location": "Bendale, Scarborough",
+        "text": "Bendale Scarborough bungalow, original cinderblock foundation. The crew handled the chronic spring water entry by replacing the perimeter drain during the underpinning. Saved us a separate waterproofing project later.",
+        "rating": 5
+      },
+      {
+        "name": "Anitha K.",
+        "location": "Wexford, Scarborough",
+        "text": "Wexford 1960s split-level. Underpinned the basement, lowered the slab to a real 8'2\" ceiling, and finished it for the family. The City of Toronto inspector signed off on the first visit and the warranty paperwork came through fast.",
+        "rating": 5
+      }
+    ],
+    "problems": [
+      {
+        "title": "Cramped Ceiling Height",
+        "description": "Post-war Scarborough bungalows and split-levels in Agincourt, Wexford, and Bendale typically have 6'6\"-7'0\" original basements. Underpinning to 8'+ enables both finishing and a legal secondary suite."
+      },
+      {
+        "title": "Cracked Foundation Walls",
+        "description": "Scarborough Bluffs-area clay, especially in Cliffside and Birch Cliff, drives active settlement in older detached homes. Patches keep failing because the underlying bearing problem continues."
+      },
+      {
+        "title": "Leaking Basement",
+        "description": "Original 1960s drainage tile on Scarborough's clay soil is past its life. Every spring melt brings water entry through the wall-floor cove, especially in Bendale and Wexford."
+      },
+      {
+        "title": "Stalled By Permits",
+        "description": "City of Toronto plan review applies to all Scarborough addresses, with Second Suite registration as an extra step for legal apartments. Typical timeline 8-12 weeks. We handle it."
+      }
+    ],
+    "processIntro": "Scarborough projects route through City of Toronto plan review, with the Bluffs-area clay soil profile driving the engineering details on every Cliffside and Birch Cliff site. Plan review typically runs 8-12 weeks, and we sequence the engineer's settlement assessment in the first two weeks so it doesn't extend the timeline."
   },
   {
     "id": "york",
@@ -1106,7 +1496,46 @@
     "stats": {
       "projectsInArea": "30+ York projects",
       "yearsServing": "Serving York since 2010"
-    }
+    },
+    "reviews": [
+      {
+        "name": "Nelson G.",
+        "location": "Mount Dennis, York",
+        "text": "Mount Dennis 1940s detached in York. Underpinning was the only way to make the basement usable for our growing family. TBU coordinated the engineer, the permit, and the finishing as a single project, three months total.",
+        "rating": 5
+      },
+      {
+        "name": "Carmen O.",
+        "location": "Silverthorn, York",
+        "text": "Silverthorn rowhouse, classic narrow lot. The party-wall sequencing with our neighbour was the part that worried me most. TBU walked them through it before we signed. Five weeks start to finish, no complaints from either side.",
+        "rating": 5
+      },
+      {
+        "name": "Lucia F.",
+        "location": "Weston, York",
+        "text": "Weston semi in the York district along Weston Road. Underpinned plus waterproofed as one project. The 1950s foundation had three different patch jobs from previous owners. Now it is clean, dry, and a proper basement.",
+        "rating": 5
+      }
+    ],
+    "problems": [
+      {
+        "title": "Cramped Ceiling Height",
+        "description": "Mount Dennis, Weston, and Silverthorn 1940s-50s detached homes in York have 6'4\"-6'8\" original basements. Underpinning to 8 feet is the only path to a finished family room or legal apartment."
+      },
+      {
+        "title": "Cracked Foundation Walls",
+        "description": "Clay-soil settlement along the Eglinton West corridor causes active foundation movement in post-war York homes. Cosmetic patches do not address the underlying bearing issue."
+      },
+      {
+        "title": "Leaking Basement",
+        "description": "Original perimeter drains in York are past their service life. The Black Creek watershed brings additional groundwater pressure during spring melt across Rockcliffe-Smythe and Mount Dennis."
+      },
+      {
+        "title": "Stalled By Permits",
+        "description": "City of Toronto plan review applies to all York addresses, with the Eglinton LRT corridor adding zoning-change considerations for some properties. Typical timeline 8-10 weeks."
+      }
+    ],
+    "processIntro": "York underpinning goes through City of Toronto plan review with typical 8-10 week timelines. The Eglinton LRT corridor has overlay zoning changes affecting parts of Mount Dennis and Silverthorn, and we screen for any zoning variance requirement during the initial site visit so the permit application doesn't stall mid-review."
   },
   {
     "id": "east-york",
@@ -1192,7 +1621,46 @@
     "stats": {
       "projectsInArea": "40+ East York projects",
       "yearsServing": "Serving East York since 2008"
-    }
+    },
+    "reviews": [
+      {
+        "name": "Kostas P.",
+        "location": "Pape Village, East York",
+        "text": "Pape Village 1930s East York bungalow. The basement had been damp for decades. TBU's engineer found that the original weeping tile had collapsed entirely. Underpinning plus a new perimeter drain. Greek Easter dinner in the new basement this year.",
+        "rating": 5
+      },
+      {
+        "name": "Linda W.",
+        "location": "Leaside, East York",
+        "text": "Leaside 1940s detached. We wanted real ceiling height for a finished family room. TBU underpinned to 8 feet, kept the original oak floors above untouched, and the engineered slab passed inspection without a callback.",
+        "rating": 5
+      },
+      {
+        "name": "Vincenzo R.",
+        "location": "Crescent Town, East York",
+        "text": "Crescent Town corridor in East York, classic 1930s bungalow. The foundation was rubble-and-fieldstone, not poured concrete. TBU handled the heritage-construction sequencing carefully and we ended up with a beautiful new lower level.",
+        "rating": 5
+      }
+    ],
+    "problems": [
+      {
+        "title": "Cramped Ceiling Height",
+        "description": "Pape Village and Leaside 1930s bungalows plus 1950s detached homes in East York have 6'4\"-6'10\" original basements. The space is unusable as a real living level without underpinning."
+      },
+      {
+        "title": "Cracked Foundation Walls",
+        "description": "Original 1930s rubble-and-fieldstone foundations under East York homes show a century of frost-cycle wear. The party-wall settlement pattern is common across Pape Village rowhouses."
+      },
+      {
+        "title": "Leaking Basement",
+        "description": "Don River watershed affects East York drainage, especially in Crescent Town and the Don Mills slope. Original weeping tile is past its life across most pre-war East York homes."
+      },
+      {
+        "title": "Stalled By Permits",
+        "description": "City of Toronto plan review applies to East York. Crescent Town high-density redevelopment overlays add complexity for some addresses. Typical timeline 8-10 weeks."
+      }
+    ],
+    "processIntro": "East York projects route through the City of Toronto building department, with Crescent Town high-density redevelopment overlays applying to some addresses. Don River watershed conditions affect drainage detail in Pape Village and along the slope toward Don Mills, and our engineering specifies the integrated waterproofing accordingly."
   },
   {
     "id": "brampton",
@@ -1203,7 +1671,7 @@
     "council": "City of Brampton",
     "metaTitle": "Basement Underpinning Brampton | TBU",
     "h1Title": "Basement Underpinning in Brampton",
-    "metaDescription": "Brampton homeowners trust our dedicated City of Brampton permit coordinator \u2014 we handle Peel Region framework and older Downtown and Heart Lake housing stock.",
+    "metaDescription": "Brampton homeowners trust our dedicated City of Brampton permit coordinator. We handle Peel Region framework and older Downtown and Heart Lake housing stock.",
     "description": "Underpinning across Brampton's older neighbourhoods. City of Brampton building permit coordination included.",
     "responseTime": "Next-day estimate",
     "areas": [
@@ -1278,7 +1746,46 @@
     "stats": {
       "projectsInArea": "30+ Brampton projects",
       "yearsServing": "Serving Brampton since 2010"
-    }
+    },
+    "reviews": [
+      {
+        "name": "Harpreet K.",
+        "location": "Bramalea, Brampton",
+        "text": "Bramalea 1980s detached, large lot, classic suburban Brampton. TBU underpinned to 8'4\" plus full waterproofing. The basement is now a legal secondary suite registered with the City of Brampton. My parents moved in three months after pour.",
+        "rating": 5
+      },
+      {
+        "name": "Trevor J.",
+        "location": "Heart Lake, Brampton",
+        "text": "Heart Lake 1990s detached in Brampton. The basement had a chronic seepage from the back wall. The engineer diagnosed a buried downspout discharging into the foundation, fixed it during the underpinning. Basement has been dry since.",
+        "rating": 5
+      },
+      {
+        "name": "Simran S.",
+        "location": "Mount Pleasant, Brampton",
+        "text": "Mount Pleasant Brampton 2005 detached, but the basement was unfinished and short. Underpinned to 8'2\", built a full secondary suite for rental income. The Region of Peel permit process was straightforward thanks to TBU's coordinator.",
+        "rating": 5
+      }
+    ],
+    "problems": [
+      {
+        "title": "Cramped Ceiling Height",
+        "description": "Brampton 1980s-90s subdivision detached homes in Bramalea, Heart Lake, and Mount Pleasant have original 6'8\"-7'0\" basements. Most are unfinished, and underpinning enables a full secondary suite for rental income."
+      },
+      {
+        "title": "Cracked Foundation Walls",
+        "description": "High clay content in Peel Region soil causes seasonal expansion-contraction in Brampton subdivision foundations. 1990s poured-concrete walls show step-pattern cracking after 25-30 years."
+      },
+      {
+        "title": "Leaking Basement",
+        "description": "Brampton clay holds water against foundations after spring melt, driving chronic seepage at the wall-floor cove. Original drainage tile is approaching the end of its 30-year warranty life."
+      },
+      {
+        "title": "Stalled By Permits",
+        "description": "City of Brampton runs its own building department, fee structure, and inspection cadence, different from City of Toronto and City of Mississauga. Our coordinator handles the differences."
+      }
+    ],
+    "processIntro": "Brampton underpinning runs through the City of Brampton building department plus Region of Peel coordination, with separate fees and inspection cadence from City of Toronto and City of Mississauga. Peel Region clay drives the structural engineering details: high seasonal expansion-contraction means we spec deeper bearing depths than typical Toronto-core projects."
   },
   {
     "id": "markham",
@@ -1289,7 +1796,7 @@
     "council": "City of Markham",
     "metaTitle": "Basement Underpinning Markham | TBU",
     "h1Title": "Basement Underpinning in Markham",
-    "metaDescription": "Markham operates under York Region with its own building department \u2014 our coordinator handles it and coordinates heritage overlay work in Unionville.",
+    "metaDescription": "Markham operates under York Region with its own building department. Our coordinator handles it and coordinates heritage overlay work in Unionville.",
     "description": "Underpinning across Markham, Unionville, Thornhill, Cornell, Cathedraltown.",
     "responseTime": "Next-day estimate",
     "areas": [
@@ -1365,7 +1872,46 @@
     "stats": {
       "projectsInArea": "50+ Markham projects",
       "yearsServing": "Serving Markham since 2009"
-    }
+    },
+    "reviews": [
+      {
+        "name": "Wendy L.",
+        "location": "Unionville, Markham",
+        "text": "Unionville Main Street heritage home in Markham. The City of Markham heritage overlay scared off three other contractors. TBU's coordinator pulled the heritage permit in seven weeks, underpinned the basement, and respected every original detail.",
+        "rating": 5
+      },
+      {
+        "name": "Edmund C.",
+        "location": "Cathedraltown, Markham",
+        "text": "Cathedraltown 2010-built Markham home. The basement was deep but unfinished. Underpinning was not needed. TBU did interior waterproofing and a sump system instead. They told me up front the underpinning was unnecessary. Honest call, saved us thirty grand.",
+        "rating": 5
+      },
+      {
+        "name": "Yi-Chen W.",
+        "location": "Berczy Village, Markham",
+        "text": "Berczy Village newer Markham detached. Underpinning to give us full ceiling height for a basement gym. The York Region permit process was quicker than I expected. The crew was respectful of the family schedule for our two young kids upstairs.",
+        "rating": 5
+      }
+    ],
+    "problems": [
+      {
+        "title": "Cramped Ceiling Height",
+        "description": "Old Markham 1960s bungalows in Unionville have 6'6\" basements. Newer 2000s infill in Cathedraltown and Berczy Village runs 7'0\"+, but most are still unfinished. Underpinning enables a legal lower level."
+      },
+      {
+        "title": "Cracked Foundation Walls",
+        "description": "Heritage-era stone foundations under Unionville Main Street homes show settlement on York Region clay. Newer subdivision homes settle differently but show their own cracking pattern after 15-20 years."
+      },
+      {
+        "title": "Leaking Basement",
+        "description": "Older Markham core homes have failing perimeter drains. Newer Cathedraltown and Berczy Village builds occasionally show under-slab hydrostatic pressure that no surface waterproofing addresses."
+      },
+      {
+        "title": "Stalled By Permits",
+        "description": "Markham heritage overlays cover Unionville Main Street and parts of Old Markham. York Region permits run 4-6 weeks plan review. Our coordinator pre-screens every project."
+      }
+    ],
+    "processIntro": "Markham projects go through the City of Markham building department under York Region authority. Unionville Main Street and parts of Old Markham fall under heritage overlays adding 4-6 weeks to plan review; our coordinator pre-screens heritage status during the estimate and pulls the heritage permit alongside the building permit."
   },
   {
     "id": "vaughan",
@@ -1376,7 +1922,7 @@
     "council": "City of Vaughan",
     "metaTitle": "Basement Underpinning Vaughan | TBU",
     "h1Title": "Basement Underpinning in Vaughan",
-    "metaDescription": "Vaughan's York Region building department handles permit submissions \u2014 our in-house coordinator also manages Kleinburg conservation overlay requirements.",
+    "metaDescription": "Vaughan's York Region building department handles permit submissions. Our in-house coordinator also manages Kleinburg conservation overlay requirements.",
     "description": "Underpinning across Vaughan, Woodbridge, Maple, Thornhill, Concord, and Kleinburg.",
     "responseTime": "Next-day estimate",
     "areas": [
@@ -1452,7 +1998,46 @@
     "stats": {
       "projectsInArea": "40+ Vaughan projects",
       "yearsServing": "Serving Vaughan since 2010"
-    }
+    },
+    "reviews": [
+      {
+        "name": "Antonio G.",
+        "location": "Woodbridge, Vaughan",
+        "text": "Woodbridge 1980s detached in Vaughan. Italian-Canadian neighbourhood, everyone watches what gets built. TBU's underpinning was clean, the engineer's stamp came through fast, and now we have a proper finished basement for entertaining.",
+        "rating": 5
+      },
+      {
+        "name": "Vladimir K.",
+        "location": "Maple, Vaughan",
+        "text": "Maple Vaughan 1990s detached, large suburban lot. Underpinning plus waterproofing. The crew was careful about the perennial garden along the side wall, it survived. Basement legal apartment registered with the City of Vaughan a month after pour.",
+        "rating": 5
+      },
+      {
+        "name": "Sara B.",
+        "location": "Thornhill, Vaughan",
+        "text": "Thornhill side of Vaughan, established 1970s detached. We had cracks in the basement walls that previous contractors had told us were cosmetic. TBU's engineer disagreed, confirmed active settlement and underpinned. Now structurally bulletproof.",
+        "rating": 5
+      }
+    ],
+    "problems": [
+      {
+        "title": "Cramped Ceiling Height",
+        "description": "Newer 1990s-2000s Vaughan detached homes in Maple, Carrville, and Patterson have 7'0\"+ basements, but 1980s Woodbridge homes run shorter. Some Concord-area builds are slab-on-grade, which limits underpinning options."
+      },
+      {
+        "title": "Cracked Foundation Walls",
+        "description": "Maple and Carrville-area clay drives expansion-cycle cracking in 1990s poured-concrete foundations after 25-30 years. The pattern is most visible on the back wall facing the rear yard."
+      },
+      {
+        "title": "Leaking Basement",
+        "description": "1990s subdivision drainage tile across Vaughan is approaching the end of its warranty life. Side-yard runoff from neighbouring lots is the most common entry path we see in Maple and Woodbridge."
+      },
+      {
+        "title": "Stalled By Permits",
+        "description": "Vaughan permits run through City of Vaughan plus York Region. Heritage Conservation applies in Kleinburg. Plan review typically 5-7 weeks. Our coordinator handles the multi-layer process."
+      }
+    ],
+    "processIntro": "Vaughan underpinning routes through the City of Vaughan building department plus York Region permits. Kleinburg heritage overlays apply to estate properties, while Concord-area slab-on-grade builds limit underpinning options entirely, so we confirm foundation type during the site visit before quoting any structural scope."
   },
   {
     "id": "richmond-hill",
@@ -1539,7 +2124,46 @@
     "stats": {
       "projectsInArea": "30+ Richmond Hill projects",
       "yearsServing": "Serving Richmond Hill since 2011"
-    }
+    },
+    "reviews": [
+      {
+        "name": "Amir N.",
+        "location": "Bayview, Richmond Hill",
+        "text": "Bayview Hill Richmond Hill 1990s detached. We needed full ceiling height for a basement workout space. TBU underpinned to 8'3\", waterproofed the rear wall, and the York Region inspector signed off without issues.",
+        "rating": 5
+      },
+      {
+        "name": "Wei C.",
+        "location": "Oak Ridges, Richmond Hill",
+        "text": "Oak Ridges Richmond Hill 2003-build, but the basement had a chronic damp problem. TBU's engineer traced it to a missing dimpled membrane on one wall. Fixed it during a partial-perimeter waterproofing, no underpinning needed.",
+        "rating": 5
+      },
+      {
+        "name": "Natalia P.",
+        "location": "Mill Pond, Richmond Hill",
+        "text": "Mill Pond Richmond Hill 1980s detached. Underpinning plus finishing as one project. The Town of Richmond Hill permit timeline was longer than I expected, but TBU's coordinator kept us informed weekly. Final ceiling: 8'1\".",
+        "rating": 5
+      }
+    ],
+    "problems": [
+      {
+        "title": "Cramped Ceiling Height",
+        "description": "1980s-90s Bayview Hill, Mill Pond, and Jefferson detached homes typically have 6'8\"-7'0\" original basements. Most are unfinished. Underpinning enables a workout space, in-law suite, or legal apartment."
+      },
+      {
+        "title": "Cracked Foundation Walls",
+        "description": "Oak Ridges Moraine edge has varied soil profiles across Richmond Hill. Hilly terrain causes uneven settlement, with some homes showing more movement on the downslope side of the foundation."
+      },
+      {
+        "title": "Leaking Basement",
+        "description": "Water table varies dramatically by terrain in Richmond Hill. Mill Pond and Oak Ridges sit on higher tables; chronic seepage is common without integrated waterproofing."
+      },
+      {
+        "title": "Stalled By Permits",
+        "description": "Town of Richmond Hill plus York Region adds review layers. Plan review timelines run longer than other GTA municipalities, typically 6-8 weeks. We pre-screen every project for compliance."
+      }
+    ],
+    "processIntro": "Richmond Hill projects go through the Town of Richmond Hill building department under York Region authority, with plan review timelines typically running 6-8 weeks (longer than other GTA municipalities). Oak Ridges Moraine edge brings varied soil profiles across the city, and we sequence a soils investigation upfront for any address north of Bloomington Road so the engineering specs match the actual ground conditions."
   },
   {
     "id": "oakville",
@@ -1550,7 +2174,7 @@
     "council": "Town of Oakville",
     "metaTitle": "Basement Underpinning Oakville | TBU",
     "h1Title": "Basement Underpinning in Oakville",
-    "metaDescription": "Oakville's Halton Region framework means a separate permit process \u2014 our coordinator handles Old Oakville heritage and Bronte's elevated lakeshore water table.",
+    "metaDescription": "Oakville's Halton Region framework means a separate permit process. Our coordinator handles Old Oakville heritage and Bronte's elevated lakeshore water table.",
     "description": "Underpinning across Oakville, Old Oakville, Glen Abbey, Bronte, Kerr Village.",
     "responseTime": "Next-day estimate",
     "areas": [
@@ -1626,7 +2250,46 @@
     "stats": {
       "projectsInArea": "30+ Oakville projects",
       "yearsServing": "Serving Oakville since 2011"
-    }
+    },
+    "reviews": [
+      {
+        "name": "Christopher H.",
+        "location": "Old Oakville",
+        "text": "Old Oakville heritage home off Lakeshore Road. The Town of Oakville heritage rules made me nervous. TBU's permit team handled it cleanly. Underpinned to 8'2\", waterproofed the lake-side wall, and our 1920s Tudor still looks original from the street.",
+        "rating": 5
+      },
+      {
+        "name": "Margaret W.",
+        "location": "Glen Abbey, Oakville",
+        "text": "Glen Abbey Oakville 1980s executive detached. The basement was deep enough but unfinished. TBU did interior waterproofing and a sump pump install with no underpinning. Honest assessment that saved us a major project.",
+        "rating": 5
+      },
+      {
+        "name": "Andrew B.",
+        "location": "Bronte, Oakville",
+        "text": "Bronte Oakville bungalow, classic suburban lot. Underpinned to 8 feet plus full waterproofing. The basement is now a legal in-law suite. The Halton Region permit process was smooth thanks to TBU's coordinator.",
+        "rating": 5
+      }
+    ],
+    "problems": [
+      {
+        "title": "Cramped Ceiling Height",
+        "description": "Old Oakville lakefront estates from the 1900s-1930s have 6'-6'6\" basements. Postwar bungalows in Bronte and Kerr Village run 6'6\"-7'0\". Underpinning to 8 feet enables a real lower-level living space."
+      },
+      {
+        "title": "Cracked Foundation Walls",
+        "description": "Original Oakville lakefront rubble-and-stone foundations show a century of frost cycles. Mature trees on heritage properties add root pressure to the bearing soil."
+      },
+      {
+        "title": "Leaking Basement",
+        "description": "High water table near Lake Ontario means lakefront Oakville homes face chronic seepage. Old Oakville and Bronte lakeshore streets are the highest-risk zone we see in Halton Region."
+      },
+      {
+        "title": "Stalled By Permits",
+        "description": "Town of Oakville heritage overlays cover Old Oakville and parts of Bronte. Halton Region permits run 4-6 weeks plan review with higher fees than Toronto-core. Our coordinator handles every step."
+      }
+    ],
+    "processIntro": "Oakville underpinning runs through the Town of Oakville building department plus Halton Region permits. Old Oakville heritage overlays cover most lakefront addresses and add 4-6 weeks to plan review; we carry the heritage application and the higher Halton fee structure as a routine part of every estate-home project."
   },
   {
     "id": "burlington",
@@ -1637,7 +2300,7 @@
     "council": "City of Burlington",
     "metaTitle": "Basement Underpinning Burlington | TBU",
     "h1Title": "Basement Underpinning in Burlington",
-    "metaDescription": "Burlington operates under Halton Region alongside Oakville \u2014 our coordinator handles permits for Aldershot's mature neighbourhood housing stock.",
+    "metaDescription": "Burlington operates under Halton Region alongside Oakville. Our coordinator handles permits for Aldershot's mature neighbourhood housing stock.",
     "description": "Underpinning across Burlington, Aldershot, Roseland, Tyandaga, Alton.",
     "responseTime": "Next-day estimate",
     "areas": [
@@ -1712,7 +2375,46 @@
     "stats": {
       "projectsInArea": "20+ Burlington projects",
       "yearsServing": "Serving Burlington since 2012"
-    }
+    },
+    "reviews": [
+      {
+        "name": "Catherine M.",
+        "location": "Aldershot, Burlington",
+        "text": "Aldershot Burlington 1960s detached, original 6'8\" basement. Underpinned to 8 feet for a proper rec room. The City of Burlington permit timeline was faster than Toronto-core, and the crew commuted from the GTA without losing a day to traffic.",
+        "rating": 5
+      },
+      {
+        "name": "James R.",
+        "location": "Roseland, Burlington",
+        "text": "Roseland Burlington 1950s home. The basement had a chronic spring leak the previous owners had ignored for years. TBU diagnosed it as a failed weeping tile, replaced it during the underpinning. First dry spring in decades.",
+        "rating": 5
+      },
+      {
+        "name": "Elizabeth T.",
+        "location": "Tyandaga, Burlington",
+        "text": "Tyandaga Burlington escarpment-side home. Water table was the issue. Underpinning paired with full perimeter waterproofing and a battery-backup sump. The basement now stays dry through every Lake Ontario humidity event.",
+        "rating": 5
+      }
+    ],
+    "problems": [
+      {
+        "title": "Cramped Ceiling Height",
+        "description": "1950s-60s Burlington lakefront low-lying detached homes in Roseland and Aldershot have 6'6\"-7'0\" original basements. Underpinning is the only path to a finished basement or legal in-law suite."
+      },
+      {
+        "title": "Cracked Foundation Walls",
+        "description": "Burlington Heights escarpment-side homes face unique grade pressure, with foundations showing tipping toward the downslope side. Tyandaga and Alton see the most movement."
+      },
+      {
+        "title": "Leaking Basement",
+        "description": "Lakefront low-lying lots in Burlington carry chronic water-table issues. 1960s drainage tile is past its life across most established neighbourhoods, with spring seepage the common failure pattern."
+      },
+      {
+        "title": "Stalled By Permits",
+        "description": "City of Burlington plus Halton Region permits run 4-6 weeks plan review, faster than Toronto-core but still meaningful timelines. Our coordinator stays ahead of the cycle."
+      }
+    ],
+    "processIntro": "Burlington projects go through the City of Burlington building department under Halton Region authority, with typical 4-6 week plan review faster than Toronto-core. Burlington Heights escarpment-side homes have unique grade-pressure considerations that drive the engineering: Tyandaga and Alton sites need bearing-depth calculations specific to the escarpment slope conditions."
   },
   {
     "id": "pickering",
@@ -1798,6 +2500,45 @@
     "stats": {
       "projectsInArea": "20+ Pickering projects",
       "yearsServing": "Serving Pickering since 2012"
-    }
+    },
+    "reviews": [
+      {
+        "name": "Trevor S.",
+        "location": "Bay Ridges, Pickering",
+        "text": "Bay Ridges Pickering 1970s bungalow, close enough to the lake that the water table was always going to be a problem. TBU paired underpinning with weeping tile and a battery-backup sump. Dry through two springs already.",
+        "rating": 5
+      },
+      {
+        "name": "Anjali R.",
+        "location": "Liverpool, Pickering",
+        "text": "Liverpool Pickering 1990s detached, classic suburban subdivision. Underpinned to 8'2\" plus a finished basement for our extended family. The City of Pickering permit timeline was fast, under five weeks.",
+        "rating": 5
+      },
+      {
+        "name": "Patricia O.",
+        "location": "Amberlea, Pickering",
+        "text": "Amberlea Pickering 1985-build, original concrete-block foundation. The basement was usable but short. Underpinning plus interior waterproofing as one project. The Durham Region inspector signed off the first time.",
+        "rating": 5
+      }
+    ],
+    "problems": [
+      {
+        "title": "Cramped Ceiling Height",
+        "description": "1980s subdivision detached homes in Bay Ridges, Liverpool, and Amberlea have 6'8\"-7'0\" original basements. Most are unfinished. Underpinning enables a legal lower level for extended family or rental."
+      },
+      {
+        "title": "Cracked Foundation Walls",
+        "description": "Lake Iroquois shoreline area in Pickering has loose post-glacial soils, driving foundation settlement in 1980s subdivision builds. The pattern shows on the lake-side walls first."
+      },
+      {
+        "title": "Leaking Basement",
+        "description": "High water table near Lake Ontario, especially in Bay Ridges and Rosebank. 1980s drainage tile on the local clay is approaching the end of its warranty life, and spring seepage is the norm."
+      },
+      {
+        "title": "Stalled By Permits",
+        "description": "City of Pickering plus Durham Region permits run a separate fee structure from Peel and Halton. Plan review typically 4-6 weeks. Our coordinator handles the Durham-specific paperwork."
+      }
+    ],
+    "processIntro": "Pickering underpinning runs through the City of Pickering building department plus Durham Region permits, with a separate fee structure from Peel and Halton. Lake Iroquois shoreline soils in Bay Ridges and Liverpool have a loose post-glacial profile, so our engineering specs include deeper bearing depths than typical inland projects."
   }
 ]

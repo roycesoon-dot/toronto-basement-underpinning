@@ -30,12 +30,12 @@ export default defineConfig({
         ) {
           return { ...item, priority: 0.9, changefreq: 'monthly' };
         }
-        // Service area pages
-        if (url.includes('/service-areas/') && url.split('/').length > 5) {
-          return { ...item, priority: 0.85, changefreq: 'monthly' };
-        }
         // Guide / support pages
         if (url.includes('/guide/')) {
+          return { ...item, priority: 0.85, changefreq: 'monthly' };
+        }
+        // Service area / location pages
+        if (url.includes('/service-areas/') && url.split('/').length > 5) {
           return { ...item, priority: 0.7, changefreq: 'monthly' };
         }
         // Everything else (about, contact, tools, index pages)
