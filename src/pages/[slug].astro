@@ -290,6 +290,18 @@ const howToSchema = service.data.process && service.data.process.length > 0
                       <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Subsidy paperwork (backwater valve rebate)</span></li>
                     </>
                   )}
+                  {service.slug === 'basement-walkout' && (
+                    <>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Structural steel lintel (engineered)</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Foundation wall saw-cut opening</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Below-grade stairwell + retaining walls</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Perimeter drainage channel + tie-in</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Waterproofing membrane on all new surfaces</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Door rough opening framed</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Engineer-stamped drawings + permit</span></li>
+                      <li class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg><span class="text-brand-text">Final inspection + zero-risk warranty</span></li>
+                    </>
+                  )}
                 </ul>
               </div>
             </div>
@@ -339,6 +351,13 @@ const howToSchema = service.data.process && service.data.process.length > 0
                       <div class="flex justify-between text-sm"><span class="text-brand-muted">Camera inspection + drain cleaning</span><span class="text-brand-text font-bold">$300-$700</span></div>
                       <div class="flex justify-between text-sm"><span class="text-brand-muted">Main drain partial replacement</span><span class="text-brand-text font-bold">$4,000-$8,000</span></div>
                       <div class="flex justify-between text-sm"><span class="text-brand-muted">Full main drain replacement</span><span class="text-brand-text font-bold">$8,000-$15,000</span></div>
+                    </>
+                  )}
+                  {service.slug === 'basement-walkout' && (
+                    <>
+                      <div class="flex justify-between text-sm"><span class="text-brand-muted">Standalone walkout (rear/side)</span><span class="text-brand-text font-bold">$8,000-$14,000</span></div>
+                      <div class="flex justify-between text-sm"><span class="text-brand-muted">Deep stairwell + complex grade</span><span class="text-brand-text font-bold">$14,000-$18,000+</span></div>
+                      <div class="flex justify-between text-sm"><span class="text-brand-muted">Combined with underpinning</span><span class="text-brand-text font-bold">Save $1,500-$3,000</span></div>
                     </>
                   )}
                 </div>
