@@ -17,7 +17,8 @@
           { "label": "Sump Pumps & Battery Backups", "href": "/sump-pumps/" },
           { "label": "Concrete & Foundation Repair", "href": "/concrete-foundation-repair/" },
           { "label": "Drawings & Permits", "href": "/drawings-permits/" },
-          { "label": "Plumbing & Drains", "href": "/plumbing-drain-services/" }
+          { "label": "Plumbing & Drains", "href": "/plumbing-drain-services/" },
+          { "label": "Basement Walkout", "href": "/basement-walkout/" }
         ]
       },
       { "label": "Service Areas", "href": "/service-areas/" },
@@ -42,7 +43,8 @@
           { "label": "Sump Pumps", "href": "/sump-pumps/" },
           { "label": "Foundation Repair", "href": "/concrete-foundation-repair/" },
           { "label": "Drawings & Permits", "href": "/drawings-permits/" },
-          { "label": "Plumbing & Drains", "href": "/plumbing-drain-services/" }
+          { "label": "Plumbing & Drains", "href": "/plumbing-drain-services/" },
+          { "label": "Basement Walkout", "href": "/basement-walkout/" }
         ]
       },
       {
