@@ -1,0 +1,315 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TrustBar from '../components/blocks/TrustBar.astro';
+import CTA from '../components/blocks/CTA.astro';
+import site from '../config/site.json';
+
+const title = `Project Gallery | ${site.name}`;
+const description =
+  'Browse completed basement underpinning, waterproofing, walkout, and finishing projects across Toronto and the GTA. Real job-site photos from our crews.';
+
+const projects = [
+  {
+    image: '/images/generated/gallery-annex-victorian-underpinning.webp',
+    alt: 'Open pin-section excavation sequence in Annex Toronto Victorian semi during underpinning',
+    category: 'Underpinning',
+    title: 'The Annex Victorian Semi — Full Perimeter Underpinning',
+    description:
+      '180 linear feet of perimeter underpinning on a 1920s Victorian semi. Staged pin-sequence excavation, engineered footing extensions, permit closed in 11 weeks.',
+    scope: 'Engineered footing extension, 8 ft conversion',
+    serviceHref: '/interior-waterproofing/',
+    serviceLabel: 'Underpinning',
+    areaHref: '/service-areas/toronto/',
+    areaLabel: 'The Annex',
+  },
+  {
+    image: '/images/generated/gallery-scarborough-bungalow-underpinning.webp',
+    alt: 'Completed concrete pin sections in Scarborough bungalow basement underpinning project',
+    category: 'Underpinning',
+    title: 'Scarborough Bungalow — 5 ft to 8 ft Depth Conversion',
+    description:
+      'Full-perimeter depth conversion on a postwar Scarborough bungalow. 19 pin sections poured in staged sequence, structural engineer on-site for final inspection.',
+    scope: 'Poured-in-place concrete footing, 19 pins',
+    serviceHref: '/interior-waterproofing/',
+    serviceLabel: 'Underpinning',
+    areaHref: '/service-areas/toronto/',
+    areaLabel: 'Scarborough',
+  },
+  {
+    image: '/images/generated/gallery-north-york-underpinning-pour.webp',
+    alt: 'Concrete pour into engineered pin section during North York underpinning project',
+    category: 'Underpinning',
+    title: 'North York Detached — 220 ft Perimeter + Bench Footing',
+    description:
+      'Large detached home, 220 linear feet. Combination of traditional underpin and bench footing on the party wall. City of Toronto permit, engineer stamped.',
+    scope: 'Bench footing + traditional underpin, 220 ft',
+    serviceHref: '/interior-waterproofing/',
+    serviceLabel: 'Underpinning',
+    areaHref: '/service-areas/north-york/',
+    areaLabel: 'North York',
+  },
+  {
+    image: '/images/generated/gallery-etobicoke-weeping-tile-waterproofing.webp',
+    alt: 'Interior weeping tile installation with Delta-MS membrane on Etobicoke foundation wall',
+    category: 'Waterproofing',
+    title: 'Etobicoke Semi — Interior Weeping Tile + Delta-MS Membrane',
+    description:
+      'Full interior waterproofing system: new weeping tile trenched at footing, Delta-MS membrane on all walls, dual sump pit with Zoeller primary pump.',
+    scope: 'Delta-MS membrane, Zoeller M53 primary sump',
+    serviceHref: '/interior-waterproofing/',
+    serviceLabel: 'Interior Waterproofing',
+    areaHref: '/service-areas/etobicoke/',
+    areaLabel: 'Etobicoke',
+  },
+  {
+    image: '/images/generated/gallery-mississauga-sump-battery-backup.webp',
+    alt: 'Sealed sump pit lid with primary and battery backup pump installation in Mississauga basement',
+    category: 'Waterproofing',
+    title: 'Mississauga Detached — Sump Pump + Battery Backup System',
+    description:
+      'New sealed sump pit with Zoeller M53 primary, Basement Watchdog BWC1 battery backup, and high-water alarm. Installed during underpinning scope.',
+    scope: 'Zoeller M53 + BWC1 battery backup',
+    serviceHref: '/sump-pumps/',
+    serviceLabel: 'Sump Pumps & Backups',
+    areaHref: '/service-areas/mississauga/',
+    areaLabel: 'Mississauga',
+  },
+  {
+    image: '/images/generated/gallery-east-york-walkout-excavation.webp',
+    alt: 'Walkout basement stairwell excavation with structural steel lintel installation in East York',
+    category: 'Walkout',
+    title: 'East York — Walkout Stairwell Excavation & Steel Lintel',
+    description:
+      'Rear walkout excavation through solid foundation wall, structural steel lintel installation, waterproof membrane on stairwell walls, concrete steps.',
+    scope: 'Steel lintel, waterproof membrane, concrete stair',
+    serviceHref: '/basement-walkout/',
+    serviceLabel: 'Basement Walkout',
+    areaHref: '/service-areas/toronto/',
+    areaLabel: 'East York',
+  },
+  {
+    image: '/images/generated/gallery-oakville-walkout-retaining-wall.webp',
+    alt: 'Completed walkout basement entrance with poured concrete retaining wall in Oakville',
+    category: 'Walkout',
+    title: 'Oakville Detached — Walkout + Concrete Retaining Wall',
+    description:
+      'Full walkout creation with poured concrete retaining wall on sloped lot. Drain tile at base, waterproof parging, painted metal door in new opening.',
+    scope: 'Poured retaining wall, drain tile, parging',
+    serviceHref: '/basement-walkout/',
+    serviceLabel: 'Basement Walkout',
+    areaHref: '/service-areas/mississauga/',
+    areaLabel: 'Oakville',
+  },
+  {
+    image: '/images/generated/gallery-leslieville-basement-suite.webp',
+    alt: 'Finished basement legal suite in Leslieville Toronto with open concept kitchen and living area',
+    category: 'Finishing',
+    title: 'Leslieville — 900 sqft Legal Basement Suite',
+    description:
+      'Full basement finishing after underpinning: framing, electrical rough-in, spray foam insulation, drywall, LVP flooring, kitchen, bathroom, egress windows.',
+    scope: 'Full finishing package, egress windows, permit',
+    serviceHref: '/basement-finishing/',
+    serviceLabel: 'Basement Finishing',
+    areaHref: '/service-areas/toronto/',
+    areaLabel: 'Leslieville',
+  },
+  {
+    image: '/images/generated/gallery-rexdale-basement-apartment.webp',
+    alt: 'Completed basement apartment with separate entrance in Rexdale Etobicoke',
+    category: 'Finishing',
+    title: 'Rexdale — Basement Apartment with Separate Entrance',
+    description:
+      'Below-grade apartment with separate side entrance, full kitchen, 4-piece bath, in-suite laundry rough-in. City permit, ESA electrical certificate.',
+    scope: 'Separate entrance, full kitchen + bath, ESA cert',
+    serviceHref: '/basement-finishing/',
+    serviceLabel: 'Basement Finishing',
+    areaHref: '/service-areas/etobicoke/',
+    areaLabel: 'Rexdale',
+  },
+  {
+    image: '/images/generated/gallery-midtown-crack-injection.webp',
+    alt: 'Polyurethane crack injection being performed on poured concrete foundation wall in midtown Toronto',
+    category: 'Foundation Repair',
+    title: 'Midtown Toronto — Poured Foundation Crack Injection',
+    description:
+      'Two vertical cracks on poured concrete foundation, 12 ft deep. Polyurethane expanding foam injection from interior, 10-year warranty on seal.',
+    scope: 'Polyurethane injection, 10-yr warranty',
+    serviceHref: '/concrete-foundation-repair/',
+    serviceLabel: 'Foundation Repair',
+    areaHref: '/service-areas/toronto/',
+    areaLabel: 'Midtown Toronto',
+  },
+  {
+    image: '/images/generated/gallery-brampton-foundation-parging.webp',
+    alt: 'Foundation parging coat and waterproof coating applied to block foundation in Brampton',
+    category: 'Foundation Repair',
+    title: 'Brampton Block Foundation — Parging + Waterproof Coating',
+    description:
+      'Deteriorating block foundation with spalling mortar joints. Full parging coat application, Drylok Extreme waterproof coating, grading corrected at grade.',
+    scope: 'Parging coat, Drylok Extreme, grading correction',
+    serviceHref: '/concrete-foundation-repair/',
+    serviceLabel: 'Foundation Repair',
+    areaHref: '/service-areas/toronto/',
+    areaLabel: 'Brampton',
+  },
+  {
+    image: '/images/generated/gallery-beaches-underpinning-finished.webp',
+    alt: 'Completed and finished basement in The Beaches Toronto after full underpinning project',
+    category: 'Underpinning',
+    title: 'The Beaches — Underpin + Full Basement Finish',
+    description:
+      'Combined scope: full perimeter underpinning to 8 ft, interior waterproofing, then complete basement finishing into a legal 2-bedroom suite.',
+    scope: 'Underpin + waterproof + full finish, permits',
+    serviceHref: '/interior-waterproofing/',
+    serviceLabel: 'Underpinning',
+    areaHref: '/service-areas/toronto/',
+    areaLabel: 'The Beaches',
+  },
+];
+
+const categories = ['All', ...Array.from(new Set(projects.map((p) => p.category)))];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  pageType="default"
+>
+
+  <!-- Hero -->
+  <section class="relative bg-primary-800 py-16 lg:py-24 overflow-hidden">
+    <img
+      src="/images/misc/toronto-basement-underpinning-specialists-staged-e.webp"
+      alt=""
+      aria-hidden="true"
+      class="absolute inset-0 w-full h-full object-cover opacity-20"
+      fetchpriority="high"
+      loading="eager"
+    />
+    <div class="relative z-10 max-w-container mx-auto px-4">
+      <span class="inline-block px-4 py-1.5 bg-accent-500 text-white text-xs font-bold uppercase tracking-wider mb-5">
+        Project Gallery
+      </span>
+      <h1 class="text-white text-4xl lg:text-5xl font-extrabold leading-tight mb-4 max-w-3xl">
+        Toronto Basement Underpinning Projects Across the GTA
+      </h1>
+      <p class="text-primary-100 text-lg max-w-2xl mb-6">
+        Real job-site photos from our crews. Underpinning, waterproofing, walkout excavations, and basement finishing — completed across Toronto and the Greater Toronto Area.
+      </p>
+      <p class="text-primary-200 text-sm italic">
+        Licensed & Insured. Engineered on every project. 20 active crews.
+      </p>
+    </div>
+  </section>
+
+  <TrustBar />
+
+  <!-- Filter + Grid -->
+  <section class="py-16 bg-brand-bg px-4">
+    <div class="max-w-container mx-auto">
+
+      <!-- Category Filter -->
+      <div class="flex flex-wrap gap-3 mb-10" id="filter-bar">
+        {categories.map((cat) => (
+          <button
+            class="filter-btn px-5 py-2 text-sm font-semibold border border-brand-border bg-white text-brand-text hover:border-accent-500 hover:text-accent-500 transition-colors"
+            data-category={cat}
+            aria-pressed={cat === 'All' ? 'true' : 'false'}
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
+
+      <!-- Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+        {projects.map((p) => (
+          <article
+            class="gallery-card group bg-white overflow-hidden hover:shadow-lg transition-shadow border border-brand-border"
+            data-category={p.category}
+          >
+            <!-- Image -->
+            <div class="aspect-video overflow-hidden relative">
+              <img
+                src={p.image}
+                alt={p.alt}
+                loading="lazy"
+                decoding="async"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <span class="absolute top-3 left-3 bg-primary-800/90 text-accent-400 text-[11px] font-bold uppercase tracking-wider px-3 py-1">
+                {p.category}
+              </span>
+            </div>
+
+            <!-- Content -->
+            <div class="p-6">
+              <h2 class="text-lg font-bold text-primary-800 mb-2 leading-snug">{p.title}</h2>
+              <p class="text-sm text-brand-text mb-3 leading-relaxed">{p.description}</p>
+              <p class="text-xs text-brand-muted mb-4">
+                <strong>Scope:</strong> {p.scope}
+              </p>
+              <div class="flex flex-wrap gap-2 text-xs">
+                <a
+                  href={p.serviceHref}
+                  class="inline-block px-3 py-1 bg-accent-500 text-white font-semibold hover:bg-accent-600 transition-colors"
+                >
+                  {p.serviceLabel}
+                </a>
+                <a
+                  href={p.areaHref}
+                  class="inline-block px-3 py-1 bg-white border border-brand-border text-brand-text font-semibold hover:bg-brand-bg transition-colors"
+                >
+                  {p.areaLabel}
+                </a>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <!-- Empty state (hidden by default) -->
+      <p class="hidden text-center text-brand-muted py-12" id="no-results">
+        No projects in that category yet.
+      </p>
+    </div>
+  </section>
+
+  <CTA />
+
+</BaseLayout>
+
+<script>
+  const filterBar = document.getElementById('filter-bar');
+  const cards = document.querySelectorAll<HTMLElement>('.gallery-card');
+  const noResults = document.getElementById('no-results');
+
+  filterBar?.addEventListener('click', (e) => {
+    const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('.filter-btn');
+    if (!btn) return;
+
+    const category = btn.dataset.category ?? 'All';
+
+    // Update active state
+    filterBar.querySelectorAll<HTMLButtonElement>('.filter-btn').forEach((b) => {
+      const active = b.dataset.category === category;
+      b.setAttribute('aria-pressed', active ? 'true' : 'false');
+      b.classList.toggle('!bg-primary-800', active);
+      b.classList.toggle('!text-white', active);
+      b.classList.toggle('!border-primary-800', active);
+    });
+
+    // Show/hide cards
+    let visible = 0;
+    cards.forEach((card) => {
+      const show = category === 'All' || card.dataset.category === category;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+
+    noResults?.classList.toggle('hidden', visible > 0);
+  });
+
+  // Set All active on load
+  filterBar?.querySelector<HTMLButtonElement>('[data-category="All"]')?.click();
+</script>
