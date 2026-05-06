@@ -36,11 +36,11 @@ const images = [
   },
   {
     filename: 'gallery-east-york-walkout-excavation.webp',
-    prompt: 'Basement walkout excavation in progress at a Toronto home, rectangular opening cut through the foundation wall with a structural steel lintel installed overhead, dirt stairwell leading up to daylight, realistic construction photo',
+    prompt: 'Walkout basement excavation in progress at a Toronto brick home, rectangular opening freshly cut through the exterior brick foundation wall, structural steel I-beam lintel installed horizontally spanning the top of the opening, excavated stairwell pit dug in the earth outside the house, construction debris and dirt visible around the opening, realistic job-site photo taken from outside looking at the foundation wall',
   },
   {
     filename: 'gallery-oakville-walkout-retaining-wall.webp',
-    prompt: 'Exterior view of a completed walkout basement entrance at a Toronto home, concrete steps descending below grade from the backyard down into a sunken stairwell, poured concrete retaining walls on both sides of the stairwell, a solid exterior basement door at the bottom, backyard grass and sky visible above at grade level, realistic exterior photo',
+    prompt: 'Completed walkout basement entrance at a suburban Toronto home, view from outside looking down concrete steps descending below grade into a sunken stairwell, poured concrete retaining walls on both sides, a solid grey steel door set into the brick foundation wall at the bottom of the stairs, brick siding of the house visible above at grade level, metal handrail on one side, realistic exterior residential photo',
   },
   {
     filename: 'gallery-leslieville-basement-suite.webp',
