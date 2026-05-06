@@ -20,7 +20,7 @@ const images = [
   },
   {
     filename: 'gallery-scarborough-bungalow-underpinning.webp',
-    prompt: 'Completed underpinning pin sections in a Toronto bungalow basement, rows of freshly poured concrete footing extensions along the base of the foundation wall, construction lighting, dirt floor, realistic job-site photography',
+    prompt: 'Toronto basement underpinning job site, completed concrete pin sections poured directly beneath and flush against the base of an existing brick foundation wall, new concrete footing extensions visible tight to the wall at floor level, sequential pin excavations still open beside completed ones, dirt floor, construction lighting, realistic job-site photography',
   },
   {
     filename: 'gallery-north-york-underpinning-pour.webp',

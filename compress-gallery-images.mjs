@@ -17,14 +17,15 @@ console.log(`Compressing ${files.length} gallery images...\n`);
 for (const file of files) {
   const filepath = path.join(DIR, file);
   const before = fs.statSync(filepath).size;
-  const tmp = filepath + '.tmp';
 
-  await sharp(filepath)
+  // Read into memory first so Sharp releases the file handle before we write back
+  const inputBuf = fs.readFileSync(filepath);
+  const outputBuf = await sharp(inputBuf)
     .resize(1280, 720, { fit: 'cover', position: 'centre' })
     .webp({ quality: 75 })
-    .toFile(tmp);
+    .toBuffer();
 
-  fs.renameSync(tmp, filepath);
+  fs.writeFileSync(filepath, outputBuf);
   const after = fs.statSync(filepath).size;
   const saving = (((before - after) / before) * 100).toFixed(0);
   console.log(`  ${file}`);
