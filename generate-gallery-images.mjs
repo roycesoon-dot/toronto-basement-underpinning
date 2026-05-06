@@ -40,7 +40,7 @@ const images = [
   },
   {
     filename: 'gallery-oakville-walkout-retaining-wall.webp',
-    prompt: 'Completed walkout basement entrance at a suburban Toronto home, poured concrete retaining walls on either side of a stairwell leading down to a metal basement door, clean concrete steps, realistic exterior photo',
+    prompt: 'Exterior view of a completed walkout basement entrance at a Toronto home, concrete steps descending below grade from the backyard down into a sunken stairwell, poured concrete retaining walls on both sides of the stairwell, a solid exterior basement door at the bottom, backyard grass and sky visible above at grade level, realistic exterior photo',
   },
   {
     filename: 'gallery-leslieville-basement-suite.webp',
