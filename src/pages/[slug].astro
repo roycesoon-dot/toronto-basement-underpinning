@@ -112,7 +112,7 @@ const howToSchema = service.data.process && service.data.process.length > 0
       )}
       <h1 class="text-white mb-4 max-w-4xl">{h1}</h1>
       <span class="accent-bar"></span>
-      <p class="text-base text-primary-100 max-w-2xl mb-8 leading-relaxed" set:html={service.data.fullDescription} />
+      <p class="text-base text-primary-100 max-w-2xl mb-8 leading-relaxed [&_a]:text-accent-300 [&_a]:hover:text-accent-200 [&_a]:font-semibold [&_a]:underline-offset-2 [&_a]:underline" set:html={service.data.fullDescription} />
 
       <div class="flex flex-wrap gap-3 mb-8">
         <a href="/contact/" class="btn btn-primary">Get a Free Estimate</a>
