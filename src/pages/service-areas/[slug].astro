@@ -160,8 +160,9 @@ const breadcrumbSchema = {
       </span>
       <h1 class="text-white mb-4 max-w-4xl">{h1}</h1>
       <span class="accent-bar"></span>
-      <p class="text-base text-primary-100 max-w-2xl mb-4 leading-relaxed"><a href="/" class="text-accent-300 hover:text-accent-200 font-medium">{site.name}</a> delivers basement underpinning in {location.name}, ON, for homeowners who need basement lowering, interior waterproofing, basement finishing, sump pump installation, concrete foundation repair, legal apartment conversions, walkout basements, engineered drawings, and building permits - all under one licensed roof.</p>
-      <p class="text-sm text-primary-200 max-w-2xl mb-8">{location.description}</p>
+      <p class="text-base text-primary-100 max-w-2xl mb-8 leading-relaxed">
+        {location.description}{' '}<a href="/" class="text-accent-300 hover:text-accent-200 font-semibold">{site.name}</a> delivers basement underpinning, interior waterproofing, basement finishing, sump pump installation, concrete foundation repair, legal apartment conversions, walkout basements, and permit coordination for {location.name} homeowners - full scope, one licensed crew.
+      </p>
 
       <div class="flex flex-wrap gap-3 mb-6">
         <a href="/contact/" class="btn btn-primary">Get a Free {location.shortName} Estimate</a>
