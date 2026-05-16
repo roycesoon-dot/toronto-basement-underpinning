@@ -371,6 +371,13 @@ declare module 'astro:content' {
   collection: "services";
   data: InferEntrySchema<"services">
 } & { render(): Render[".mdx"] };
+"basement-walkout.mdx": {
+	id: "basement-walkout.mdx";
+  slug: "basement-walkout";
+  body: string;
+  collection: "services";
+  data: InferEntrySchema<"services">
+} & { render(): Render[".mdx"] };
 "concrete-foundation-repair.mdx": {
 	id: "concrete-foundation-repair.mdx";
   slug: "concrete-foundation-repair";
