@@ -80,9 +80,9 @@
       "Financing on Approval"
     ],
     "openingHours": {
-      "weekdays": "08:00-18:00",
-      "saturday": "09:00-15:00",
-      "sunday": "Closed"
+      "weekdays": "00:00-23:59",
+      "saturday": "00:00-23:59",
+      "sunday": "00:00-23:59"
     }
   },
   "strategy": {
