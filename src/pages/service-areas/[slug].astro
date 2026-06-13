@@ -22,7 +22,7 @@ const locationsPath = site.urlPatterns.locationsPath;
 const services = (await getCollection('services')).filter((s) => s.data.featured);
 
 const meta = location.metaTitle || `Basement Underpinning ${location.name} | ${site.name}`;
-const description = location.metaDescription || location.description;
+const description = '';
 const h1 = location.h1Title || `Basement Underpinning in ${location.name}`;
 
 const heroImage = "/images/misc/indoor-finished-basement-service-areas-hero.webp";
@@ -144,7 +144,7 @@ const breadcrumbSchema = {
   <section class="relative overflow-hidden bg-primary-800 text-white">
     <div class="absolute inset-0 z-0">
       <img src={heroImage} alt="" class="w-full h-full object-cover" loading="eager" />
-      <div class="absolute inset-0 bg-gradient-to-r from-primary-800/95 via-primary-800/85 to-primary-700/55"></div>
+      <div class="absolute inset-0 bg-primary-800/90"></div>
     </div>
     <div class="relative z-10 max-w-container mx-auto px-4 py-14 lg:py-24">
       <nav class="text-xs text-primary-200 mb-4 flex flex-wrap gap-1.5 items-center" aria-label="Breadcrumb">
@@ -158,11 +158,19 @@ const breadcrumbSchema = {
       <span class="inline-block bg-accent-500/20 border border-accent-500 text-accent-300 text-xs font-bold uppercase tracking-widest px-3 py-1.5 mb-4">
         {location.responseTime} &middot; {location.council}
       </span>
-      <h1 class="text-white mb-4 max-w-4xl">{h1}</h1>
+      <h1 class="text-white mb-4">{h1}</h1>
       <span class="accent-bar"></span>
-      <p class="text-base text-primary-100 max-w-2xl mb-8 leading-relaxed">
-        {location.description}{' '}<a href="/" class="text-accent-300 hover:text-accent-200 font-semibold">{site.name}</a> delivers basement underpinning, interior waterproofing, basement finishing, sump pump installation, concrete foundation repair, legal apartment conversions, walkout basements, and permit coordination - full scope, one licensed crew.
-      </p>
+      <div class="mb-8 space-y-4">
+        <p class="text-base text-primary-100 leading-relaxed">
+          {location.description}{' '}<a href="/" class="text-accent-300 hover:text-accent-200 font-semibold underline">{site.name}</a> delivers basement lowering, underpinning, interior waterproofing, basement finishing, sump pump installation, concrete foundation repair, legal apartment conversions, walkout basements, and permit coordination - full scope, one licensed crew.
+        </p>
+        <p class="text-base text-primary-100 leading-relaxed">
+          A typical {location.shortName} basement lowering runs $20,000-$50,000 depending on foundation depth, soil condition, and whether waterproofing and finishing are included in the same project. Every quote is fixed-price, includes engineered drawings and city permits, and is backed by our zero-risk no-questions-asked warranty.
+        </p>
+        <p class="text-base text-primary-100 leading-relaxed">
+          Toronto Basement Underpinning serves basement lowering and underpinning across {location.name} and the Greater Toronto Area, including Toronto, North York, Scarborough, Etobicoke, Mississauga, and Brampton.
+        </p>
+      </div>
 
       <div class="flex flex-wrap gap-3 mb-6">
         <a href="/contact/" class="btn btn-primary">Get a Free {location.shortName} Estimate</a>

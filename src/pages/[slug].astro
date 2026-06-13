@@ -21,7 +21,7 @@ const { service } = Astro.props;
 const { Content } = await service.render();
 
 const meta = service.data.seo?.metaTitle || `${service.data.title} Toronto | ${site.name}`;
-const description = service.data.seo?.metaDescription || service.data.description;
+const description = '';
 const h1 = service.data.h1Title || `Professional ${service.data.title} in Toronto`;
 
 const formattedUpdated = service.data.lastUpdated
@@ -96,7 +96,7 @@ const howToSchema = service.data.process && service.data.process.length > 0
   <section class="relative overflow-hidden bg-primary-800 text-white">
     <div class="absolute inset-0 z-0">
       <img src={service.data.image} alt="" class="w-full h-full object-cover" loading="eager" />
-      <div class="absolute inset-0 bg-gradient-to-r from-primary-800/95 via-primary-800/80 to-primary-700/55"></div>
+      <div class="absolute inset-0 bg-primary-800/90"></div>
     </div>
     <div class="relative z-10 max-w-container mx-auto px-4 py-14 lg:py-24">
       <nav class="text-xs text-primary-200 mb-4 flex flex-wrap gap-1.5 items-center" aria-label="Breadcrumb">
@@ -110,9 +110,13 @@ const howToSchema = service.data.process && service.data.process.length > 0
           {service.data.badge}
         </span>
       )}
-      <h1 class="text-white mb-4 max-w-4xl">{h1}</h1>
+      <h1 class="text-white mb-4">{h1}</h1>
       <span class="accent-bar"></span>
-      <p class="text-base text-primary-100 max-w-2xl mb-8 leading-relaxed [&_a]:text-accent-300 [&_a]:hover:text-accent-200 [&_a]:font-semibold [&_a]:underline-offset-2 [&_a]:underline" set:html={service.data.fullDescription} />
+      <div class="mb-8 space-y-4">
+        {service.data.fullDescription.split('\n\n').map((para: string) => (
+          <p class="text-base text-primary-100 leading-relaxed [&_a]:text-accent-300 [&_a]:hover:text-accent-200 [&_a]:font-semibold [&_a]:underline-offset-2 [&_a]:underline" set:html={para} />
+        ))}
+      </div>
 
       <div class="flex flex-wrap gap-3 mb-8">
         <a href="/contact/" class="btn btn-primary">Get a Free Estimate</a>
