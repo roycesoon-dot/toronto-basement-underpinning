@@ -12,6 +12,7 @@
         "label": "Services",
         "href": "/interior-waterproofing/",
         "children": [
+          { "label": "Basement Lowering", "href": "/basement-lowering/" },
           { "label": "Interior Waterproofing", "href": "/interior-waterproofing/" },
           { "label": "Basement Finishing", "href": "/basement-finishing/" },
           { "label": "Sump Pumps & Battery Backups", "href": "/sump-pumps/" },
@@ -45,6 +46,7 @@
       {
         "title": "Services",
         "links": [
+          { "label": "Basement Lowering", "href": "/basement-lowering/" },
           { "label": "Interior Waterproofing", "href": "/interior-waterproofing/" },
           { "label": "Basement Finishing", "href": "/basement-finishing/" },
           { "label": "Sump Pumps", "href": "/sump-pumps/" },
